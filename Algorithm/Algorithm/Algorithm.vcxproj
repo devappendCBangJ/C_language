@@ -141,6 +141,7 @@
   <ItemGroup>
     <ClCompile Include="Algorithm_Basic.cpp" />
     <ClCompile Include="C++기초.cpp" />
+    <ClCompile Include="test.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
