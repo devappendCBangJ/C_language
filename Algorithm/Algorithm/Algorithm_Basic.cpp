@@ -81,7 +81,7 @@
 				// 최악의 경우 : 가장 널리 이용됨. 계산 쉬움 + 중요한 의미 가짐 (빅오 표기법)
 			// - 최적화 : 바로 이전 단계 빅오 시간 복잡도를 목표 알고리즘 생각 ♣
 
-			// - ★함수의 시간 복잡도 : 컴파일러에서 제공하는 다양한 함수의 시간 복잡도를 알고 있어야한다★
+			// - ★함수의 시간 복잡도 : 컴파일러 내장 함수를 쓸 경우 시간 복잡도를 알고 있어야한다★
 
 		// (3) 좋은 알고리즘 판단 ♣
 			// - 입력 크기와
@@ -210,8 +210,8 @@
 
 	// 4) 그리디
 		// - 특징 : 매 단계 가능한 해들 중 가장 좋은 해만 취하는 방법
-		// - 장점 : 일부 문제 해결 ex.현실 동전 문제
-		// - 단점 : 문제에 항상 최적의 답을 주지는 않음 ex.160원짜리 동전 ♣
+		// - 장점 : 일부 문제 해결 ex.약수 배수 동전 문제
+		// - 단점 : 문제에 항상 최적의 답을 주지는 않음 ex.160원 동전같은 약수 배수 아닌 동전 문제 ♣
 
 		// ex. 동전 거스름돈(최소 동전 수)
 			// change = W, n500 = n100 = n50 = n10 = n1 = 0 // n500, n100, n50, n10, n1은 각각의 동전 카운트
@@ -300,14 +300,151 @@
 		// - 위와 같은 정렬 아이디어를 기억해라 ♣
 		// - 보통 컴파일러 내장함수의 정렬 시간 복잡도는 위 처럼 O(nlogn) 수준임을 기억해라 ♣
 
+	// 7) 분할정복 - 선택문제
+
 	// 6) 동적 프로그래밍 ♣ 다시 해보기
 		// - 특징 : 복잡한 문제를 풀기 위해 여러 하위 문제로 나누어 풀고, 나중에 결합해서 답 구하는 방법
 			// but 변수를 통해 기억 (하위 문제간 겹침 발생 있는 경우 분할정복 기법보다 효율적)
 			// 점화식, 수열과 같은 문제 풀이
 		// - 장점 : 모든 동전 거스름돈 문제 최적해 제시 ex.160원짜리 동전
-		// 
-		// 
-		// 
+
+		// ex. 피보나치 수열 - 분할정복 ♣
+			// - 하위 문제간 겹침으로 분할정복 비효율적
+
+			// int fib(n) {
+				// if (n <= 0) return 0;
+				// else if (n == 1) return 1;
+				// else return fib(n - 1) + fib(n - 2);
+			// }
+
+		// ex. 피보나치 수열 - BottomUp ♣
+			// - 하위 문제간 겹침으로 동적 프로그래밍 효율적
+			// - TopDown보다 효율적
+
+			// int fib(n) {
+				// int map[n + 1]; map[0] = 0; map[1] = 1;
+				// if (n <= 0) return map[0];
+				// else if (n == 1) return map[1];
+				// else {
+					// for (i = 2; i <= n; i++)
+						// map[i] = map[i - 1] + map[i - 2];
+					// return map[n];
+				// }
+			// }
+
+		// ex. 피보나치 수열 - TopDown ♣ 이거는 순환 아닌가? 맞음!
+			// - 하위 문제간 겹침으로 동적 프로그래밍 효율적
+			// - BottomUp보다 비효율적
+
+			// int fib(n) {
+				// int map[n + 1]; map[0] = 0; map[1] = 1;
+				// int fib(n) {
+					// if (map(n) is ready) return map[n];
+					// else {
+						// map[n] = fib[n - 1] + fib[n - 2];
+						// return map[n];
+					// }
+				// }
+			// }
+
+			// - map(n) is ready: map(i)에 dummy value(-1)로 초기화 한 뒤 
+				// 음이 아닌 지를 확인하는 방법 등으로 구현가능
+
+		// ex. 동전 거스름돈(모든 경우) ♣
+			// [조건]
+				// 동전의 종류 : d_1, d_2, ...d_k, 단, d_1 > d_2 > ... > d_k = 1
+				// 거스름돈 : n원
+				// C[n] : 거스름돈 n을 남기는데 필요한 최소 동전 개수
+			// [결과]
+				// C[j] = min_(1<=i<=k){C[j-di]+1}, if j >= d_i
+
+			// for i = 1 to n C[i]=∞
+			// C[0] = 0
+			// for j = 1 to n // j는 1원부터 증가하는 (임시) 거스름돈 액수
+				// for i = 1 to k // k는 d_i부터 감소하는 동전 금액
+					// if (d_i ≤ j) and (C[j - d_i] + 1 < C[j])
+						// C[j] = C[j - d_i] + 1
+			// return C[n]
+			// - 평균 시간 복잡도 : O(nk) 수준. k가 적으면 O(n) 수준
+			// - 최악 시간 복잡도 : O(nk) 수준. k가 적으면 O(n) 수준
+
+		// ex. 스트링 편집거리 ♣
+			// - 편집거리 : 두 문자열 차이 측정을 위한 문자열 측정 단위
+			// - 최소 편집거리 : 주어진 문자열을 목표 문자열로 변환하기 위해 필요한 최소 편집거리
+			// - 편집거리 테이블
+			// [문제]
+				// X = bbabb >> Y = abaa
+				// 삽입 : 1, 삭제 : 1, 변경 : 0 or 2
+				// 1) 편집1에서 x 전부 삭제 후 y 하나씩 삽입 : 비용9
+				// 2) 편집2에서 x1, x2 전부 삭제 후 x5를 a로 변경한 뒤 a 삽입 : 비용6
+				// 3) 편집3에서 x1, x4를 a로 변경 후 x5 삭제 : 비용5
+				// >> 존재하는 모든 연산 중 편집비용이 가장 작은 연산?
+			// [결과]
+				// D(i, j) = min[D(i-1, j)+δD, D(i, j-1)+δI, D(i-1, j-1)+0/δC]
+					// 0/δC : xi=yi면 0, 그렇지 않으면 δC
+
+			// int EditDist(n, X[], m, Y[], ins, del, chg){
+				// int D[n+1][m+1]; // D테이블
+				// int i, j;
+				// D[0][0] = 0; // D테이블 시작점
+				// for (i = 1; i < n+1; i++){ // 첫 열 초기화
+					// D[i][0] = D[i-1][0] + del;
+				// }
+				// for (j = 1; j < m+1; j++){ // 첫 행 초기화
+					// D[0][j] = D[0][j-1] + ins;
+				// }
+				// for (i = 1; i < n+1; i++){
+					// for (j = 1; j < m+1; j++){
+						// c = (X[i] == Y[j])? 0:chg;
+						// D[i][j] = min(D[i-1][j] + del, D[i][j-1] + ins, D[i-1][j-1] + c;
+					// }
+				// }
+				// return D[n][m];
+			// }
+			// - 평균 시간 복잡도 : O(mn) 수준
+			// - 최악 시간 복잡도 : O(mn) 수준
+
+		// ex. 막대기 자르기 ♣
+			// [문제]
+				// 하나 긴 막대기 존재. 막대기 조각마다 가격 다름
+				// R_n : 길이가 n인 막대기를 잘라 만들 수 있는 최대 가격
+				// P_i : 길이가 i인 막대기 조각 가격
+				// >> 막대기 잘라 가장 높은 가격 만들기 위해 해야할 일?
+			// [결과]
+				// R_n = max(P_i + R_(n-i)) where i=1,...,n
+				// R_1 = P_1 + R_0 = 1, R_2 = max(P_2 + R_0, P_1 + R_1) = 5, ...
+
+			// 길이 4인 막대기 >> 5(길이2) + 5(길이2) = 10이 최대
+
+		// ex. 0 / 1 배낭 문제(물체 쪼개기 불가) ♣
+			// - Greedy 방법으로 해결 불가능한 문제
+			// - 동적 프로그래밍 방법으로 해결 가능한 문제
+			// [문제]
+				// 무게 제한 50인 배낭에 다음 3개 물건 넣음
+				// 물체를 쪼개서 일부만 포함시킬 수 없음
+				// m[i][w] : i개 물건, w 무게 제한으로 만들 수 있는 최대 가치
+				// m[0][w] = 0 for all w
+				// m[i][0] = 0 for all i
+				// >> 넣은 물건들의 가치 합이 최대가 되는 방법?
+			// [결과]
+				// i번째 물건 무게가 w보다 큰 경우 : m[i][w] = m[i-1][w]
+				// 그렇지 않은 경우 : m[i][w] = max(m[i-1][w], m[i-1][w-wi] + vi)
+
+		// ex. Coin Counting Problem ♣
+			// [문제]
+				// a_1, a_2, ... a_n이 주어짐
+				// C(i, j) : a_1, a_2, ..., a_n 수열을 사용하여 j로 합칠 수 있는 방법의 개수
+				// k_1*a_1 + k_2*a_2 + ... + k_n*a_n = T의 해법 개수? (k_i >= 0)
+			// [결과]
+				// C(i,j) = C(i-1,j) + C(i-1,j-a_i), C(0, 0) = 1
+
+		// ex. Simplified Knapsack ♣
+			// [문제]
+				// a_1, a_2, ... a_n이 주어짐
+				// C(i, j) : a_1, a_2, ..., a_n 수열을 사용하여 j로 합칠 수 있는 가능성
+				// k_1*a_1 + k_2*a_2 + ... + k_n*a_n = T의 해법이 있는가? (k_i >= 0)
+			// [결과]
+				// C(i,j) = C(i-1,j) v C(i-1,j-a_i), C(0, 0) = 1
 
 // ● 자료구조 종류
 	// 1. 트리
@@ -328,36 +465,169 @@
 				// - 전위 순회(VLR) : 방문 순서 루트 노드 >> 자손 노드
 					// ex. 구조화된 문서 출력
 						// preorder(TreeNode* root) {
-						//	if (root) {
-						//		printf("%d", root->data); // 노드 방문
-						//		preorder(root->left);// 왼쪽서브트리 순회
-						//		preorder(root->right);// 오른쪽서브트리 순회
-						//	}
+							// if (root) {
+									// printf("%d", root->data); // 노드 방문
+									// preorder(root->left);// 왼쪽서브트리 순회
+									// preorder(root->right);// 오른쪽서브트리 순회
+							// }
 						// }
 				// - 중위 순회(LVR) : 방문 순서 왼쪽 자손 노드 >> 루트 노드 >> 오른쪽 자손 노드
 					// ex. 수식 표현
 						// inorder(TreeNode* root) {
-						//	if (root) {
-						//		//왼쪽서브트리순회
-						//		inorder(root->left);
-						//		//노드방문
-						//		printf("%d", root->data);
-						//		//오른쪽서브트리순회
-						//		inorder(root->right);
-						//	}
+							// if (root) {
+									// 왼쪽서브트리순회
+									// inorder(root->left);
+									// 노드방문
+									// printf("%d", root->data);
+									// 오른쪽서브트리순회
+									// inorder(root->right);
+							// }
 						// }
 				// - 후위 순회(LRV) : 방문 순서 자손 노드 >> 루트 노드
 						// ex. 디렉토리 용량 계산
 						// postorder(TreeNode* root) {
-						//	if (root) {
-						//		// 왼쪽서브트리 순회
-						//		postorder(root->left);
-						//		// 오른쪽서브트리순회
-						//		postorder(root->right);
-						//		// 노드 방문
-						//		printf("%d", root->data);
-						//	}
+							// if (root) {
+									// 왼쪽서브트리 순회
+									// postorder(root->left);
+									// 오른쪽서브트리순회
+									// postorder(root->right);
+									// 노드 방문
+									// printf("%d", root->data);
+							// }
 						// }
+	// 2. 스택
+		// - 특징 : 후입 선출(LIFO last in first out)
+		// 1) 스택 기능 종류
+			// - top부터 삽입(push)
+			// - top부터 삭제(pop)
+
+		// 2) 스택 구현
+			// (1) 공백상태
+				// is_empty(S) 
+				// if top = -1
+					// then return TRUE
+				// else return FALSE
+
+			// (2) 포화상태
+				// is_full(S)
+				// if top = (MAX_STACK_SIZE - 1)
+					// then return TRUE
+				// else return FALSE
+
+			// (3) push 연산
+				// push(S, x)
+				// if is_full(S):
+					// then error "overflow"
+				// else:
+					// top ← top + 1
+					// stack[top] ← x
+
+			// (4) pop 연산
+				// pop(S, x)
+				// if is_empty(S):
+					// then error "underflow"
+				// else:
+					// e ← stack[top]
+					// top ← top - 1
+					// return e
+
+			// (1) C언어 구현 ♣ 이해 안됨
+				// typedef int element; // 배열요소는 element타입으로 선언
+				// typedef struct {
+					// element stack[MAX_STACK_SIZE];
+					// int top;
+				// } StackType; // 관련 데이터를 구조체로 묶어서 함수의 파라미터로 전달
+
+				// 스택 초기화 함수
+				// void init(StackType *s) {
+					// s->top = -1;
+				// }
+
+				// 공백 상태 검출 함수
+				//int is_empty(StackType *s) {
+					// return (s->top == -1);
+				// }
+
+				// 포화 상태 검출 함수
+				//int is_full(StackType *s) {
+					// return (s->top == (MAX_STACK_SIZE - 1));
+				// }
+
+				// 삽입함수
+				// void push(StackType *s, element item) {
+					// if (is_full(s)) {
+						// fprintf(stderr, "스택 포화 에러\n"); 
+						// return;
+					// }
+					// else 
+						// s->stack[++(s->top)] = item;
+				// }
+
+				// 삭제함수
+				// element pop(StackType *s) {
+					// if (is_empty(s)) {
+						// fprintf(stderr, "스택 공백 에러\n"); 
+						// exit(1);
+					// }
+					// else return s->stack[(s->top)--];
+				//}
+
+				// 피크함수
+				//element peek(StackType* s) {
+					// if (is_empty(s)) {
+						// fprintf(stderr, "스택 공백 에러\n"); 
+						// exit(1);
+					// }
+				// else return s->stack[s->top];
+				// }
+
+		// ex. 에디터의 undo 기능
+		// ex. 함수호출에서 복귀주소 기억
+		// ex. 괄호검사
+			// [문제]
+				// 괄호 종류 : 대괄호 [], 중괄호 {}, 소괄호 ()
+				// 조건 : 왼쪽 괄호 개수 = 오른쪽 괄호 개수
+					// 같은 괄호에서 왼쪽 괄호는 오른쪽 괄호보다 먼저
+					// 괄호 사이에서는 포함관계만 존재
+			// [풀이 과정]
+				// 문자열의 괄호 차례대로 조사하면서 왼쪽 괄호는 스택에 삽입
+					// 오른쪽 괄호는 스택에서 top괄호를 삭제한 후, 오른쪽 괄호과 짝 맞는지 검사
+				// 마지막 괄호까지 조사한 후에도 스택에 괄호 남아있으면 0(거짓)반환, 그렇지 않으면 1(참) 반환
+
+				// check_matching(expr)
+				// while (입력 expr의 끝이 아니면)
+					// ch ← expr의 다음 글자
+					// switch (ch)
+						// case '(': case '[': case '{': // 왼쪽 괄호면 push
+							// ch를 스택에 삽입
+							// break
+						// case ')': case ']': case ']': // 오른쪽 괄호면 pop 이후 비교
+							// if(스택이 비어 있으면)
+								// then 오류(조건2)
+							// else 스택에서 open_ch를 꺼낸다
+								// if (ch와 open_ch가 같은 짝이 아니면)
+									// then 오류 보고(조건3)
+							// break
+				// if(스택이 비어 있지 않으면)
+					// then 오류(조건1)
+
+		// ex. 미로탐색
+			// [문제]
+				// 미로 탈출
+			// [풀이 과정]
+				// 현재 위치에서 가능한 방향을 스택에 저장해 둠. 막다른 길을 만나면 스택에서 다음 탐색 위치 꺼냄
+
+				// 스택 s와 출구의 위치 X, 현재 생쥐의 위치 초기화
+				// while(현재의 위치가 출구가 아니면)
+					// do 현재위치를 방문한 것으로 표기
+						// if(현재위치의 위, 아래, 왼쪽, 오른쪽 위치가 아직 방문되지 않았고 갈 수 있으면)
+							// then 그 위치들을 스택에 push
+						// if(is_empty(s))
+							// then 실패
+						// else
+							// 스택에서 하나의 위치를 꺼내어 현재 위치로 만든다
+				// 성공
+			
 
 // ★왜 ~~한 조건이 있는가? 고민 >> 출제자의 의도 파악 >> 아이디어 스케치 중요
 // 알고리즘 강의 or 책을 통한 심화 학습 필요
