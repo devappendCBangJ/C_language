@@ -142,6 +142,7 @@
     <ClCompile Include="Algorithm_Basic.cpp" />
     <ClCompile Include="C++기초.cpp" />
     <ClCompile Include="test.cpp" />
+    <ClCompile Include="Visual Studio vs Visual Studio Code.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
