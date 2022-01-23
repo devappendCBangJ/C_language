@@ -4,6 +4,9 @@
 
 	 //1. 자료 구조 ♣
 		// 1) list : 할 일 리스트
+			// - char 배열 최대 크기 : 약 100만
+			// - int 배열 최대 크기 : 약 25만
+			// - vector의 push_back 최대 크기 : 약 10억
 		// 2) stack : 쌓여진 책 더미
 		// 3) queue : 티켓 창구에서의 대기열
 		// 4) tree : 회사 조직도
@@ -106,13 +109,13 @@
 					// /* 입력 k : 탐색키, 출력 i : k의 존재위치
 					// 가정: 레코드는 a[1]~a[n]에 이미 정렬되어 있음 */
 					// 	int low, high, mid;
-					// 	low ＝ 1;
-					// 	high ＝ n;
-					// 	while (low ＜＝ high) { // 원소의 개수가 홀수개일때를 대비해서 <가 아닌 <= 인듯
-					// 		mid ＝(low ＋ high) / 2;
-					// 		if (k ＝＝ a[mid].key) return(mid);
-					// 		else if (k ＜ a[mid].key) high＝mid－1;
-					// 		else if (k ＞ a[mid].key) low＝mid＋1;
+					// 	low = 1;
+					// 	high = n;
+					// 	while (low <= high) { // 원소의 개수가 홀수개일때를 대비해서 <가 아닌 <= 인듯
+					// 		mid =(low + high) / 2;
+					// 		if (k == a[mid].key) return(mid);
+					// 		else if (k < a[mid].key) high=mid-1;
+					// 		else if (k > a[mid].key) low=mid+1;
 					// 	}
 					// 	return(0);
 				// }
@@ -138,7 +141,8 @@
 		// (2) 삽입 정렬 : 두 번째 자료부터 시작. 그 앞(왼쪽)의 자료들과 비교하여 삽입할 위치를 지정. 자료를 뒤로 옮기고, 지정한 자리에 자료를 삽입하여 정렬 ♣
 			// - 특징 : 거의 정렬된 목록을 정리하는데 버블정렬보다 효율적
 			// ex. 리스트 원소 전부 정렬
-				// for (int i = 1; i < n; i++) {
+				// int i, j;
+				// for (i = 1; i < n; i++) {
 					// tmp = a[i];
 					// for (j = i - 1; j >= 0; j--) {
 						// if (a[j] > tmp) a[j + 1] = a[j];
