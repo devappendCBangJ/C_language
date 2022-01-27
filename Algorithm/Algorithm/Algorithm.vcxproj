@@ -140,6 +140,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Algorithm_Basic.cpp" />
+    <ClCompile Include="C++ STL.cpp" />
     <ClCompile Include="C++기초.cpp" />
     <ClCompile Include="test.cpp" />
   </ItemGroup>
