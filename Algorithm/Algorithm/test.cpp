@@ -3,52 +3,56 @@
 #include <algorithm>
 
 int main() {
-	// 입력 + 정렬
-	std::vector<int> listN;
-	int sum = 0, min = 2000000000, max = -2000000000, N, C;
-	scanf_s("%d %d", &N, &C);
-	for (int i = 0; i < N; i++) {
+	// 입력
+	int N;
+	scanf_s("%d", &N);
+	int cnt[2001] = { 0 }, listN[2001] = { 0 }, K;
+	for (int i = 1; i <= N; i++) {
 		scanf_s("%d", &listN[i]);
-		if (min > listN[i]) {
-			min = listN[i];
-		}
-		else if(max < listN[i]) {
-			max = listN[i];
-		}
-		printf("listN[i] : %d\n", listN[i]); // 확인용 코드
-		printf("min : %d\n", min); // 확인용 코드
-		printf("max : %d\n", max); // 확인용 코드
+		cnt[listN[i]]++;
+		// printf("cnt[listN[%d]] : %d\n", listN[i], cnt[listN[i]]); // 확인용 코드
 	}
-	printf("\n"); // 확인용 코드
-	for (int i = 0; i < N; i++) { // 확인용 코드
-		printf("listN[i] : %d\n", listN[i]);
-	}
-	sort(listN.begin(), listN.end());
-	printf("\n"); // 확인용 코드
-	for (int i = 0; i < N; i++) { // 확인용 코드
-		printf("listN[i] : %d\n", listN[i]);
-	}
-	printf("\n"); // 확인용 코드
+	scanf_s("%d", &K);
 
 	// 연산
-	int middle, cnt, res = min;
-	while (min <= max) {
-		middle = (min + max) / 2, cnt = 1;
-		for (int i=1; i<N; i++){
-			if (middle <= listN[i] - listN[i - 1]) {
-				cnt++;
-			}
-			printf("((%d))\n", cnt); // 확인용 코드
+	int res = -1;
+	if (K < N) {
+		res = K + 1;
+	}
+	else {
+		int sum = N, i = 2, total = N;	// 이미 한바퀴 돈 상태니까 i=1이 아니라 sum=N, total=N, i=2 ♣
+		while (total < K) {
+			sum -= cnt[i];
+			total += sum;
+			i++;
 		}
-		printf("(%d)\n", middle); // 확인용 코드
-		if (cnt < C) {
-			max = middle - 1;
-		}
-		else if(cnt >= C) {
-			if (middle > res) {
-				res = middle;
+		printf("total : %d\n", total);	// 확인용 코드
+		if (total == K) {
+			for (int j = 1; j <= N; j++) {	// 변수 j랑 i랑 헷갈려서 선언은 j로 하고 ++은 i로 해버림 ♣
+				if (listN[j] >= i) {
+					res = j;
+					break;
+				}
 			}
-			min = middle + 1;
+			// printf("total == K\n");	// 확인용 코드
+		}
+		else {
+			i--;	// 되돌리려면 역순으로 해야한다 ♣
+			total -= sum;
+			sum += cnt[i];
+			// printf("total : %d\n", total);	// 확인용 코드
+
+			for (int j = 1; j <= N; j++) {
+				if (listN[j] >= i) {
+					total++;
+					// printf("i : %d\n", i);	// 확인용 코드
+					// printf("listN[j] : %d\n", listN[j]);	// 확인용 코드
+					if (total == K + 1) {
+						res = j;
+						break;
+					}
+				}
+			}
 		}
 	}
 
