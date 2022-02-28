@@ -1,0 +1,10 @@
+C:\Users\Hi\source\repos\1_AddOne\1_AddOne\bin\Debug\1_AddOne.exe.config
+C:\Users\Hi\source\repos\1_AddOne\1_AddOne\bin\Debug\1_AddOne.exe
+C:\Users\Hi\source\repos\1_AddOne\1_AddOne\bin\Debug\1_AddOne.pdb
+C:\Users\Hi\source\repos\1_AddOne\1_AddOne\obj\Debug\1_AddOne.csproj.AssemblyReference.cache
+C:\Users\Hi\source\repos\1_AddOne\1_AddOne\obj\Debug\_1_AddOne.Form1.resources
+C:\Users\Hi\source\repos\1_AddOne\1_AddOne\obj\Debug\_1_AddOne.Properties.Resources.resources
+C:\Users\Hi\source\repos\1_AddOne\1_AddOne\obj\Debug\1_AddOne.csproj.GenerateResource.cache
+C:\Users\Hi\source\repos\1_AddOne\1_AddOne\obj\Debug\1_AddOne.csproj.CoreCompileInputs.cache
+C:\Users\Hi\source\repos\1_AddOne\1_AddOne\obj\Debug\1_AddOne.exe
+C:\Users\Hi\source\repos\1_AddOne\1_AddOne\obj\Debug\1_AddOne.pdb
