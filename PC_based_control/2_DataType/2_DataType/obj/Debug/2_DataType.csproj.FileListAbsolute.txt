@@ -1,0 +1,10 @@
+C:\Users\Hi\source\repos\PC_based_control\2_DataType\2_DataType\bin\Debug\2_DataType.exe.config
+C:\Users\Hi\source\repos\PC_based_control\2_DataType\2_DataType\bin\Debug\2_DataType.exe
+C:\Users\Hi\source\repos\PC_based_control\2_DataType\2_DataType\bin\Debug\2_DataType.pdb
+C:\Users\Hi\source\repos\PC_based_control\2_DataType\2_DataType\obj\Debug\2_DataType.csproj.AssemblyReference.cache
+C:\Users\Hi\source\repos\PC_based_control\2_DataType\2_DataType\obj\Debug\_2_DataType.Form1.resources
+C:\Users\Hi\source\repos\PC_based_control\2_DataType\2_DataType\obj\Debug\_2_DataType.Properties.Resources.resources
+C:\Users\Hi\source\repos\PC_based_control\2_DataType\2_DataType\obj\Debug\2_DataType.csproj.GenerateResource.cache
+C:\Users\Hi\source\repos\PC_based_control\2_DataType\2_DataType\obj\Debug\2_DataType.csproj.CoreCompileInputs.cache
+C:\Users\Hi\source\repos\PC_based_control\2_DataType\2_DataType\obj\Debug\2_DataType.exe
+C:\Users\Hi\source\repos\PC_based_control\2_DataType\2_DataType\obj\Debug\2_DataType.pdb

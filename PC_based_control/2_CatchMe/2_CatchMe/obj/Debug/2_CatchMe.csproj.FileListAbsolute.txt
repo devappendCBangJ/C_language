@@ -1,0 +1,10 @@
+C:\Users\Hi\source\repos\PC_based_control\2_CatchMe\2_CatchMe\bin\Debug\2_CatchMe.exe.config
+C:\Users\Hi\source\repos\PC_based_control\2_CatchMe\2_CatchMe\bin\Debug\2_CatchMe.exe
+C:\Users\Hi\source\repos\PC_based_control\2_CatchMe\2_CatchMe\bin\Debug\2_CatchMe.pdb
+C:\Users\Hi\source\repos\PC_based_control\2_CatchMe\2_CatchMe\obj\Debug\2_CatchMe.csproj.AssemblyReference.cache
+C:\Users\Hi\source\repos\PC_based_control\2_CatchMe\2_CatchMe\obj\Debug\_2_CatchMe.Form1.resources
+C:\Users\Hi\source\repos\PC_based_control\2_CatchMe\2_CatchMe\obj\Debug\_2_CatchMe.Properties.Resources.resources
+C:\Users\Hi\source\repos\PC_based_control\2_CatchMe\2_CatchMe\obj\Debug\2_CatchMe.csproj.GenerateResource.cache
+C:\Users\Hi\source\repos\PC_based_control\2_CatchMe\2_CatchMe\obj\Debug\2_CatchMe.csproj.CoreCompileInputs.cache
+C:\Users\Hi\source\repos\PC_based_control\2_CatchMe\2_CatchMe\obj\Debug\2_CatchMe.exe
+C:\Users\Hi\source\repos\PC_based_control\2_CatchMe\2_CatchMe\obj\Debug\2_CatchMe.pdb
