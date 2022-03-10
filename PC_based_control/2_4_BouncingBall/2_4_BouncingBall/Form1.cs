@@ -12,15 +12,11 @@ namespace _2_4_BouncingBall
 {
     public partial class Form1 : Form
     {
-        int dx = 2, dy = 2;
+        int dx = 2, dy = 3;
         int speed = 1;
         public Form1()
         {
             InitializeComponent();
-        }
-
-        private void groupBox1_Enter(object sender, EventArgs e)
-        {
         }
 
         private void radSlow_CheckedChanged(object sender, EventArgs e)
@@ -43,14 +39,6 @@ namespace _2_4_BouncingBall
                 speed = 0;
                 Console.WriteLine("%d, %d", dx, dy);
             }
-        }
-
-        private void radSlow_Click(object sender, EventArgs e)
-        {
-        }
-
-        private void radFast_Click(object sender, EventArgs e)
-        {
         }
 
         private void timer1_Tick(object sender, EventArgs e)
@@ -79,6 +67,10 @@ namespace _2_4_BouncingBall
                 if(picBall.Top >= this.ClientSize.Height / 3 && picBall.Top <= this.ClientSize.Height * 2 / 3)
                 {
                     picBall.BackColor = Color.Red;
+                }
+                else
+                {
+                    picBall.BackColor = Color.Blue;
                 }
             }
             else

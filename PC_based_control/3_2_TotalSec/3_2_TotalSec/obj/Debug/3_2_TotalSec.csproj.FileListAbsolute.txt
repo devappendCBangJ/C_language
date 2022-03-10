@@ -1,0 +1,10 @@
+C:\Users\Bang\source\repos\PC_based_control\3_2_TotalSec\3_2_TotalSec\bin\Debug\3_2_TotalSec.exe.config
+C:\Users\Bang\source\repos\PC_based_control\3_2_TotalSec\3_2_TotalSec\bin\Debug\3_2_TotalSec.exe
+C:\Users\Bang\source\repos\PC_based_control\3_2_TotalSec\3_2_TotalSec\bin\Debug\3_2_TotalSec.pdb
+C:\Users\Bang\source\repos\PC_based_control\3_2_TotalSec\3_2_TotalSec\obj\Debug\3_2_TotalSec.csproj.AssemblyReference.cache
+C:\Users\Bang\source\repos\PC_based_control\3_2_TotalSec\3_2_TotalSec\obj\Debug\_3_2_TotalSec.Form1.resources
+C:\Users\Bang\source\repos\PC_based_control\3_2_TotalSec\3_2_TotalSec\obj\Debug\_3_2_TotalSec.Properties.Resources.resources
+C:\Users\Bang\source\repos\PC_based_control\3_2_TotalSec\3_2_TotalSec\obj\Debug\3_2_TotalSec.csproj.GenerateResource.cache
+C:\Users\Bang\source\repos\PC_based_control\3_2_TotalSec\3_2_TotalSec\obj\Debug\3_2_TotalSec.csproj.CoreCompileInputs.cache
+C:\Users\Bang\source\repos\PC_based_control\3_2_TotalSec\3_2_TotalSec\obj\Debug\3_2_TotalSec.exe
+C:\Users\Bang\source\repos\PC_based_control\3_2_TotalSec\3_2_TotalSec\obj\Debug\3_2_TotalSec.pdb

@@ -58,7 +58,11 @@
 				// max(size(a)) >> m or n
 				// end >> m or n
 			// 5) 행렬 크기
-				// size(A) >> [m n]
+				// [m n] = size(A)
+				// [~, n] = size(A)
+					// ~ : 출력값 무시
+				// [m, ~] = size(A)
+					// ~ : 출력값 무시
 			// 6) 행렬 크기 중 더 큰 값
 				// max(size(A)) >> m or n
 		// 4. 원소 추출

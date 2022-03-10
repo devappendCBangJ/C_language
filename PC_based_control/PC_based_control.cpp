@@ -74,6 +74,10 @@
 			[4] x너비 : attribute_name.Width
 			[4] y너비 : attribute_name.Height
 
+		3] 체크 박스
+			[1] 체크박스 체크 : 변수명.Checked = true
+			[1] 체크박스 체크 해제 : 변수명.Checked = false
+
 		3] Graphics
 			[1] 그래픽 객체 생성 : Graphics 변수명 = attribute_name.CreateGraphics()
 			[2] 타원 그리기 : 변수명.DrawEllipse(new pen(Color.Red), x좌표, y좌표, 타원 너비, 타원 높이)
@@ -93,7 +97,30 @@
 			[1] 랜덤 변수 생성 : Random 변수명 = new Random();
 			[2] 랜덤 변수 값 범위 지정 : 변수명 = 변수명.Next(n1, n2);
 
-		5] 프로그램 종료 : Application.Exit()
+		4] 배열
+			[1] string 배열 생성 : string[] 변수명 = new string[] { "원소1", "원소2", ... };
+
+		5] 마스크 연산
+			(num & 0x01) != 0;
+			(num & 0x02) != 0;
+			(num & 0x04) != 0;
+			(num & 0x08) != 0;
+			(num & 0x10) != 0;
+			(num & 0x20) != 0;
+			(num & 0x40) != 0;
+			(num & 0x80) != 0;
+
+		6] 함수
+			[1] 함수 생성
+				private 리턴_자료형 함수명(입력_자료형 입력_변수명, ...)
+				{
+					~~명령어~~
+					return 리턴값
+				} // 여기에 ; 사용x
+			[2] 함수 사용
+				함수명(입력_변수값, ...);
+
+		7] 프로그램 종료 : Application.Exit()
 
 3. 자료형
 	1) 자료형 종류
@@ -143,7 +170,7 @@
 				- C# : 메모리 주소 출력 불가(error를 없애기 위해)
 
 				- stack : cache memory(cpu에 존재)에 저장 / 적은 용량 / 임시 사용 메모리 공간
-				- heap : memory에 저장 / 주소 지정능력만큼   용량 / 장기 사용 메모리 공간
+				- heap : memory에 저장 / 주소 지정능력만큼 용량 / 장기 사용 메모리 공간
 
 		(3) 기본 데이터 형식 / 복합 데이터 형식
 			1] 기본 데이터 형식

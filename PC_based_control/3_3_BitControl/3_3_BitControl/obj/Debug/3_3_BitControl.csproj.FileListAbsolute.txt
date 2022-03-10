@@ -1,0 +1,10 @@
+C:\Users\Bang\source\repos\PC_based_control\3_3_BitControl\3_3_BitControl\bin\Debug\3_3_BitControl.exe.config
+C:\Users\Bang\source\repos\PC_based_control\3_3_BitControl\3_3_BitControl\bin\Debug\3_3_BitControl.exe
+C:\Users\Bang\source\repos\PC_based_control\3_3_BitControl\3_3_BitControl\bin\Debug\3_3_BitControl.pdb
+C:\Users\Bang\source\repos\PC_based_control\3_3_BitControl\3_3_BitControl\obj\Debug\3_3_BitControl.csproj.AssemblyReference.cache
+C:\Users\Bang\source\repos\PC_based_control\3_3_BitControl\3_3_BitControl\obj\Debug\_3_3_BitControl.Form1.resources
+C:\Users\Bang\source\repos\PC_based_control\3_3_BitControl\3_3_BitControl\obj\Debug\_3_3_BitControl.Properties.Resources.resources
+C:\Users\Bang\source\repos\PC_based_control\3_3_BitControl\3_3_BitControl\obj\Debug\3_3_BitControl.csproj.GenerateResource.cache
+C:\Users\Bang\source\repos\PC_based_control\3_3_BitControl\3_3_BitControl\obj\Debug\3_3_BitControl.csproj.CoreCompileInputs.cache
+C:\Users\Bang\source\repos\PC_based_control\3_3_BitControl\3_3_BitControl\obj\Debug\3_3_BitControl.exe
+C:\Users\Bang\source\repos\PC_based_control\3_3_BitControl\3_3_BitControl\obj\Debug\3_3_BitControl.pdb

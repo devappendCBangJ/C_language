@@ -52,7 +52,6 @@ namespace _2_4_BouncingBall
             this.radSlow.Text = "slow";
             this.radSlow.UseVisualStyleBackColor = true;
             this.radSlow.CheckedChanged += new System.EventHandler(this.radSlow_CheckedChanged);
-            this.radSlow.Click += new System.EventHandler(this.radSlow_Click);
             // 
             // radFast
             // 
@@ -66,7 +65,6 @@ namespace _2_4_BouncingBall
             this.radFast.Text = "fast";
             this.radFast.UseVisualStyleBackColor = true;
             this.radFast.CheckedChanged += new System.EventHandler(this.radFast_CheckedChanged);
-            this.radFast.Click += new System.EventHandler(this.radFast_Click);
             // 
             // grBox
             // 
@@ -80,7 +78,6 @@ namespace _2_4_BouncingBall
             this.grBox.TabIndex = 3;
             this.grBox.TabStop = false;
             this.grBox.Text = "Speed";
-            this.grBox.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
             // timer1
             // 

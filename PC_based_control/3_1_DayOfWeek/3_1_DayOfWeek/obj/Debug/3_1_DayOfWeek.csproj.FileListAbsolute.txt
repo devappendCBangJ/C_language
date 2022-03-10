@@ -1,0 +1,10 @@
+C:\Users\Bang\source\repos\PC_based_control\3_1_DayOfWeek\3_1_DayOfWeek\bin\Debug\3_1_DayOfWeek.exe.config
+C:\Users\Bang\source\repos\PC_based_control\3_1_DayOfWeek\3_1_DayOfWeek\bin\Debug\3_1_DayOfWeek.exe
+C:\Users\Bang\source\repos\PC_based_control\3_1_DayOfWeek\3_1_DayOfWeek\bin\Debug\3_1_DayOfWeek.pdb
+C:\Users\Bang\source\repos\PC_based_control\3_1_DayOfWeek\3_1_DayOfWeek\obj\Debug\3_1_DayOfWeek.csproj.AssemblyReference.cache
+C:\Users\Bang\source\repos\PC_based_control\3_1_DayOfWeek\3_1_DayOfWeek\obj\Debug\_3_1_DayOfWeek.Form1.resources
+C:\Users\Bang\source\repos\PC_based_control\3_1_DayOfWeek\3_1_DayOfWeek\obj\Debug\_3_1_DayOfWeek.Properties.Resources.resources
+C:\Users\Bang\source\repos\PC_based_control\3_1_DayOfWeek\3_1_DayOfWeek\obj\Debug\3_1_DayOfWeek.csproj.GenerateResource.cache
+C:\Users\Bang\source\repos\PC_based_control\3_1_DayOfWeek\3_1_DayOfWeek\obj\Debug\3_1_DayOfWeek.csproj.CoreCompileInputs.cache
+C:\Users\Bang\source\repos\PC_based_control\3_1_DayOfWeek\3_1_DayOfWeek\obj\Debug\3_1_DayOfWeek.exe
+C:\Users\Bang\source\repos\PC_based_control\3_1_DayOfWeek\3_1_DayOfWeek\obj\Debug\3_1_DayOfWeek.pdb
