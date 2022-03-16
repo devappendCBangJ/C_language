@@ -1,0 +1,10 @@
+C:\Users\COM\source\repos\3_2_Goto_Control\3_2_Goto_Control\bin\Debug\3_2_Goto_Control.exe.config
+C:\Users\COM\source\repos\3_2_Goto_Control\3_2_Goto_Control\bin\Debug\3_2_Goto_Control.exe
+C:\Users\COM\source\repos\3_2_Goto_Control\3_2_Goto_Control\bin\Debug\3_2_Goto_Control.pdb
+C:\Users\COM\source\repos\3_2_Goto_Control\3_2_Goto_Control\obj\Debug\3_2_Goto_Control.csprojAssemblyReference.cache
+C:\Users\COM\source\repos\3_2_Goto_Control\3_2_Goto_Control\obj\Debug\_3_2_Goto_Control.Form1.resources
+C:\Users\COM\source\repos\3_2_Goto_Control\3_2_Goto_Control\obj\Debug\_3_2_Goto_Control.Properties.Resources.resources
+C:\Users\COM\source\repos\3_2_Goto_Control\3_2_Goto_Control\obj\Debug\3_2_Goto_Control.csproj.GenerateResource.cache
+C:\Users\COM\source\repos\3_2_Goto_Control\3_2_Goto_Control\obj\Debug\3_2_Goto_Control.csproj.CoreCompileInputs.cache
+C:\Users\COM\source\repos\3_2_Goto_Control\3_2_Goto_Control\obj\Debug\3_2_Goto_Control.exe
+C:\Users\COM\source\repos\3_2_Goto_Control\3_2_Goto_Control\obj\Debug\3_2_Goto_Control.pdb
