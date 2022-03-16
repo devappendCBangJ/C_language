@@ -9,7 +9,8 @@
 
 // 그래프 작도
 // plot(x, y, '+', x2, y2) : (x, y)점들 '+'로 표시. (x2, y2)점들 선 그래프
-// ezplot(equation, [xlb, xub]) : xlb <= x <= xub에서 f함수 선 그래프 ♣
+// ezplot(equation, [xlb, xub]) : xlb <= x <= xub 에서 f함수 선 그래프 ♣
+// ezplot(equation, [xlb, xub, ylb, yub]) : xlb <= x <= xub, ylb <= y <= yub 에서 f함수 선 그래프 ♣
 // linspace(xlb, xub, n) 
 // subplot(NMK) : N행 M열 K번째에 빈공간 생성 ♣
 // polar(th, r) : 극좌표 그래프 ♣

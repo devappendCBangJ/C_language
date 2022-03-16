@@ -1,0 +1,10 @@
+C:\Users\COM\source\repos\3_6_LeastSquare2\3_6_LeastSquare2\obj\Debug\3_6_LeastSquare2.csprojAssemblyReference.cache
+C:\Users\COM\source\repos\3_6_LeastSquare2\3_6_LeastSquare2\obj\Debug\_3_6_LeastSquare2.Form.resources
+C:\Users\COM\source\repos\3_6_LeastSquare2\3_6_LeastSquare2\obj\Debug\_3_6_LeastSquare2.Properties.Resources.resources
+C:\Users\COM\source\repos\3_6_LeastSquare2\3_6_LeastSquare2\obj\Debug\3_6_LeastSquare2.csproj.GenerateResource.cache
+C:\Users\COM\source\repos\3_6_LeastSquare2\3_6_LeastSquare2\obj\Debug\3_6_LeastSquare2.csproj.CoreCompileInputs.cache
+C:\Users\COM\source\repos\3_6_LeastSquare2\3_6_LeastSquare2\bin\Debug\3_6_LeastSquare2.exe.config
+C:\Users\COM\source\repos\3_6_LeastSquare2\3_6_LeastSquare2\bin\Debug\3_6_LeastSquare2.exe
+C:\Users\COM\source\repos\3_6_LeastSquare2\3_6_LeastSquare2\bin\Debug\3_6_LeastSquare2.pdb
+C:\Users\COM\source\repos\3_6_LeastSquare2\3_6_LeastSquare2\obj\Debug\3_6_LeastSquare2.exe
+C:\Users\COM\source\repos\3_6_LeastSquare2\3_6_LeastSquare2\obj\Debug\3_6_LeastSquare2.pdb

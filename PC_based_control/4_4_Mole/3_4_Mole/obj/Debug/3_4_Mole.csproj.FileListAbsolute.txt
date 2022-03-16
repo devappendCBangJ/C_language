@@ -1,0 +1,10 @@
+C:\Users\COM\source\repos\3_4_Mole\3_4_Mole\bin\Debug\3_4_Mole.exe.config
+C:\Users\COM\source\repos\3_4_Mole\3_4_Mole\bin\Debug\3_4_Mole.exe
+C:\Users\COM\source\repos\3_4_Mole\3_4_Mole\bin\Debug\3_4_Mole.pdb
+C:\Users\COM\source\repos\3_4_Mole\3_4_Mole\obj\Debug\3_4_Mole.csprojAssemblyReference.cache
+C:\Users\COM\source\repos\3_4_Mole\3_4_Mole\obj\Debug\_3_4_Mole.Form1.resources
+C:\Users\COM\source\repos\3_4_Mole\3_4_Mole\obj\Debug\_3_4_Mole.Properties.Resources.resources
+C:\Users\COM\source\repos\3_4_Mole\3_4_Mole\obj\Debug\3_4_Mole.csproj.GenerateResource.cache
+C:\Users\COM\source\repos\3_4_Mole\3_4_Mole\obj\Debug\3_4_Mole.csproj.CoreCompileInputs.cache
+C:\Users\COM\source\repos\3_4_Mole\3_4_Mole\obj\Debug\3_4_Mole.exe
+C:\Users\COM\source\repos\3_4_Mole\3_4_Mole\obj\Debug\3_4_Mole.pdb

@@ -1,0 +1,10 @@
+C:\Users\COM\source\repos\3_3_PrimeNumber\3_3_PrimeNumber\bin\Debug\3_3_PrimeNumber.exe.config
+C:\Users\COM\source\repos\3_3_PrimeNumber\3_3_PrimeNumber\bin\Debug\3_3_PrimeNumber.exe
+C:\Users\COM\source\repos\3_3_PrimeNumber\3_3_PrimeNumber\bin\Debug\3_3_PrimeNumber.pdb
+C:\Users\COM\source\repos\3_3_PrimeNumber\3_3_PrimeNumber\obj\Debug\3_3_PrimeNumber.csprojAssemblyReference.cache
+C:\Users\COM\source\repos\3_3_PrimeNumber\3_3_PrimeNumber\obj\Debug\_3_3_PrimeNumber.Form1.resources
+C:\Users\COM\source\repos\3_3_PrimeNumber\3_3_PrimeNumber\obj\Debug\_3_3_PrimeNumber.Properties.Resources.resources
+C:\Users\COM\source\repos\3_3_PrimeNumber\3_3_PrimeNumber\obj\Debug\3_3_PrimeNumber.csproj.GenerateResource.cache
+C:\Users\COM\source\repos\3_3_PrimeNumber\3_3_PrimeNumber\obj\Debug\3_3_PrimeNumber.csproj.CoreCompileInputs.cache
+C:\Users\COM\source\repos\3_3_PrimeNumber\3_3_PrimeNumber\obj\Debug\3_3_PrimeNumber.exe
+C:\Users\COM\source\repos\3_3_PrimeNumber\3_3_PrimeNumber\obj\Debug\3_3_PrimeNumber.pdb
