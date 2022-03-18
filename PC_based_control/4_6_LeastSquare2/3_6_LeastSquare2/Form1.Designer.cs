@@ -28,20 +28,20 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
+            this.Draw = new System.Windows.Forms.Button();
             this.picDraw = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.picDraw)).BeginInit();
             this.SuspendLayout();
             // 
-            // button1
+            // Draw
             // 
-            this.button1.Location = new System.Drawing.Point(671, 299);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(108, 79);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.Draw.Location = new System.Drawing.Point(680, 359);
+            this.Draw.Name = "Draw";
+            this.Draw.Size = new System.Drawing.Size(108, 79);
+            this.Draw.TabIndex = 0;
+            this.Draw.Text = "Draw";
+            this.Draw.UseVisualStyleBackColor = true;
+            this.Draw.Click += new System.EventHandler(this.button1_Click);
             // 
             // picDraw
             // 
@@ -58,7 +58,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.picDraw);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.Draw);
             this.Name = "Form";
             this.Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)(this.picDraw)).EndInit();
@@ -68,7 +68,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button Draw;
         private System.Windows.Forms.PictureBox picDraw;
     }
 }

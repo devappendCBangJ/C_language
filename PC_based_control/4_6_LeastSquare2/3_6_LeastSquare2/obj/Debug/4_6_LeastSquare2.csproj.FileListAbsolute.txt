@@ -1,0 +1,10 @@
+C:\Users\Bang\source\repos\PC_based_control\4_6_LeastSquare2\3_6_LeastSquare2\bin\Debug\3_6_LeastSquare2.exe.config
+C:\Users\Bang\source\repos\PC_based_control\4_6_LeastSquare2\3_6_LeastSquare2\bin\Debug\3_6_LeastSquare2.exe
+C:\Users\Bang\source\repos\PC_based_control\4_6_LeastSquare2\3_6_LeastSquare2\bin\Debug\3_6_LeastSquare2.pdb
+C:\Users\Bang\source\repos\PC_based_control\4_6_LeastSquare2\3_6_LeastSquare2\obj\Debug\4_6_LeastSquare2.csproj.AssemblyReference.cache
+C:\Users\Bang\source\repos\PC_based_control\4_6_LeastSquare2\3_6_LeastSquare2\obj\Debug\_3_6_LeastSquare2.Form.resources
+C:\Users\Bang\source\repos\PC_based_control\4_6_LeastSquare2\3_6_LeastSquare2\obj\Debug\_3_6_LeastSquare2.Properties.Resources.resources
+C:\Users\Bang\source\repos\PC_based_control\4_6_LeastSquare2\3_6_LeastSquare2\obj\Debug\4_6_LeastSquare2.csproj.GenerateResource.cache
+C:\Users\Bang\source\repos\PC_based_control\4_6_LeastSquare2\3_6_LeastSquare2\obj\Debug\4_6_LeastSquare2.csproj.CoreCompileInputs.cache
+C:\Users\Bang\source\repos\PC_based_control\4_6_LeastSquare2\3_6_LeastSquare2\obj\Debug\3_6_LeastSquare2.exe
+C:\Users\Bang\source\repos\PC_based_control\4_6_LeastSquare2\3_6_LeastSquare2\obj\Debug\3_6_LeastSquare2.pdb
