@@ -1,0 +1,10 @@
+C:\Users\Bang\source\repos\PC_based_control\5_1_Method_Basic\5_1_Method_Basic\bin\Debug\5_1_Method_Basic.exe.config
+C:\Users\Bang\source\repos\PC_based_control\5_1_Method_Basic\5_1_Method_Basic\bin\Debug\5_1_Method_Basic.exe
+C:\Users\Bang\source\repos\PC_based_control\5_1_Method_Basic\5_1_Method_Basic\bin\Debug\5_1_Method_Basic.pdb
+C:\Users\Bang\source\repos\PC_based_control\5_1_Method_Basic\5_1_Method_Basic\obj\Debug\5_1_Method_Basic.csproj.AssemblyReference.cache
+C:\Users\Bang\source\repos\PC_based_control\5_1_Method_Basic\5_1_Method_Basic\obj\Debug\_5_1_Method_Basic.Form1.resources
+C:\Users\Bang\source\repos\PC_based_control\5_1_Method_Basic\5_1_Method_Basic\obj\Debug\_5_1_Method_Basic.Properties.Resources.resources
+C:\Users\Bang\source\repos\PC_based_control\5_1_Method_Basic\5_1_Method_Basic\obj\Debug\5_1_Method_Basic.csproj.GenerateResource.cache
+C:\Users\Bang\source\repos\PC_based_control\5_1_Method_Basic\5_1_Method_Basic\obj\Debug\5_1_Method_Basic.csproj.CoreCompileInputs.cache
+C:\Users\Bang\source\repos\PC_based_control\5_1_Method_Basic\5_1_Method_Basic\obj\Debug\5_1_Method_Basic.exe
+C:\Users\Bang\source\repos\PC_based_control\5_1_Method_Basic\5_1_Method_Basic\obj\Debug\5_1_Method_Basic.pdb
