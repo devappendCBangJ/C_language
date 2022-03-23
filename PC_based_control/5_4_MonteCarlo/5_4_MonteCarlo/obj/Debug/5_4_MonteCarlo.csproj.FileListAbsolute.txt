@@ -1,0 +1,10 @@
+C:\Users\Bang\source\repos\PC_based_control\5_4_MonteCarlo\5_4_MonteCarlo\bin\Debug\5_4_MonteCarlo.exe.config
+C:\Users\Bang\source\repos\PC_based_control\5_4_MonteCarlo\5_4_MonteCarlo\bin\Debug\5_4_MonteCarlo.exe
+C:\Users\Bang\source\repos\PC_based_control\5_4_MonteCarlo\5_4_MonteCarlo\bin\Debug\5_4_MonteCarlo.pdb
+C:\Users\Bang\source\repos\PC_based_control\5_4_MonteCarlo\5_4_MonteCarlo\obj\Debug\5_4_MonteCarlo.csproj.AssemblyReference.cache
+C:\Users\Bang\source\repos\PC_based_control\5_4_MonteCarlo\5_4_MonteCarlo\obj\Debug\_5_4_MonteCarlo.Form1.resources
+C:\Users\Bang\source\repos\PC_based_control\5_4_MonteCarlo\5_4_MonteCarlo\obj\Debug\_5_4_MonteCarlo.Properties.Resources.resources
+C:\Users\Bang\source\repos\PC_based_control\5_4_MonteCarlo\5_4_MonteCarlo\obj\Debug\5_4_MonteCarlo.csproj.GenerateResource.cache
+C:\Users\Bang\source\repos\PC_based_control\5_4_MonteCarlo\5_4_MonteCarlo\obj\Debug\5_4_MonteCarlo.csproj.CoreCompileInputs.cache
+C:\Users\Bang\source\repos\PC_based_control\5_4_MonteCarlo\5_4_MonteCarlo\obj\Debug\5_4_MonteCarlo.exe
+C:\Users\Bang\source\repos\PC_based_control\5_4_MonteCarlo\5_4_MonteCarlo\obj\Debug\5_4_MonteCarlo.pdb

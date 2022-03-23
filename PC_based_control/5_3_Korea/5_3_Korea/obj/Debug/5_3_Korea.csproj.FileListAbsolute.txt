@@ -1,0 +1,10 @@
+C:\Users\Bang\source\repos\PC_based_control\5_3_Korea\5_3_Korea\bin\Debug\5_3_Korea.exe.config
+C:\Users\Bang\source\repos\PC_based_control\5_3_Korea\5_3_Korea\bin\Debug\5_3_Korea.exe
+C:\Users\Bang\source\repos\PC_based_control\5_3_Korea\5_3_Korea\bin\Debug\5_3_Korea.pdb
+C:\Users\Bang\source\repos\PC_based_control\5_3_Korea\5_3_Korea\obj\Debug\5_3_Korea.csproj.AssemblyReference.cache
+C:\Users\Bang\source\repos\PC_based_control\5_3_Korea\5_3_Korea\obj\Debug\_5_3_Korea.Form1.resources
+C:\Users\Bang\source\repos\PC_based_control\5_3_Korea\5_3_Korea\obj\Debug\_5_3_Korea.Properties.Resources.resources
+C:\Users\Bang\source\repos\PC_based_control\5_3_Korea\5_3_Korea\obj\Debug\5_3_Korea.csproj.GenerateResource.cache
+C:\Users\Bang\source\repos\PC_based_control\5_3_Korea\5_3_Korea\obj\Debug\5_3_Korea.csproj.CoreCompileInputs.cache
+C:\Users\Bang\source\repos\PC_based_control\5_3_Korea\5_3_Korea\obj\Debug\5_3_Korea.exe
+C:\Users\Bang\source\repos\PC_based_control\5_3_Korea\5_3_Korea\obj\Debug\5_3_Korea.pdb

@@ -61,9 +61,10 @@
 	3) Icon event : 아이콘 오른쪽 마우스 - 속성 - 이벤트
 	4) Code : 아이콘 오른쪽 마우스 - 코드 수정
 		1] 형변환
-			[1] int형 변환 : Convert.ToInt32(string_data)
-			[1] string형 변환 : Convert.ToString(int_data)
-			[1] double형 변환 : Convert.ToDouble(double_data)
+			[1] int형 변환 : Convert.ToInt32(data)
+			[1] string형 변환 : Convert.ToString(data)
+			[1] double형 변환 : Convert.ToDouble(data)
+			[1] float형 변환 : Convert.ToSingle(data)
 
 		2] 출력
 			[1] 텍스트 출력 : Console.WriteLine(변수명)
@@ -96,7 +97,8 @@
 			[1] 그래픽 객체 생성 : Graphics 변수명 = attribute_name.CreateGraphics()
 			[2] 타원 그리기 : 변수명.DrawEllipse(new pen(Color.Red), x좌표, y좌표, 타원 너비, 타원 높이)
 			[2] line 그리기 : 변수명.DrawLine(new pen(Color.Red), x1좌표, y1좌표, x2좌표, y2좌표)
-				- 펜 생성 : new pen(Color.Red)
+				- 펜 생성 : Pen 펜_변수명 = new pen(Color.Red)
+			[3] Clear : grp.Clear(Color.White);
 
 		3] 마우스
 			[1] 마우스 x좌표 : e.X
@@ -149,15 +151,27 @@
 				1]] 총 문자 개수가 value개 되도록 왼쪽에 공백 삽입 : 변수명.PadLeft(value);
 				2]] 총 문자 개수가 value개 되도록 오른쪽에 공백 삽입 : 변수명.PadRight(value);
 			[8] 단어 자르기
-				char[] delim = new char[] { '기준1', '기준2', ... };
-				string [] 새로운_변수명 = 변수명.Split(delim);
-			[9] 단어 대체 : 변수명.Replace('대체할 단어', '대체 후 단어')
+				char[] 기준_변수명 = new char[] { '기준1', '기준2', ... };
+				string [] 새로운_변수명 = 변수명.Split(기준_변수명);
+			[9] 단어 대체 : 변수명.Replace('대체할 단어', '대체 후 단어');
+			[10] 형식 지정 : string.Format("{index:xxxx.xxxx}", 변수명, ...);
+				index : index가 0부터 시작해서 뒤에 있는 변수중에서 사용할 변수 지정
+				xxxx.xxxx : 정수, 소수점 자리수 지정
 
 		+a)
 			1) 참조형 변수 종류
 				(1) 클래스
 				(2) 배열
 				(3) 스트링
+
+			2) 나눗셈
+				(1) int 나눗셈 : 몫만 추출하는 나눗셈 실시
+					int / int
+				(2) double 나눗셈 : 소숫점 나눗셈 실시
+					int / double
+					double / int
+					double / double
+			
 
 		5] 마스크 연산
 			(num & 0x01) != 0;
@@ -182,6 +196,20 @@
 		7] 자원 추가
 			1way : 프로젝트 파일 >> resources
 			2way : 상단 프로젝트 >> 프로젝트 속성 >> 리소스 >> 리소스 추가
+
+		7] 파일 열기
+			[1] 파일 열기 팝업
+				DialogResult rtn = openFileDialog.ShowDialog();
+				if (rtn != DialogResult.OK) return;
+			[2] 파일명 + 파일위치 받기 : string fname = openFileDialog.FileName;
+
+		7] 파일 읽기
+			[1] 파일 읽기
+				StreamReader sr = new StreamReader(fname, Encoding.Default);
+			[2] 한줄 읽기
+				st = sr.ReadLine();
+			[3] 파일 닫기
+				sr.Close();
 
 		8] 프로그램 종료 : Application.Exit()
 
