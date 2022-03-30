@@ -1,0 +1,10 @@
+C:\Users\Bang\source\repos\PC_based_control\5_5_MonteCarlo_Tri\5_5_MonteCarlo_Tri\bin\Debug\5_5_MonteCarlo_Tri.exe.config
+C:\Users\Bang\source\repos\PC_based_control\5_5_MonteCarlo_Tri\5_5_MonteCarlo_Tri\bin\Debug\5_5_MonteCarlo_Tri.exe
+C:\Users\Bang\source\repos\PC_based_control\5_5_MonteCarlo_Tri\5_5_MonteCarlo_Tri\bin\Debug\5_5_MonteCarlo_Tri.pdb
+C:\Users\Bang\source\repos\PC_based_control\5_5_MonteCarlo_Tri\5_5_MonteCarlo_Tri\obj\Debug\5_5_MonteCarlo_Tri.csproj.AssemblyReference.cache
+C:\Users\Bang\source\repos\PC_based_control\5_5_MonteCarlo_Tri\5_5_MonteCarlo_Tri\obj\Debug\_5_5_MonteCarlo_Tri.Form1.resources
+C:\Users\Bang\source\repos\PC_based_control\5_5_MonteCarlo_Tri\5_5_MonteCarlo_Tri\obj\Debug\_5_5_MonteCarlo_Tri.Properties.Resources.resources
+C:\Users\Bang\source\repos\PC_based_control\5_5_MonteCarlo_Tri\5_5_MonteCarlo_Tri\obj\Debug\5_5_MonteCarlo_Tri.csproj.GenerateResource.cache
+C:\Users\Bang\source\repos\PC_based_control\5_5_MonteCarlo_Tri\5_5_MonteCarlo_Tri\obj\Debug\5_5_MonteCarlo_Tri.csproj.CoreCompileInputs.cache
+C:\Users\Bang\source\repos\PC_based_control\5_5_MonteCarlo_Tri\5_5_MonteCarlo_Tri\obj\Debug\5_5_MonteCarlo_Tri.exe
+C:\Users\Bang\source\repos\PC_based_control\5_5_MonteCarlo_Tri\5_5_MonteCarlo_Tri\obj\Debug\5_5_MonteCarlo_Tri.pdb

@@ -42,7 +42,7 @@ namespace _5_4_MonteCarlo
                 int xp = rnd.Next(wd);
                 int yp = rnd.Next(ht);
 
-                bool isIn = xp >= 100 && xp < 200 && yp >= 100 && yp < 200;
+                bool isIn = xp >= 100 && xp < 200 && yp >= 100 && yp < 200; // 요렇게 해도 되네?
                 Color col;
                 if (isIn)
                 {
@@ -55,7 +55,7 @@ namespace _5_4_MonteCarlo
                     col = Color.Silver;
                 }
 
-                grp.DrawEllipse(new Pen(col), xp, yp, 1, 1); // double형으로 형변환 하지 않으면 / 사용시 int 나누기 int가 되서 몫만 추출
+                grp.DrawEllipse(new Pen(col), xp, yp, 1, 1);
 
                 // 정보 출력
                 lblIn.Text = Convert.ToString(nIn);
