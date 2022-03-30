@@ -10,7 +10,9 @@
 	Ctrl + K + U : 전체 주석 해제
 	메소드에 커서 가져다 대기 : 오버로딩 확인
 	F1 : 함수 설명
-	F9 : 디버깅 // 빨간 지점에 도달하면 break
+	F9 : 디버깅 break point 생성 // 빨간 지점에 도달하면 break
+	F10 : 디버깅 다음줄 진행
+	F11 : 
 
 0. 학습 목표
 	1) 객체 지향 프로그래밍
@@ -595,7 +597,6 @@
 					// main문
 					인수 선언 필수 + 초기화 필요없음
 					메소드명(out 인수1, out 인수2, ...);
-
 	5) 예시
 		(1) 메소드 선언
 			class Calculator
@@ -664,4 +665,45 @@
 			int result1 = Plus(1,2);
 			double result2 = Plus(3.1, 2.4);
 	6) 
+
+7. Class
+	0) 역사
+		(1) 기계어
+		(2) 어셈블리어
+		(3) 고급 언어
+			1] goto문 : 스파게티 코드
+			2] 구조적 프로그래밍 : 순서대로 코드 진행
+			3] OOP
+				- readability
+				- maintainence
+				- reusable
+	1) 정의
+		(1) 객체지향프로그래밍(OOP)
+			- 코드 내 모든 것을 객체(Object)로 표현
+			1] Class : 청사진
+			2] 객체(object = instance) : 청사진의 실체
+			3] 속성(property = member) : 변수
+			4] 메소드(method) : 함수
+	2) 비교
+		(1) C언어 : class X
+		(2) C++ : class 사용 가능. 기능 많음
+		(3) C#, java : 완전한 class
+			- 모든 것이 class 내에 존재
+		(4) Python : class 사용 가능. 라이브러리 많음(ex. opencv, tensorflow...)
+	3) 사용
+		(1) 선언
+			class 클래스명
+			{
+				~~ property & method ~~
+			}
+		(2) 생성자
+			class 클래스명
+			{
+				한정자 클래스명(매개변수1, 매개변수2, ...)
+				{
+					~~ property & method ~~
+				}
+			}
+			~~ property && method ~~
+		(3) 소멸자
 */

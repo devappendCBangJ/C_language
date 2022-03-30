@@ -1,0 +1,11 @@
+C:\Users\COM\Desktop\C_language-master\PC_based_control\6_1_Class_Basic\6_1_Class_Basic\bin\Debug\6_1_Class_Basic.exe.config
+C:\Users\COM\Desktop\C_language-master\PC_based_control\6_1_Class_Basic\6_1_Class_Basic\bin\Debug\6_1_Class_Basic.exe
+C:\Users\COM\Desktop\C_language-master\PC_based_control\6_1_Class_Basic\6_1_Class_Basic\bin\Debug\6_1_Class_Basic.pdb
+C:\Users\COM\Desktop\C_language-master\PC_based_control\6_1_Class_Basic\6_1_Class_Basic\obj\Debug\6_1_Class_Basic.csproj.AssemblyReference.cache
+C:\Users\COM\Desktop\C_language-master\PC_based_control\6_1_Class_Basic\6_1_Class_Basic\obj\Debug\6_1_Class_Basic.csproj.SuggestedBindingRedirects.cache
+C:\Users\COM\Desktop\C_language-master\PC_based_control\6_1_Class_Basic\6_1_Class_Basic\obj\Debug\_6_1_Class_Basic.Properties.Resources.resources
+C:\Users\COM\Desktop\C_language-master\PC_based_control\6_1_Class_Basic\6_1_Class_Basic\obj\Debug\6_1_Class_Basic.csproj.GenerateResource.cache
+C:\Users\COM\Desktop\C_language-master\PC_based_control\6_1_Class_Basic\6_1_Class_Basic\obj\Debug\6_1_Class_Basic.csproj.CoreCompileInputs.cache
+C:\Users\COM\Desktop\C_language-master\PC_based_control\6_1_Class_Basic\6_1_Class_Basic\obj\Debug\6_1_Class_Basic.exe
+C:\Users\COM\Desktop\C_language-master\PC_based_control\6_1_Class_Basic\6_1_Class_Basic\obj\Debug\6_1_Class_Basic.pdb
+C:\Users\COM\Desktop\C_language-master\PC_based_control\6_1_Class_Basic\6_1_Class_Basic\obj\Debug\_6_1_Class_Basic.Form1.resources
