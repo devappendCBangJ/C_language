@@ -37,12 +37,14 @@ namespace _5_4_MonteCarlo
             // Monte Carlo Simulation
             int nPoint = 20000;
             int nIn = 0, nOut = 0;
+
+            // 좌표 난수 발생, 그리기 n번 반복
             for (int i = 0; i < nPoint; i++)
             {
                 int xp = rnd.Next(wd);
                 int yp = rnd.Next(ht);
 
-                bool isIn = xp >= 100 && xp < 200 && yp >= 100 && yp < 200; // 요렇게 해도 되네?
+                bool isIn = xp >= 100 && xp < 200 && yp >= 100 && yp < 200; // 요렇게 해도 되네? ♣
                 Color col;
                 if (isIn)
                 {

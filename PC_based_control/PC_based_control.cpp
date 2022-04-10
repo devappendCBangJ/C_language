@@ -531,7 +531,7 @@
 		(2) 매개변수
 			1] 일반 매개변수 전달(Call by value) : 복사본 전달
 				// 메소드 정의
-					한정자 static 반환_형식 메소드명(자료형1 매개변수1, 자료형2 매개변수2, ...)
+					한정자 static 반환형 메소드명(자료형1 매개변수1, 자료형2 매개변수2, ...)
 					{
 						~~ 코드 ~~
 					}
@@ -544,7 +544,7 @@
 				- 변수 초기화하지 않고 매개변수로 넣으면 오류
 
 				// 메소드 정의
-					한정자 static 반환_형식 메소드명(ref 자료형1 매개변수1, ref 자료형2 매개변수2, ...)
+					한정자 static 반환형 메소드명(ref 자료형1 매개변수1, ref 자료형2 매개변수2, ...)
 					{
 						~~ 코드 ~~
 					}
@@ -554,7 +554,7 @@
 			3] 선택적 매개변수 : 매개변수 기본값 할당
 				- 생략 불가능한 변수를 생략 가능한 매개변수보다 앞에 선언
 				// 메소드 정의
-					한정자 static 반환_형식 메소드명(자료형1 매개변수1 = 초기값1, 자료형2 매개변수2 = 초기값2, ...)
+					한정자 static 반환형 메소드명(자료형1 매개변수1 = 초기값1, 자료형2 매개변수2 = 초기값2, ...)
 					{
 						~~ 코드 ~~
 					}
@@ -565,7 +565,7 @@
 					인수1, 2 생략 : 메소드명();
 			4] 가변길이 매개변수 : 개수가 유연하게 변하는 매개변수
 				// 메소드 정의
-					한정자 static 반환_형식 메소드명(params 배열_자료형[] 배열명)
+					한정자 static 반환형 메소드명(params 배열_자료형[] 배열명)
 					{
 						for(int i = 0; i < 배열명.Length; i++)
 						{
@@ -578,7 +578,7 @@
 					메소드명(원하는 개수의 인수를 ,로 구분하여 넣음);
 			5] 명명된 매개변수 : 매개변수 이름 명시하여 순서 고려x
 				// 메소드 정의
-					한정자 static 반환_형식 메소드명(자료형1 매개변수1, 자료형2 매개변수2, ...)
+					한정자 static 반환형 메소드명(자료형1 매개변수1, 자료형2 매개변수2, ...)
 					{
 						~~ 코드 ~~
 					}
@@ -590,7 +590,7 @@
 				- 입력값 사용x, 출력값 사용o
 				- 변수 초기화하지 않고 매개변수로 넣어도 괜찮다
 				// 메소드 정의
-					한정자 static 반환_형식 메소드명(out 자료형1 매개변수1, out 자료형2 매개변수2, ...)
+					한정자 static 반환형 메소드명(out 자료형1 매개변수1, out 자료형2 매개변수2, ...)
 					{
 						~~ 코드 ~~
 					}
@@ -621,12 +621,12 @@
 	+a) 
 		1) 한정자
 			(1) public : Class 외부 / Class 내부에서 호출 가능
-				public static 반환_형식 메소드명(자료형1 매개변수1, 자료형2 매개변수2, ...)
+				public static 반환형 메소드명(자료형1 매개변수1, 자료형2 매개변수2, ...)
 				{
 					~~ 코드 ~~
 				}
 			(2) private : Class 외부에선 호출 불가능 / Class 내부에선 호출 가능
-				private static 반환_형식 메소드명(자료형1 매개변수1, 자료형2 매개변수2, ...)
+				private static 반환형 메소드명(자료형1 매개변수1, 자료형2 매개변수2, ...)
 				{
 					~~ 코드 ~~
 				}
@@ -679,31 +679,371 @@
 				- reusable
 	1) 정의
 		(1) 객체지향프로그래밍(OOP)
-			- 코드 내 모든 것을 객체(Object)로 표현
-			1] Class : 청사진
-			2] 객체(object = instance) : 청사진의 실체
-			3] 속성(property = member) : 변수
-			4] 메소드(method) : 함수
+			1] 개념
+				- 코드 내 모든 것을 객체(Object)로 표현
+				- 복합 데이터 형식
+			2] 용어
+				[1] Class : 청사진
+				[2] 객체(object = instance) : 청사진의 실체
+				[3] 속성(property = member) : 변수
+				[4] 메소드(method = member 함수) :함수
+				[5] 객체.속성 or 객체.메소드에서 . : member 접근 연산자
 	2) 비교
-		(1) C언어 : class X
-		(2) C++ : class 사용 가능. 기능 많음
-		(3) C#, java : 완전한 class
-			- 모든 것이 class 내에 존재
-		(4) Python : class 사용 가능. 라이브러리 많음(ex. opencv, tensorflow...)
+		(1) class
+			1] C언어 : class X
+			2] C++ : class 사용 가능. 기능 많음
+			3] C#, java : 완전한 class
+				- 모든 것이 class 내에 존재
+			4] Python : class 사용 가능. 라이브러리 많음(ex. opencv, tensorflow...)
+		(2) 참조 변수 선언
+			1] C, C++ : 배열을 값으로 선언
+				int a[100];
+			2] C# : 배열을 참조 변수로만 선언
+				int [] a = new int [100];
+					- int [] a : stack(참조)
+					- new int [100] : heap(실제값)
+				Man a = new Man; // class를 참조변수로 선언
+			
 	3) 사용
 		(1) 선언
 			class 클래스명
 			{
 				~~ property & method ~~
 			}
-		(2) 생성자
-			class 클래스명
-			{
-				한정자 클래스명(매개변수1, 매개변수2, ...)
+
+			- 관례 : class명 첫자는 대문자
+		(2) 생성자 & 소멸자
+			1] 생성자(Constructor) : class 생성
+				[1] 특징
+					1]] 프로그래머가 선언하지 않아도, 매개변수 받지 않는 default 생성자 생성
+					1]] 생성자 1개라도 선언시, default 생성자 제공x
+				[2] 사용
+					class 클래스명
+					{
+						한정자 클래스명(자료형1 매개변수1, 자료형2 매개변수2, ...) // 생성자
+						{
+							~~ property & method ~~
+						}
+						~~ property && method ~~
+					}
+			2] 소멸자(Destructor) : class 소멸
+				[1] 특징
+					1]] 프로그래머가 선언하지 않아도, default 소멸자 제공
+					1]] 생성자 1개라도 선언시, default 생성자 제공x
+					2]] 소멸자를 직접 구현하는 것이 좋지 않은 이유
+						- garbage collector의 사용으로 소멸자 호출시점 예측 불가
+						- garbage collector의 신뢰도 높음
+				[2] 비교
+					1]] C, C++ : class 벗어나면, 지역변수의 범위를 넘어간 heap의 객체를 garbage collector가 처리. garbage collector가 제거하므로 바로 제거x
+					2]] C# : 프로그래머가 class 나가기 전, delete 객체명;으로 처리. delete하는 순간 제거
+				[3] 사용
+					class 클래스명 // 소멸자
+					{
+						~클래스명()
+						{
+							~~ 코드 ~~
+						}
+						~~ property && method
+					}
+		(3) 얕은 복사 & 깊은 복사
+			1] 얕은 복사
+				[1] 개념 : 힙의 주소 복사
+				[2] 사용
+					클래스명 새로운_객체명 = 기존_객체명;
+			2] 깊은 복사
+				[1] 개념 : 값을 복사
+				[2] 사용
+					class 클래스명
+					{
+						한정자 반환형 메소드명()
+						{
+							클래스명 임시_객체명 =  new 클래스명();
+							임시_객체명.메소드명1 = this.메소드명1
+							임시_객체명.메소드명2 = this.메소드명2
+							...
+							return 임시_객체명
+						}
+						~~ property && method ~~
+					}
+					클래스명 새로운_객체명 = 기존객체명.DeepCopy();
+		(4) 은닉(Encapsulation)
+			1] 개념 : 필요한 기능만 노출. 내부는 감춤
+				- default : private
+			2] 종류
+				1] public : Base Class 내/외부, 파생 Class 모두에서 접근 가능
+					- 수정 범위 : 프로그램 전체
+				2] protected : Base Class 내부, 파생 Class만 접근 가능
+					- 수정 범위 : Base Class 내부 + 파생 Class
+				3] private : Base Class 내부만 접근 가능
+					- 수정 범위 : Base Class 내부
+			ex]
+				// Class 생성
+				class Circle2D
 				{
-					~~ property & method ~~
+					pulbic Circle2D(double x, double y, double r)
+					{
+						xc = x; yc = y; radius = r;
+					}
+					private double xc, yc, radius;
+					public double area()
+					{
+						return 3.141592654 * radius * radius
+					}
 				}
-			}
-			~~ property && method ~~
-		(3) 소멸자
+
+				// Class 사용
+				Circle2D c = new Circle2D(10, 20, 5);
+				double r = c.radius; // 이건 불가능
+				double a = c.area(); // 이건 가능
+		(5) 상속(Inheritance)
+			1] 개념 : 부모 Class(기반 Class)가 자식 Class(파생 Class)에게 필드, 메소드, 프로퍼티 상속
+				- private를 제외한 부모 Class의 모든 것 상속
+			2] 용어
+				[1] 부모 class : 기반 class
+				[2] 자식 class : 파생 class
+			3] 사용
+				class 기반클래스명
+				{
+					~~ property && method ~~
+				}
+				class 파생클래스명:기반클래스명
+				{
+					~~ property && method ~~
+			4] 형식 변환 종류
+				[1] is
+					1]] 개념 : 객체 형식 검사
+						- 결과 : bool로 반환
+					2]] 사용
+						if(객체명 is 클래스명){~~ 코드 ~~}
+				[2] as
+					1]] 개념 : 형식 변환 연산자 역할
+						- 형변환 연산자
+							형변환 실패 : 예외 던짐
+							형변환 성공 : 형식 변환
+						- as 연산자
+							형변환 실패 : 객체 참조를 null로 만듦
+							형변환 성공 : 형식 변환
+					2]] 사용
+						- 형변환 연산자
+							클래스명1 클래스1_객체명 = (클래스명1)클래스2_객체명;
+							객체명1_객체명.클래스1_메소드();
+
+							((클래스명1)클래스2_객체명).클래스1_메소드();
+
+							클래스명1 클래스1_객체명 = new 클래스명1();
+							클래스1_객체명.클래스1_메소드();
+						- as 연산자
+							클래스명1 클래스1_객체명 = 클래스2_객체명 as 클래스명1;
+		(6) 다형성(Polymorphism)
+			1] 개념 : 여러 형태의 객체 구현
+				- 파생 클래스의 메소드 오버라이딩
+			2] 오버라이딩
+				[1] 개념 : 부모 Class의 메소드를 자식 Class에서 재정의
+					- 형식이 baseclass 형태여도, 내용물이 derivedclass 형태면, 내용물에 맞춰서 오버라이딩하여 호출
+				[2] 사용
+					- 부모 Class : virtual 한정자로 미리 선언
+					- 자식 Class : 부모 Class에서 virtual 한정자로 선언된 메소드를 override 한정자로 재선언
+
+					class 기반클래스명
+					{
+						한정자 virtual 반환형 메소드명1()
+						{
+							~~ 코드 ~~
+						}
+					}
+
+					class 파생클래스명:기반클래스명
+					{
+						한정자 override 반환형 메소드명1()
+						{
+							base.메소드명1();
+							~~ 코드 ~~
+						}
+					}
+
+					- 호출 시 형식 : baseclass 형태
+					- 내용물 : baseclass 형태
+					>> 결과 : baseclass의 메소드 사용
+
+					- 호출 시 형식 : baseclass 형태
+					- 내용물 :derivedclass 형태
+					>> 결과 : derivedclass 메소드 사용
+
+					- 호출 시 형식 : derivedclass 형태
+					- 내용물 : derivedclass 형태
+					>> 결과 : derivedclass 형태 사용
+			2] 오버라이딩 봉인
+				[1] 개념 : 부모 Class의 메소드를 파생 Class에서 오버라이딩 불가
+				[2] 사용
+
+					class 기반클래스명
+						{
+							한정자 virtual 반환형 메소드명1()
+							{
+								~~ 코드 ~~
+							}
+						}
+
+						class 파생클래스명:기반클래스명
+						{
+							한정자 sealed 반환형 메소드명1()
+							{
+								base.메소드명1();
+								~~ 코드 ~~
+							}
+						}
+			3] 메소드 숨기기
+				[1] 개념 : 부모 Class의 메소드를 자식 Class에서 재정의x. 새로 선언하여 덮음o
+					- 형식이 baseclass형태이고, 내용물이 derivedclass 형태면, 형식에 맞춰서 호출
+				[2] 사용
+					- new 한정자(객체 할당 시 new 연산자와 다름)
+					- 부모 Class : virtual 한정자로 미리 선언x
+					- 자식 Class : 부모 Class와 같은 이름의 메소드를 new 한정자로 선언
+				
+					class 기반클래스명
+					{
+						한정자 반환형 메소드명1()
+						{
+						`	~~ 코드 ~~
+						}
+					}
+
+					class 파생클래스명:기반클래스명
+					{
+						한정자 new 반환형 메소드명1()
+						{
+							~~ 코드 ~~
+						}
+					}
+		(7) 중첩 Class
+			1] 개념 : 클래스 내에 클래스 선언
+			2] 사용
+				class 클래스명1
+				{
+					~~ property && method ~~
+					class 클래스명2
+					{
+						~~ property && method ~~
+					}
+				}
+		(8) 분할 Class
+			1] 개념 : 분할하여 class 구현. 서로 다른 파일에 구현 가능
+			2] 사용
+				// 파일1
+				partial class 클래스명1
+				{
+					~~ property && method ~~
+				}
+
+				// 파일2
+				partial class 클래스명1
+				{
+					~~ property && method ~~
+				}
+		(9) 확장 Method
+			1] 개념 : 기존 Class 기능 확장 but 상속과는 다르다
+			2] 사용
+				namespace 네임스페이스명
+				{
+					한정자 static class 클래스명
+					{
+						한정자 static 반환형 메소드명(this 대상_자료형 식별자, 자료형1 매개변수1, 자료형2 매개변수2, ...)
+						{
+							~~ 코드 ~~
+						}
+					}
+				}
+		(10) 구조체 ♣♣♣
+			1] 비교
+				[1] 클래스
+					키워드 : class
+					형식 : 참조 형식
+					복사 : 얕은 복사
+					인스턴스 생성 : new연산자, 생성자 필요
+					생성자 : 매개변수 없는 생성자 선언도 가능
+					상속 : 가능
+				[2] 구조체
+					키워드 : struct
+					형식 : 값 형식
+					복사 : 깊은 복사
+					인스턴스 생성 : 선언만으로도 생성
+					생성자 : 매개변수 없는 생성자 선언 불가능
+					상속 : 모든 구조체는 System.Object형식을 상속하는 System.ValueType으로부터 직접 상속받음
+
+					- C언어의 struct와 유사
+					- struct와 class는 유사
+
+					struct MyStruct // 키워드 : struct
+					{
+						public int MyField1
+						public int MyField2
+
+						public void MyMethod()
+						{
+							~~ property && method ~~
+						}
+					}
+
+					MyStruct s; // 형식 : 값형식, 인스턴스 : 선언만으로도 생성
+					s.MyField1 = 1;
+					s.MyField2 = 2;
+
+					MyStruct t;
+					t = s; // 복사 : 깊은 복사
+					s.Myfield = 3;
+	+a)
+		1) 참조 변수 선언 자료형
+			(1) 배열
+			(2) 스트링
+			(3) Class
+		2) this 키워드
+			(1) 개념 : 객체가 스스로를 가리키는 키워드(Class 내에서 아직 만들어지지 않은 Class의 인스턴스 지칭)
+		3) base 키워드
+			(1) 개념 : 부모 Class 지칭
+			(2) 사용
+				class 기반클래스명
+				{
+					public 반환형 기반클래스의_메소드명(자료형1 매개변수1, 자료형2 매개변수2, ...)
+					{
+						~~ 코드 ~~
+					}
+				}
+
+				class 파생클래스명:기반클래스명
+				{
+					public 반환형 파생클래스의_메소드명(자료형1 매개변수1, 자료형2 매개변수2, ...)
+					{
+						base.기반클래스의_메소드명();
+					}
+				}
+		4) static(정적)
+			(1) 정적 member : class 내에 1개만 존재하는 member
+				class Bread
+				{
+					public double weight;
+					public static int cnt;
+					public int n;
+				}
+
+				Bread a = new Bread();
+				Bread b = new Bread();
+				Bread c = new Bread();
+
+				a.n = 100; // 가능
+				a.cnt = 100; // 불가능
+				Bread.cnt = 100; // 가능
+				Bread.n = 100; // 불가능
+			(2) 정적 class : 정적 member만을 가질 수 있는 class
+				Convert.ToInt32("123") // Convert : .NET에 있는 정적 class명이므로, Convert형 객체를 만들 수 없다
+
+				namespace 네임스페이스명
+				{
+					한정자 static class 클래스명
+					{
+						한정자 static 반환형 메소드명(this 대상_자료형 식별자, 자료형1 매개변수1, 자료형2 매개변수2, ...)
+						{
+							~~ 코드 ~~
+						}
+					}
+				}
 */

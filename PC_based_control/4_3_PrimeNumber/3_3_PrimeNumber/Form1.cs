@@ -17,6 +17,7 @@ namespace _3_3_PrimeNumber
             InitializeComponent();
         }
 
+        // 소수 판별
         private bool isPrime(int num)
         {
             bool isprime = true;
@@ -33,18 +34,15 @@ namespace _3_3_PrimeNumber
 
         private void button1_Click(object sender, EventArgs e)
         {
+            // 소수 판단 & 출력
             int num = Convert.ToInt32(textBox1.Text);
             bool isprime = isPrime(num);
             label1.Text = isprime ? "소수입니다" : "소수가 아닙니다"; // 3항 연산자
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void button2_Click(object sender, EventArgs e)
         {
+            // 10000까지의 소수 출력
             int cnt = 0;
             for(int i = 2; i<=10000; i++)
             {
@@ -55,12 +53,13 @@ namespace _3_3_PrimeNumber
 
         private void button3_Click(object sender, EventArgs e)
         {
+            // 10000번째 소수 출력
             int cnt2 = 0;
             int i = 2;
             while (true)
             {
-                if (isPrime(i++) == true) cnt2++;
-                if(cnt2 == 10000)
+                if (isPrime(i++) == true) cnt2++; // ♣♣
+                if (cnt2 == 10000)
                 {
                     break;
                 }

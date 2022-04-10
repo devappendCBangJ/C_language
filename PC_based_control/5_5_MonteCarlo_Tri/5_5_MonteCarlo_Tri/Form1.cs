@@ -12,13 +12,11 @@ namespace _5_5_MonteCarlo_Tri
 {
     public partial class Form1 : Form
     {
+        // 초기화
         Random rnd = new Random();
         double [] p_x = new double[3];
         double [] p_y = new double[3];
         double tri_area;
-
-        double [] tri_x = new double[3];
-        double [] tri_y = new double[3];
 
         double[] tmp_x_y = new double[2];
         double [] tmp_area = new double[3];
@@ -31,15 +29,15 @@ namespace _5_5_MonteCarlo_Tri
             return tri_area;
         }
 
-        private bool tri_in_func(double p_x0, double p_y0)
+        private bool tri_in_func(double xp, double yp)
         {
             // 삼각형 부호 계산
             for (int i = 0; i < 3; i++)
             {
                 tmp_x_y[0] = p_x[i];
                 tmp_x_y[1] = p_y[i];
-                p_x[i] = p_x0;
-                p_y[i] = p_y0;
+                p_x[i] = xp;
+                p_y[i] = yp;
 
                 tmp_area[i] = (double)1.0 / (double)2.0 * ((p_x[0] * p_y[1] + p_x[1] * p_y[2] + p_x[2] * p_y[0]) - (p_x[0] * p_y[2] + p_x[2] * p_y[1] + p_x[1] * p_y[0]));
 
@@ -66,6 +64,7 @@ namespace _5_5_MonteCarlo_Tri
 
         private void btnStart_Click(object sender, EventArgs e)
         {
+            // 좌표 지정
             p_x[0] = 160;
             p_y[0] = 70;
             p_x[1] = 50;
@@ -78,6 +77,7 @@ namespace _5_5_MonteCarlo_Tri
             int ht = picArea.ClientSize.Height;
             int area = wd * ht;
 
+            // 1way
             //tri_x[0] = 160;
             //tri_y[0] = 70;
             //tri_x[1] = 50;
@@ -86,6 +86,8 @@ namespace _5_5_MonteCarlo_Tri
             //tri_y[2] = 290;
             //tri_area = (double)1.0 / (double)2.0 * ((tri_x[0] * tri_y[1] + tri_x[1] * tri_y[2] + tri_x[2] * tri_y[0]) - (tri_x[0] * tri_y[2] + tri_x[2] * tri_y[1] + tri_x[1] * tri_y[0]));
             //tri_area = tri_area >= 0 ? tri_area : -tri_area;
+
+            // 2way
             tri_area_func();
             double ratio_real = tri_area / (double)area; // double형으로 형변환 하지 않으면 / 사용시 int 나누기 int가 되서 몫만 추출
 
@@ -99,6 +101,8 @@ namespace _5_5_MonteCarlo_Tri
             // Monte Carlo Simulation
             int nPoint = 20000;
             int nIn = 0, nOut = 0;
+
+            // 좌표 난수 발생, 그리기 n번 반복
             for (int i = 0; i < nPoint; i++)
             {
                 int xp = rnd.Next(wd);

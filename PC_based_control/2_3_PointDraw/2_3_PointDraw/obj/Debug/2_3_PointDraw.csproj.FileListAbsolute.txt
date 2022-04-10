@@ -8,3 +8,13 @@ C:\Users\Hi\source\repos\PC_based_control\2_3_PointDraw\2_3_PointDraw\obj\Debug\
 C:\Users\Hi\source\repos\PC_based_control\2_3_PointDraw\2_3_PointDraw\obj\Debug\2_3_PointDraw.exe
 C:\Users\Hi\source\repos\PC_based_control\2_3_PointDraw\2_3_PointDraw\obj\Debug\2_3_PointDraw.pdb
 C:\Users\Hi\source\repos\PC_based_control\2_3_PointDraw\2_3_PointDraw\obj\Debug\2_3_PointDraw.csproj.AssemblyReference.cache
+C:\Users\Bang\source\repos\PC_Based_Control\2_3_PointDraw\2_3_PointDraw\bin\Debug\2_3_PointDraw.exe.config
+C:\Users\Bang\source\repos\PC_Based_Control\2_3_PointDraw\2_3_PointDraw\bin\Debug\2_3_PointDraw.exe
+C:\Users\Bang\source\repos\PC_Based_Control\2_3_PointDraw\2_3_PointDraw\bin\Debug\2_3_PointDraw.pdb
+C:\Users\Bang\source\repos\PC_Based_Control\2_3_PointDraw\2_3_PointDraw\obj\Debug\2_3_PointDraw.csproj.AssemblyReference.cache
+C:\Users\Bang\source\repos\PC_Based_Control\2_3_PointDraw\2_3_PointDraw\obj\Debug\_2_3_PointDraw.Form1.resources
+C:\Users\Bang\source\repos\PC_Based_Control\2_3_PointDraw\2_3_PointDraw\obj\Debug\_2_3_PointDraw.Properties.Resources.resources
+C:\Users\Bang\source\repos\PC_Based_Control\2_3_PointDraw\2_3_PointDraw\obj\Debug\2_3_PointDraw.csproj.GenerateResource.cache
+C:\Users\Bang\source\repos\PC_Based_Control\2_3_PointDraw\2_3_PointDraw\obj\Debug\2_3_PointDraw.csproj.CoreCompileInputs.cache
+C:\Users\Bang\source\repos\PC_Based_Control\2_3_PointDraw\2_3_PointDraw\obj\Debug\2_3_PointDraw.exe
+C:\Users\Bang\source\repos\PC_Based_Control\2_3_PointDraw\2_3_PointDraw\obj\Debug\2_3_PointDraw.pdb

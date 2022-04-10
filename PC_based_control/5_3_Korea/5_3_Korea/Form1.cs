@@ -20,25 +20,29 @@ namespace _5_3_Korea
 
         private void btnDraw_Click(object sender, EventArgs e)
         {
-            // 파일 열기 팝업
+            // 파일 열기 팝업 ♣♣
             DialogResult rtn = openFileDialog.ShowDialog();
             if (rtn != DialogResult.OK) return;
 
-            // 파일명 출력
+            // 파일명 + 위치 받기 ♣♣
             string fname = openFileDialog.FileName;
             label1.Text = fname;
 
-            // 파일 읽기
-            int npoint; // try문 안에 선언되면 try문 벗어나면 변수의 수명이 끝나기 때문
+            int npoint; // try문 안에 선언되면 try문 벗어나면 변수의 수명이 끝나기 때문 ♣♣
             float[] xp;
             float[] yp;
+
+            // 코드 시도
             try
             {
+                // 파일 읽기 ♣♣
                 StreamReader sr = new StreamReader(fname, Encoding.Default);
+                // 1줄 읽기 ♣♣
                 string st = sr.ReadLine();
                 npoint = Convert.ToInt32(st.Trim());
                 xp = new float[npoint];
                 yp = new float[npoint];
+                // 1줄씩 읽기(, 기준 슬라이싱) ♣♣
                 for (int i = 0; i < npoint; i++)
                 {
                     st = sr.ReadLine();
@@ -48,6 +52,7 @@ namespace _5_3_Korea
                 }
                 sr.Close();
             }
+            // 오류날 경우 코드
             catch
             {
                 MessageBox.Show("파일을 읽을 수 없습니다.", "오류");

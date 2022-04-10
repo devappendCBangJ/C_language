@@ -77,7 +77,6 @@ namespace _3_2_TotalSec
             this.lblHour.Size = new System.Drawing.Size(31, 12);
             this.lblHour.TabIndex = 4;
             this.lblHour.Text = "Hour";
-            this.lblHour.Click += new System.EventHandler(this.label1_Click);
             // 
             // lblMin
             // 
@@ -87,7 +86,6 @@ namespace _3_2_TotalSec
             this.lblMin.Size = new System.Drawing.Size(43, 12);
             this.lblMin.TabIndex = 5;
             this.lblMin.Text = "Minute";
-            this.lblMin.Click += new System.EventHandler(this.label2_Click);
             // 
             // lblSec
             // 

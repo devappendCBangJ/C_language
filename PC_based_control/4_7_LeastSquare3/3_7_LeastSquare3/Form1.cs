@@ -12,18 +12,19 @@ namespace _3_7_LeastSquare3
 {
     public partial class Form1 : Form
     {
+        // x, y 최소 최대 좌표
         double xmin = -2, xmax = 7;
         double ymin = -5, ymax = 70;
 
-        // 데이터 세팅
+        // 데이터 개수 지정
         const int ndat = 6;
 
-        // 각 원소 연산
+        // Sum 변수 초기화
         double sumX, sumY, sumX2, sumX3, sumX4, sumXY, sumX2Y = 0;
-
-        // D 연산
+        // Matrix 초기화
         double[,] CramMat = new double[3, 3];
 
+        // 좌표 mapping 변환
         private float xpixel(double xw)
         {
             return (float)(picDraw.ClientSize.Width * (xw - xmin) / (xmax - xmin));
@@ -34,6 +35,7 @@ namespace _3_7_LeastSquare3
             return (float)(picDraw.ClientSize.Height * (1-(yw - ymin) / (ymax - ymin)));
         }
 
+        // Sum 변수 세팅
         private void SumSet()
         {
             sumX = 0;
@@ -45,9 +47,9 @@ namespace _3_7_LeastSquare3
             sumX2Y = 0;
         }
 
+        // Matrix 세팅
         private void MatSet()
         {
-            // 3x3 matrix
             for (int i = 0; i < 3; i++)
             {
                 for (int j = 0; j < 3; j++)
@@ -75,8 +77,8 @@ namespace _3_7_LeastSquare3
         {
             // 데이터 세팅
             //const int ndat = 6;
-            double[] xw = new double[ndat] { 1, 2, 3, 4, 5, 6};
-            double[] yw = new double[ndat] { 2.1, 7.7, 13.6, 27.2, 40.9, 61.1};
+            double[] xw = new double[ndat] { 1, 2, 3, 4, 5, 6 };
+            double[] yw = new double[ndat] { 2.1, 7.7, 13.6, 27.2, 40.9, 61.1 };
 
             // 좌표계 그리기
             Graphics grp = picDraw.CreateGraphics();
@@ -91,8 +93,7 @@ namespace _3_7_LeastSquare3
 
             // Cramer's rule 풀이
 
-            // 각 원소 연산
-            SumSet();
+            // Sum 변수 세팅 - 1way
             //double sumx = 0;
             //double sumy = 0;
             //double sumx2 = 0;
@@ -101,6 +102,10 @@ namespace _3_7_LeastSquare3
             //double sumxy = 0;
             //double sumx2y = 0;
 
+            // Sum 변수 세팅 - 2way
+            SumSet();
+
+            // Sum 변수 세팅 추가 ♣
             for (int i = 0; i<ndat; i++)
             {
                 sumX += xw[i];
@@ -112,8 +117,10 @@ namespace _3_7_LeastSquare3
                 sumX2Y += xw[i] * xw[i] * yw[i];
             }
 
-            // 3x3 matrix
+            // Matrix 세팅 - 1way
             MatSet();
+
+            // Matrix 세팅 - 2way
             // double[,] CramMat = new double[3, 3];
             //for (int i = 0; i < 3; i++)
             //{
@@ -132,10 +139,10 @@ namespace _3_7_LeastSquare3
             //    }
             //}
 
-            // D 연산
+            // Determinant 연산 ♣
             double[] DMat = new double[4];
             for (int i = 0; i<4; i++) {
-                if (0 <= 1 && i < 3)
+                if (0 <= i && i < 3)
                 {
                     CramMat[0, i] = sumY;
                     CramMat[1, i] = sumXY;
@@ -149,14 +156,14 @@ namespace _3_7_LeastSquare3
                 MatSet();
             }
 
-            // a 연산
+            // a 연산 ♣
             double[] aMat = new double[4];
             for (int i = 0; i<3; i++)
             {
                 aMat[i] = DMat[i] / DMat[3];
             }
 
-            // 구해진 직선 그리기
+            // 구해진 직선 그리기 ♣
             double x = xmin;
             double interv = 100;
             for (int i = 0; i < interv; i++)

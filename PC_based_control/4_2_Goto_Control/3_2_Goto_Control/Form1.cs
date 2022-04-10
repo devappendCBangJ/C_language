@@ -19,6 +19,7 @@ namespace _3_2_Goto_Control
 
         private void button1_Click(object sender, EventArgs e)
         {
+            // continue
             for (int i = 1; i <= 100; i++)
             {
                 // if (i % 3 != 0 && i % 5 != 0)

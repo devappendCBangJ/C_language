@@ -17,16 +17,6 @@ namespace _3_2_TotalSec
             InitializeComponent();
         }
 
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void btnTotalSec_Click(object sender, EventArgs e)
         {
             // 입력

@@ -20,7 +20,7 @@ namespace _2_DataType
         private void button1_Click(object sender, EventArgs e)
         {
             bool b = false;
-            if (b)
+            if (b == false)
             {
                 int a = int.MaxValue;
                 a++;

@@ -19,7 +19,7 @@ namespace _3_3_BitControl
 
         private void SetCheckBox(int num)
         {
-            chk0.Checked = (num & 0x01 << 0) != 0; // mask 씌움
+            chk0.Checked = (num & 0x01 << 0) != 0; // mask 씌움 ♣
             chk1.Checked = (num & 0x01 << 1) != 0;
             chk2.Checked = (num & 0x01 << 2) != 0;
             chk3.Checked = (num & 0x01 << 3) != 0;
@@ -33,7 +33,7 @@ namespace _3_3_BitControl
         {
             int num = 0;
 
-            if (chk0.Checked) num = num | 0x01; // mask 씌움
+            if (chk0.Checked) num = num | 0x01; // mask 씌움 ♣
             if (chk1.Checked) num = num | 0x02;
             if (chk2.Checked) num = num | 0x04;
             if (chk3.Checked) num = num | 0x08;
@@ -49,8 +49,8 @@ namespace _3_3_BitControl
         {
             if (chk6.Checked)
             {
-                num = num | 0x80;
-                num = num & ~(0x40);
+                num = num | 0x80; // 2^7만 true로 ♣
+                num = num & ~(0x40); // 2^6만 false로 ♣
             }
             if (chk5.Checked)
             {
@@ -90,8 +90,8 @@ namespace _3_3_BitControl
         {
             if (chk1.Checked)
             {
-                num = num | 0x01;
-                num = num & ~(0x02);
+                num = num | 0x01; // 2^0만 true로 ♣
+                num = num & ~(0x02); // 2^1만 false로 ♣
             }
             if (chk2.Checked)
             {
@@ -143,13 +143,13 @@ namespace _3_3_BitControl
             int num = Convert.ToInt32(txtNum.Text);
 
             // 연산 + 출력 1way
-            // if ((num & 0x01) != 0) // mask 씌움
+            // if ((num & 0x01) != 0) // mask 씌움 ♣
             //    chk0.Checked = true;
             // else
             //    chk0.Checked = false;
 
             // 연산 + 출력 2way
-            // chk0.Checked = (num & 0x01) != 0; // mask 씌움
+            // chk0.Checked = (num & 0x01) != 0; // mask 씌움 ♣♣
             // chk1.Checked = (num & 0x02) != 0;
             // chk2.Checked = (num & 0x04) != 0;
             // chk3.Checked = (num & 0x08) != 0;
@@ -159,7 +159,7 @@ namespace _3_3_BitControl
             // chk6.Checked = (num & 0x80) != 0;
 
             // 연산 + 출력 3way
-            // chk0.Checked = (num & 0x01 << 0) != 0; // mask 씌움
+            // chk0.Checked = (num & 0x01 << 0) != 0; // mask 씌움 ♣
             // chk1.Checked = (num & 0x01 << 1) != 0;
             // chk2.Checked = (num & 0x01 << 2) != 0;
             // chk3.Checked = (num & 0x01 << 3) != 0;
@@ -201,12 +201,10 @@ namespace _3_3_BitControl
             int idx = Convert.ToInt32(txtIdx.Text);
 
             // 연산
-            num = num | 0x01 << idx;
+            num = num | 0x01 << idx; // ♣♣
 
-            // 연산 + 출력
+            // 값 업데이트
             SetCheckBox(num);
-
-            // 출력
             txtNum.Text = Convert.ToString(num);
         }
 
@@ -217,11 +215,10 @@ namespace _3_3_BitControl
             int idx = Convert.ToInt32(txtIdx.Text);
 
             // 연산
-            num = num & ~(0x01 << idx);
+            num = num & ~(0x01 << idx); // ♣♣
 
-            // 연산 + 출력
+            // 값 업데이트
             SetCheckBox(num);
-
             txtNum.Text = Convert.ToString(num);
         }
 
@@ -232,11 +229,10 @@ namespace _3_3_BitControl
             int idx = Convert.ToInt32(txtIdx.Text);
 
             // 연산
-            num = num ^(0x01 << idx);
+            num = num ^(0x01 << idx); // ♣♣
 
-            // 연산 + 출력
+            // 값 업데이트
             SetCheckBox(num);
-
             txtNum.Text = Convert.ToString(num);
         }
 
@@ -248,9 +244,8 @@ namespace _3_3_BitControl
             // 연산
             num = ShiftUpCheckBox(num);
 
-            // 연산 + 출력
+            // 값 업데이트
             SetCheckBox(num);
-
             txtNum.Text = Convert.ToString(num);
         }
 
@@ -262,9 +257,8 @@ namespace _3_3_BitControl
             // 연산
             num = ShiftDownCheckBox(num);
 
-            // 연산 + 출력
+            // 값 업데이트
             SetCheckBox(num);
-
             txtNum.Text = Convert.ToString(num);
         }
     }

@@ -112,10 +112,12 @@
             // timOpen
             // 
             this.timOpen.Enabled = true;
+            this.timOpen.Interval = 500;
             this.timOpen.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // timClose
             // 
+            this.timClose.Interval = 500;
             this.timClose.Tick += new System.EventHandler(this.timClose_Tick);
             // 
             // Form1

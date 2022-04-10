@@ -1,0 +1,10 @@
+C:\Users\Hi\C\C_language\PC_based_control\7_2_GeomPlus\7_1_Geom\bin\Debug\7_1_Geom.exe.config
+C:\Users\Hi\C\C_language\PC_based_control\7_2_GeomPlus\7_1_Geom\bin\Debug\7_1_Geom.exe
+C:\Users\Hi\C\C_language\PC_based_control\7_2_GeomPlus\7_1_Geom\bin\Debug\7_1_Geom.pdb
+C:\Users\Hi\C\C_language\PC_based_control\7_2_GeomPlus\7_1_Geom\obj\Debug\7_2_GeomPlus.csproj.AssemblyReference.cache
+C:\Users\Hi\C\C_language\PC_based_control\7_2_GeomPlus\7_1_Geom\obj\Debug\_7_1_Geom.Form1.resources
+C:\Users\Hi\C\C_language\PC_based_control\7_2_GeomPlus\7_1_Geom\obj\Debug\_7_1_Geom.Properties.Resources.resources
+C:\Users\Hi\C\C_language\PC_based_control\7_2_GeomPlus\7_1_Geom\obj\Debug\7_2_GeomPlus.csproj.GenerateResource.cache
+C:\Users\Hi\C\C_language\PC_based_control\7_2_GeomPlus\7_1_Geom\obj\Debug\7_2_GeomPlus.csproj.CoreCompileInputs.cache
+C:\Users\Hi\C\C_language\PC_based_control\7_2_GeomPlus\7_1_Geom\obj\Debug\7_1_Geom.exe
+C:\Users\Hi\C\C_language\PC_based_control\7_2_GeomPlus\7_1_Geom\obj\Debug\7_1_Geom.pdb
