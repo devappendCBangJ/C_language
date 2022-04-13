@@ -45,14 +45,14 @@ namespace StringHandling
             // 문자열 오른쪽 n개 출력
             string st = txtIN1.Text;
             int n = Convert.ToInt32(txtIN2.Text);
-            txtOUT.Text = st.Substring(st.Length - n, n);
+            txtOUT.Text = st.Substring(st.Length - n, n); // ♣
         }
 
         private void btnMid_Click(object sender, EventArgs e)
         {
             // 문자열 2~4번째 출력
             string st = txtIN1.Text;
-            txtOUT.Text = st.Substring(1, 3);
+            txtOUT.Text = st.Substring(1, 3); // ♣
         }
 
         private void btnUpper_Click(object sender, EventArgs e)

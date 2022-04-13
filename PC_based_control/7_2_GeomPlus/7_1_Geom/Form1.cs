@@ -12,7 +12,7 @@ namespace _7_1_Geom
 {
     public partial class Form1 : Form   // 분할 Class. 다른 파일에도 Form1에 대한 정의가 있다는 뜻
     {
-        List<Geom> geoms = new List<Geom>();    // 컨테이너 클래스 List !! (.NET 제공 동적 리스트). ()를 붙여서 생성자로 만듦
+        List<Geom> geoms = new List<Geom>();    // 컨테이너 클래스 List !! (.NET 제공 동적 리스트). ()를 붙여서 생성자로 만듦 ♣♣♣♣♣
         Random rnd = new Random();
 
         //=======================================
@@ -55,10 +55,6 @@ namespace _7_1_Geom
 
             col = Color.FromArgb(rnd.Next(200), rnd.Next(200), rnd.Next(200));
             geom = new Diamond(200, 300, 20, 20, col);
-            geoms.Add(geom);
-
-            col = Color.FromArgb(rnd.Next(200), rnd.Next(200), rnd.Next(200));
-            geom = new Diamond(250, 130, 20, 20, col);
             geoms.Add(geom);
 
             col = Color.FromArgb(rnd.Next(200), rnd.Next(200), rnd.Next(200));

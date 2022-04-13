@@ -157,7 +157,7 @@ namespace _3_7_LeastSquare3
             }
 
             // a 연산 ♣
-            double[] aMat = new double[4];
+            double[] aMat = new double[3];
             for (int i = 0; i<3; i++)
             {
                 aMat[i] = DMat[i] / DMat[3];

@@ -39,9 +39,10 @@ namespace _2_CatchMe
             // BtnCancel
             // 
             this.BtnCancel.Font = new System.Drawing.Font("굴림", 13F);
-            this.BtnCancel.Location = new System.Drawing.Point(570, 318);
+            this.BtnCancel.Location = new System.Drawing.Point(499, 254);
+            this.BtnCancel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BtnCancel.Name = "BtnCancel";
-            this.BtnCancel.Size = new System.Drawing.Size(198, 95);
+            this.BtnCancel.Size = new System.Drawing.Size(173, 76);
             this.BtnCancel.TabIndex = 0;
             this.BtnCancel.Text = "취소";
             this.BtnCancel.UseVisualStyleBackColor = true;
@@ -51,20 +52,19 @@ namespace _2_CatchMe
             // 
             this.lblMsg.AutoSize = true;
             this.lblMsg.Font = new System.Drawing.Font("굴림", 36F);
-            this.lblMsg.Location = new System.Drawing.Point(53, 41);
+            this.lblMsg.Location = new System.Drawing.Point(46, 33);
             this.lblMsg.Name = "lblMsg";
-            this.lblMsg.Size = new System.Drawing.Size(93, 60);
+            this.lblMsg.Size = new System.Drawing.Size(76, 48);
             this.lblMsg.TabIndex = 1;
             this.lblMsg.Text = "10";
-            this.lblMsg.Click += new System.EventHandler(this.msg_Click);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("굴림", 36F);
-            this.label1.Location = new System.Drawing.Point(135, 41);
+            this.label1.Location = new System.Drawing.Point(118, 33);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(425, 60);
+            this.label1.Size = new System.Drawing.Size(340, 48);
             this.label1.TabIndex = 2;
             this.label1.Text = "초 남았습니다.";
             // 
@@ -76,12 +76,13 @@ namespace _2_CatchMe
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(700, 360);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lblMsg);
             this.Controls.Add(this.BtnCancel);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);

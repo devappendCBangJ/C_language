@@ -1,0 +1,10 @@
+C:\Users\Bang\source\repos\PC_Based_Control\4_1_Branch_Control\4_1_Branch_Control\bin\Debug\4_1_Branch_Control.exe.config
+C:\Users\Bang\source\repos\PC_Based_Control\4_1_Branch_Control\4_1_Branch_Control\bin\Debug\4_1_Branch_Control.exe
+C:\Users\Bang\source\repos\PC_Based_Control\4_1_Branch_Control\4_1_Branch_Control\bin\Debug\4_1_Branch_Control.pdb
+C:\Users\Bang\source\repos\PC_Based_Control\4_1_Branch_Control\4_1_Branch_Control\obj\Debug\4_1_BranchControl.csproj.AssemblyReference.cache
+C:\Users\Bang\source\repos\PC_Based_Control\4_1_Branch_Control\4_1_Branch_Control\obj\Debug\_4_1_Branch_Control.Form1.resources
+C:\Users\Bang\source\repos\PC_Based_Control\4_1_Branch_Control\4_1_Branch_Control\obj\Debug\_4_1_Branch_Control.Properties.Resources.resources
+C:\Users\Bang\source\repos\PC_Based_Control\4_1_Branch_Control\4_1_Branch_Control\obj\Debug\4_1_BranchControl.csproj.GenerateResource.cache
+C:\Users\Bang\source\repos\PC_Based_Control\4_1_Branch_Control\4_1_Branch_Control\obj\Debug\4_1_BranchControl.csproj.CoreCompileInputs.cache
+C:\Users\Bang\source\repos\PC_Based_Control\4_1_Branch_Control\4_1_Branch_Control\obj\Debug\4_1_Branch_Control.exe
+C:\Users\Bang\source\repos\PC_Based_Control\4_1_Branch_Control\4_1_Branch_Control\obj\Debug\4_1_Branch_Control.pdb

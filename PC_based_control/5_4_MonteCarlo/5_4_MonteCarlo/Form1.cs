@@ -25,17 +25,17 @@ namespace _5_4_MonteCarlo
             int wd = picArea.ClientSize.Width;
             int ht = picArea.ClientSize.Height;
             int area = wd * ht;
-            double ratio_real = 100.0 * 100.0 / (double)area; // double형으로 형변환 하지 않으면 / 사용시 int 나누기 int가 되서 몫만 추출
+            double ratio_real = 100.0 * 100.0 / (double)area; // double형으로 형변환 하지 않으면 / 사용시 int 나누기 int가 되서 몫만 추출 ♣
 
             // lblRatioReal.Text = Convert.ToString(ratio_real);
             lblRatioReal.Text = string.Format("{0:0.000000}", ratio_real);
 
             // Graphics 객체
             Graphics grp = picArea.CreateGraphics();
-            grp.Clear(Color.White);
+            grp.Clear(Color.White); // ♣
 
             // Monte Carlo Simulation
-            int nPoint = 20000;
+            int nPoint = 2000;
             int nIn = 0, nOut = 0;
 
             // 좌표 난수 발생, 그리기 n번 반복

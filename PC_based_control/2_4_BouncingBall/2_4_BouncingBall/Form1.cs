@@ -12,31 +12,32 @@ namespace _2_4_BouncingBall
 {
     public partial class Form1 : Form
     {
+        Random rnd = new Random();
         int dx = 2, dy = 3;
-        int speed = 1;
+        bool speedy = true;
         public Form1()
         {
             InitializeComponent();
         }
 
-        private void radSlow_CheckedChanged(object sender, EventArgs e)
+        private void radSlow_CheckedChanged(object sender, EventArgs e) // ♣
         {
-            if(speed == 0)
+            if(speedy == false)
             {
                 dx = dx / 3;
                 dy = dy / 3;
-                speed = 1;
+                speedy = true;
                 Console.WriteLine("%d, %d", dx, dy);
             }
         }
 
         private void radFast_CheckedChanged(object sender, EventArgs e)
         {
-            if(speed == 1)
+            if(speedy == true)
             {
                 dx = dx * 3;
                 dy = dy * 3;
-                speed = 0;
+                speedy = false;
                 Console.WriteLine("%d, %d", dx, dy);
             }
         }
@@ -62,9 +63,9 @@ namespace _2_4_BouncingBall
                 dy = -dy;
             }
 
-            if (picBall.Left >= this.ClientSize.Width / 3 && picBall.Left <= this.ClientSize.Width * 2 / 3)
+            if (picBall.Left >= this.ClientSize.Width / 3 && picBall.Right <= this.ClientSize.Width * 2 / 3)
             {
-                if(picBall.Top >= this.ClientSize.Height / 3 && picBall.Top <= this.ClientSize.Height * 2 / 3)
+                if(picBall.Top >= this.ClientSize.Height / 3 && picBall.Bottom <= this.ClientSize.Height * 2 / 3)
                 {
                     picBall.BackColor = Color.Red;
                 }

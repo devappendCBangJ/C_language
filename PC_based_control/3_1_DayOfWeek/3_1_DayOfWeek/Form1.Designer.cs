@@ -63,6 +63,7 @@ namespace _3_1_DayOfWeek
             this.txtYear.Name = "txtYear";
             this.txtYear.Size = new System.Drawing.Size(100, 21);
             this.txtYear.TabIndex = 2;
+            this.txtYear.Text = "year";
             // 
             // txtMonth
             // 
@@ -70,6 +71,7 @@ namespace _3_1_DayOfWeek
             this.txtMonth.Name = "txtMonth";
             this.txtMonth.Size = new System.Drawing.Size(100, 21);
             this.txtMonth.TabIndex = 3;
+            this.txtMonth.Text = "month";
             // 
             // txtDay
             // 
@@ -77,6 +79,7 @@ namespace _3_1_DayOfWeek
             this.txtDay.Name = "txtDay";
             this.txtDay.Size = new System.Drawing.Size(100, 21);
             this.txtDay.TabIndex = 4;
+            this.txtDay.Text = "day";
             // 
             // lblOut
             // 

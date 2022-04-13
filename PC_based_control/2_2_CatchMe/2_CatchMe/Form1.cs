@@ -17,11 +17,6 @@ namespace _2_CatchMe
             InitializeComponent();
         }
 
-        private void msg_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void timer1_Tick(object sender, EventArgs e)
         {
             int sec = Convert.ToInt32(lblMsg.Text);

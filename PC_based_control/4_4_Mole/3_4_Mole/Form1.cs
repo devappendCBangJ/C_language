@@ -36,7 +36,7 @@ namespace _3_4_Mole
             timOpen.Enabled = false;
             timClose.Enabled = true;
 
-            // 카드 열기 by 랜덤 변수
+            // 카드 상태 기억
             isOpen[idx] = true;
         }
 
@@ -82,7 +82,7 @@ namespace _3_4_Mole
             timOpen.Enabled = true;
             timClose.Enabled = false;
 
-            // 카드 전부 닫기
+            // 카드 상태 기억
             for (int i = 0; i < 5; i++) isOpen[i] = false;
         }
     }

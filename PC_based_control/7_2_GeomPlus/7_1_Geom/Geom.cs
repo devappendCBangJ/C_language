@@ -10,19 +10,19 @@ namespace _7_1_Geom
 {
     class Geom
     {
-        public virtual void Draw(PictureBox pic) { }    // 오버라이딩
+        public virtual void Draw(PictureBox pic) { }    // 오버라이딩 ♣♣♣♣♣
         public Color col;
     }
 
     class Circle : Geom
     {
         private int xcen, ycen, radius;
-        public static int num;  // static : class 자체의 특성
+        public static int num;  // static : class 자체의 특성 ♣♣♣♣♣
 
-        public Circle(int xcen, int ycen, int radius, Color col)    // 생성자 : new 할때 실행
+        public Circle(int xcen, int ycen, int radius, Color col)    // 생성자 : new 할때 실행 ♣♣♣♣♣
         {
-            this.col = col;     // 상속된 속성
-            this.xcen = xcen;   // 확장된 속성
+            this.col = col;     // 상속된 속성 ♣♣♣♣♣
+            this.xcen = xcen;   // 확장된 속성 ♣♣♣♣♣
             this.ycen = ycen;
             this.radius = radius;
             num++;              // static 멤버

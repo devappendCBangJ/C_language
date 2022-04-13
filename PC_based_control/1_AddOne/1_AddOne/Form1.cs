@@ -28,10 +28,5 @@ namespace _1_AddOne
         {
             lblNum.Text = "0";
         }
-
-        private void lblNum_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }

@@ -21,9 +21,9 @@ namespace _2_3_PointDraw
 
         private void PicDraw_MouseMove(object sender, MouseEventArgs e)
         {
-            if (e.Button == MouseButtons.Left)
+            if (e.Button == MouseButtons.Left) // ♣
             {
-                Graphics grp = PicDraw.CreateGraphics();
+                Graphics grp = PicDraw.CreateGraphics(); // ♣
                 // grp.DrawEllipse(new Pen(col), e.X, e.Y, 5, 10);
                 grp.DrawLine(new Pen(col), xprev, yprev, e.X, e.Y);
 
@@ -45,7 +45,7 @@ namespace _2_3_PointDraw
         private void PicDraw_MouseDown(object sender, MouseEventArgs e)
         {
             xprev = e.X;
-            yprev = e.Y; // 이게 없으면, 이전에 마우스를 뗀 위치부터 다시 선이 그려져서 이상해진다
+            yprev = e.Y; // 이게 없으면, 이전에 마우스를 뗀 위치부터 다시 선이 그려져서 이상해진다 ♣
         }
 
         private void picGreen_Click(object sender, EventArgs e)

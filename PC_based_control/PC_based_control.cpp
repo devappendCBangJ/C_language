@@ -70,9 +70,9 @@
 
 		2] 출력
 			[1] 텍스트 출력 : Console.WriteLine(변수명)
-			[1] 메시지 박스 출력 : MessageBox.Show("~~~")
+			[1] 메시지 박스 출력 : MessageBox.Show("~~~") ♣
 
-		3] 창
+		3] 창 ♣
 			[1] 현재 창 너비 : this.ClientSize.Width
 			[1] 현재 창 높이 : this.ClientSize.Height
 
@@ -81,44 +81,47 @@
 			[1] 비활성화 : attribute_name.Enabled = false
 			[2] 텍스트 수정 : attribute_name.Text = "~~~"
 			[2] 텍스트 색 수정 : attribute_name.Forecolor = Color.Red
+			[2] Box 색 수정 : attribute_name.Backcolor = Color.Red
 			[3] x좌표 : attribute_name.Left = 좌표
 			[3] y좌표 : attribute_name.Top = 좌표
 			[4] x너비 : attribute_name.Width
 			[4] y너비 : attribute_name.Height
 
-		3] 체크 박스
+		3] 체크 박스 ♣
 			[1] 체크박스 체크 : 변수명.Checked = true
 			[1] 체크박스 체크 해제 : 변수명.Checked = false
 
-		3] 픽쳐 박스
+		3] 픽쳐 박스 ♣
 			[1] 상태 받기(픽쳐 박스를 하나로 묶은 경우)
 				PictureBox 변수명 = sender as PictureBox;
-				if (pic.Name == "picturebox_name") 코드
+				if (변수명.Name == "picturebox_name") ~~ 코드 ~~
+			[2] 이미지 설정
+				attribute_name.Image = Properties.Resources.그림_파일명
 
-		3] Graphics
+		3] Graphics ♣
 			[1] 그래픽 객체 생성 : Graphics 변수명 = attribute_name.CreateGraphics()
 			[2] 타원 그리기 : 변수명.DrawEllipse(new pen(Color.Red), x좌표, y좌표, 타원 너비, 타원 높이)
 			[2] line 그리기 : 변수명.DrawLine(new pen(Color.Red), x1좌표, y1좌표, x2좌표, y2좌표)
 				- 펜 생성 : Pen 펜_변수명 = new pen(Color.Red)
-			[3] Clear : grp.Clear(Color.White);
+			[3] Clear : 변수명.Clear(Color.White);
 
-		3] 마우스
+		3] 마우스 ♣
 			[1] 마우스 x좌표 : e.X
 			[1] 마우스 y좌표 : e.Y
 			[2] 마우스 왼쪽 클릭 : e.Button == MouseButtons.Left
 			[2] 마우스 오른쪽 클릭 : e.Button == MouseButtons.Right
 
-		4] 색
+		4] 색 ♣
 			Color 변수명 = Color.Red
 		
-		4] 시간
+		4] 시간 ♣
 			[1] 현재 시간 초로 표시 : DateTime 변수명 = DateTime.Now;
 
-		4] 랜덤
+		4] 랜덤 ♣
 			[1] 랜덤 변수 생성 : Random 변수명 = new Random();
 			[2] 랜덤 변수 값 범위 지정 : 변수명 = 변수명.Next(n1, n2);
 
-		4] 배열
+		4] 배열 ♣
 			[1] 1차원 배열 생성
 				- string 배열 : string[] 변수명 = new string[원소개수] { "원소1", "원소2", ... };
 				- bool 배열 : bool[] 변수명 = new bool[원소개수] { bool형, bool형, ... };
@@ -130,7 +133,7 @@
 
 			- 배열 인덱스 0부터 시작
 
-		5] string
+		5] string ♣
 			[1] 생성 : string 변수명 = String값;
 			[2] 길이
 				1]] 앞뒤 공백 제외 길이 : 변수명.Trim().Length;
@@ -140,25 +143,25 @@
 			[4] 대문자화 / 소문자화
 				1]] 대문자화 : 변수명.ToUpper();
 				2]] 소문자화 : 변수명.ToLower();
-			[5] 비교
+			[5] 비교 ♣♣
 				1]] string끼리 비교 : 변수명1 == 변수명2
 					- string은 참조형 변수기 때문에, 변수명1==변수명2 이것은 주소를 비교하는 것인데
 						C#에서는 변수값을 비교하는 것으로 인식해버림. 권장되지 않는 방법
 				2]] string끼리 비교 : 변수명1.CompareTo(변수명2);
 					- 같은 경우 : 0
 					- 다른 경우 : 1
-			[6] 인덱스 추출
+			[6] 인덱스 추출 ♣
 				1]] 변수명1에서 변수명2의 인덱스 추출 : 변수명1.IndexOf(변수명2);
 			[7] 공백삽입
 				1]] 총 문자 개수가 value개 되도록 왼쪽에 공백 삽입 : 변수명.PadLeft(value);
 				2]] 총 문자 개수가 value개 되도록 오른쪽에 공백 삽입 : 변수명.PadRight(value);
-			[8] 단어 자르기
-				char[] 기준_변수명 = new char[] { '기준1', '기준2', ... };
-				string [] 새로운_변수명 = 변수명.Split(기준_변수명);
-			[9] 단어 대체 : 변수명.Replace('대체할 단어', '대체 후 단어');
-			[10] 형식 지정 : string.Format("{index:xxxx.xxxx}", 변수명, ...);
+			[8] 단어 자르기 ♣
+				char[] 기준_배열명 = new char[] { '기준1', '기준2', ... };
+				string [] 새로운_배열명 = 변수명 .Split(기준_배열명);
+			[9] 단어 대체 : 변수명.Replace('대체할 단어', '대체 후 단어'); ♣
+			[10] 형식 지정 : string.Format("{index:0000.0000}", 변수명, ...); ♣
 				index : index가 0부터 시작해서 뒤에 있는 변수중에서 사용할 변수 지정
-				xxxx.xxxx : 정수, 소수점 자리수 지정
+				0000.0000 : 정수, 소수점 자리수 지정
 
 		+a)
 			1) 참조형 변수 종류
@@ -188,23 +191,23 @@
 			[1] 함수 생성
 				private 리턴_자료형 함수명(입력_자료형 입력_변수명, ...)
 				{
-					~~명령어~~
+					~~ 코드 ~~
 					return 리턴값
 				} // 여기에 ; 사용x
 			[2] 함수 사용
 				함수명(입력_변수값, ...);
 
-		7] 자원 추가
-			1way : 프로젝트 파일 >> resources
+		7] 자원 추가 ♣
+			1way : 프로젝트 폴더 >> resources
 			2way : 상단 프로젝트 >> 프로젝트 속성 >> 리소스 >> 리소스 추가
 
-		7] 파일 열기
+		7] 파일 열기 ♣
 			[1] 파일 열기 팝업
 				DialogResult rtn = openFileDialog.ShowDialog();
 				if (rtn != DialogResult.OK) return;
 			[2] 파일명 + 파일위치 받기 : string fname = openFileDialog.FileName;
 
-		7] 파일 읽기
+		7] 파일 읽기 ♣
 			[1] 파일 읽기
 				StreamReader sr = new StreamReader(fname, Encoding.Default);
 			[2] 한줄 읽기
@@ -487,6 +490,7 @@
 				{
 					~~ 코드 ~~
 				}
+		(5) try ~ catch
 
 	3) 점프문
 		(1) break

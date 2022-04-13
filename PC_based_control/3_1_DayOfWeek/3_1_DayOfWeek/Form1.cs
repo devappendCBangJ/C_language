@@ -33,7 +33,7 @@ namespace _3_1_DayOfWeek
 
             // 요일 계산
             int idx = year + (year / 4) - (year / 100) + (year / 400) + (int)(2.6 * month + 1.6) + day; // int 변환 or / : 가우스 기호 구현
-            int remainder = idx & 7;
+            int remainder = idx % 7;
 
             // 요일 출력 1way
             // if (remainder == 0) lblout.text = "월요일입니다";
@@ -68,7 +68,7 @@ namespace _3_1_DayOfWeek
             // }
 
             // 윤년 출력 2way
-            lblOut.Text = isLeapYear ? "윤년입니다." : "윤년이 아닙니다.";
+            lblOut.Text = isLeapYear ? "윤년입니다." : "윤년이 아닙니다."; // ♣
         }
     }
 }

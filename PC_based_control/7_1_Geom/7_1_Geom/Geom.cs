@@ -28,7 +28,7 @@ namespace _7_1_Geom
             num++;              // static 멤버
         }
 
-        public override void Draw(PictureBox pic)   // 오버라이딩
+        public override void Draw(PictureBox pic)   // 오버라이딩 ♣
         {
             Graphics grp = pic.CreateGraphics();
             grp.DrawEllipse(new Pen(col), xcen, ycen, radius * 2, radius * 2);

@@ -21,12 +21,11 @@ namespace _5_5_MonteCarlo_Tri
         double[] tmp_x_y = new double[2];
         double [] tmp_area = new double[3];
 
-        private double tri_area_func()
+        private void tri_area_func()
         {
             // 삼각형 면적 계산
             tri_area = (double)1.0 / (double)2.0 * ((p_x[0] * p_y[1] + p_x[1] * p_y[2] + p_x[2] * p_y[0]) - (p_x[0] * p_y[2] + p_x[2] * p_y[1] + p_x[1] * p_y[0]));
             tri_area = tri_area >= 0 ? tri_area : -tri_area;
-            return tri_area;
         }
 
         private bool tri_in_func(double xp, double yp)
@@ -99,7 +98,7 @@ namespace _5_5_MonteCarlo_Tri
             grp.Clear(Color.White);
 
             // Monte Carlo Simulation
-            int nPoint = 20000;
+            int nPoint = 2000;
             int nIn = 0, nOut = 0;
 
             // 좌표 난수 발생, 그리기 n번 반복

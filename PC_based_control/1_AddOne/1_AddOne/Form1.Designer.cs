@@ -41,20 +41,20 @@ namespace _1_AddOne
             this.lblNum.AutoSize = true;
             this.lblNum.Font = new System.Drawing.Font("Verdana", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNum.ForeColor = System.Drawing.Color.Coral;
-            this.lblNum.Location = new System.Drawing.Point(26, 36);
+            this.lblNum.Location = new System.Drawing.Point(23, 29);
             this.lblNum.Name = "lblNum";
-            this.lblNum.Size = new System.Drawing.Size(70, 73);
+            this.lblNum.Size = new System.Drawing.Size(56, 59);
             this.lblNum.TabIndex = 0;
             this.lblNum.Text = "0";
-            this.lblNum.Click += new System.EventHandler(this.lblNum_Click);
             // 
             // Reset
             // 
             this.Reset.BackColor = System.Drawing.SystemColors.ControlLight;
             this.Reset.Font = new System.Drawing.Font("Verdana", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Reset.Location = new System.Drawing.Point(338, 133);
+            this.Reset.Location = new System.Drawing.Point(296, 106);
+            this.Reset.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Reset.Name = "Reset";
-            this.Reset.Size = new System.Drawing.Size(187, 102);
+            this.Reset.Size = new System.Drawing.Size(164, 82);
             this.Reset.TabIndex = 1;
             this.Reset.Text = "Reset";
             this.Reset.UseVisualStyleBackColor = false;
@@ -64,9 +64,10 @@ namespace _1_AddOne
             // 
             this.Add.BackColor = System.Drawing.SystemColors.ControlLight;
             this.Add.Font = new System.Drawing.Font("Verdana", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Add.Location = new System.Drawing.Point(338, 251);
+            this.Add.Location = new System.Drawing.Point(296, 201);
+            this.Add.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Add.Name = "Add";
-            this.Add.Size = new System.Drawing.Size(187, 102);
+            this.Add.Size = new System.Drawing.Size(164, 82);
             this.Add.TabIndex = 2;
             this.Add.Text = "Add";
             this.Add.UseVisualStyleBackColor = false;
@@ -79,12 +80,13 @@ namespace _1_AddOne
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(555, 380);
+            this.ClientSize = new System.Drawing.Size(486, 304);
             this.Controls.Add(this.Add);
             this.Controls.Add(this.Reset);
             this.Controls.Add(this.lblNum);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);
