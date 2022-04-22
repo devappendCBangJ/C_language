@@ -1,0 +1,11 @@
+C:\Users\COM\Desktop\C_language-master\PC_based_control\9_2_AnalogClock\9_2_AnalogClock\bin\Debug\9_2_AnalogClock.exe.config
+C:\Users\COM\Desktop\C_language-master\PC_based_control\9_2_AnalogClock\9_2_AnalogClock\bin\Debug\9_2_AnalogClock.exe
+C:\Users\COM\Desktop\C_language-master\PC_based_control\9_2_AnalogClock\9_2_AnalogClock\bin\Debug\9_2_AnalogClock.pdb
+C:\Users\COM\Desktop\C_language-master\PC_based_control\9_2_AnalogClock\9_2_AnalogClock\obj\Debug\9_2_AnalogClock.csproj.AssemblyReference.cache
+C:\Users\COM\Desktop\C_language-master\PC_based_control\9_2_AnalogClock\9_2_AnalogClock\obj\Debug\9_2_AnalogClock.csproj.SuggestedBindingRedirects.cache
+C:\Users\COM\Desktop\C_language-master\PC_based_control\9_2_AnalogClock\9_2_AnalogClock\obj\Debug\_9_2_AnalogClock.Form1.resources
+C:\Users\COM\Desktop\C_language-master\PC_based_control\9_2_AnalogClock\9_2_AnalogClock\obj\Debug\_9_2_AnalogClock.Properties.Resources.resources
+C:\Users\COM\Desktop\C_language-master\PC_based_control\9_2_AnalogClock\9_2_AnalogClock\obj\Debug\9_2_AnalogClock.csproj.GenerateResource.cache
+C:\Users\COM\Desktop\C_language-master\PC_based_control\9_2_AnalogClock\9_2_AnalogClock\obj\Debug\9_2_AnalogClock.csproj.CoreCompileInputs.cache
+C:\Users\COM\Desktop\C_language-master\PC_based_control\9_2_AnalogClock\9_2_AnalogClock\obj\Debug\9_2_AnalogClock.exe
+C:\Users\COM\Desktop\C_language-master\PC_based_control\9_2_AnalogClock\9_2_AnalogClock\obj\Debug\9_2_AnalogClock.pdb

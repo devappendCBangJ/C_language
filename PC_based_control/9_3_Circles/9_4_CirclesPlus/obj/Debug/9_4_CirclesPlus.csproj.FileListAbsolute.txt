@@ -1,0 +1,10 @@
+C:\Users\Hi\source\repos\9_4_CirclesPlus\9_4_CirclesPlus\bin\Debug\9_4_CirclesPlus.exe.config
+C:\Users\Hi\source\repos\9_4_CirclesPlus\9_4_CirclesPlus\bin\Debug\9_4_CirclesPlus.exe
+C:\Users\Hi\source\repos\9_4_CirclesPlus\9_4_CirclesPlus\bin\Debug\9_4_CirclesPlus.pdb
+C:\Users\Hi\source\repos\9_4_CirclesPlus\9_4_CirclesPlus\obj\Debug\9_4_CirclesPlus.csproj.AssemblyReference.cache
+C:\Users\Hi\source\repos\9_4_CirclesPlus\9_4_CirclesPlus\obj\Debug\_9_4_CirclesPlus.Circle.resources
+C:\Users\Hi\source\repos\9_4_CirclesPlus\9_4_CirclesPlus\obj\Debug\_9_4_CirclesPlus.Properties.Resources.resources
+C:\Users\Hi\source\repos\9_4_CirclesPlus\9_4_CirclesPlus\obj\Debug\9_4_CirclesPlus.csproj.GenerateResource.cache
+C:\Users\Hi\source\repos\9_4_CirclesPlus\9_4_CirclesPlus\obj\Debug\9_4_CirclesPlus.csproj.CoreCompileInputs.cache
+C:\Users\Hi\source\repos\9_4_CirclesPlus\9_4_CirclesPlus\obj\Debug\9_4_CirclesPlus.exe
+C:\Users\Hi\source\repos\9_4_CirclesPlus\9_4_CirclesPlus\obj\Debug\9_4_CirclesPlus.pdb

@@ -1,0 +1,11 @@
+C:\Users\COM\Desktop\C_language-master\PC_based_control\9_Draw\9_Draw\bin\Debug\9_Draw.exe.config
+C:\Users\COM\Desktop\C_language-master\PC_based_control\9_Draw\9_Draw\bin\Debug\9_Draw.exe
+C:\Users\COM\Desktop\C_language-master\PC_based_control\9_Draw\9_Draw\bin\Debug\9_Draw.pdb
+C:\Users\COM\Desktop\C_language-master\PC_based_control\9_Draw\9_Draw\obj\Debug\9_Draw.csproj.AssemblyReference.cache
+C:\Users\COM\Desktop\C_language-master\PC_based_control\9_Draw\9_Draw\obj\Debug\9_Draw.csproj.SuggestedBindingRedirects.cache
+C:\Users\COM\Desktop\C_language-master\PC_based_control\9_Draw\9_Draw\obj\Debug\_9_Draw.Form1.resources
+C:\Users\COM\Desktop\C_language-master\PC_based_control\9_Draw\9_Draw\obj\Debug\_9_Draw.Properties.Resources.resources
+C:\Users\COM\Desktop\C_language-master\PC_based_control\9_Draw\9_Draw\obj\Debug\9_Draw.csproj.GenerateResource.cache
+C:\Users\COM\Desktop\C_language-master\PC_based_control\9_Draw\9_Draw\obj\Debug\9_Draw.csproj.CoreCompileInputs.cache
+C:\Users\COM\Desktop\C_language-master\PC_based_control\9_Draw\9_Draw\obj\Debug\9_Draw.exe
+C:\Users\COM\Desktop\C_language-master\PC_based_control\9_Draw\9_Draw\obj\Debug\9_Draw.pdb
