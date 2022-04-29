@@ -50,7 +50,7 @@ namespace _9_4_CirclesPlus
             }
         }
 
-        // 원 움직임
+        // 원 움직임 or 포함되는 원 제거
         private void timer1_Tick(object sender, EventArgs e)
         {
             if (chkMove.Checked == false) return;
@@ -58,6 +58,21 @@ namespace _9_4_CirclesPlus
             for (int i = 0; i < circles.Count; i++)
             {
                 circles[i].move(0, 100, 0, 100);
+            }
+
+            if(chcDelIncluded.Checked == true)
+            {
+                for(int i = 0; i < circles.Count; i++)
+                {
+                    for(int j = i+1; j < circles.Count; j++)
+                    {
+                        double dx = circles[i].xcen - circles[j].xcen;
+                        double dy = circles[i].ycen - circles[j].ycen;
+                        double dist = Math.Sqrt(dx * dx + dy * dy);
+                        if (dist < circles[i].radius - circles[j].radius) circles.Remove(circles[j]);
+                        else if (dist < circles[j].radius - circles[i].radius) circles.Remove(circles[i]);
+                    }
+                }
             }
             DrawCircles();
         }
@@ -103,7 +118,7 @@ namespace _9_4_CirclesPlus
     class Circle
     {
         private static Random rnd = new Random();
-        private double xcen, ycen, radius;
+        public double xcen, ycen, radius;
         private int red, green, blue;
         private double xmov, ymov;
 

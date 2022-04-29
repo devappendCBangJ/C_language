@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{B3DA571D-C0F9-47D4-9B4F-D628230877F1}</ProjectGuid>
+    <ProjectGuid>{EF7A5CA2-7B4B-43B1-B8ED-1F9F08B41497}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>_9_4_CirclesPlus</RootNamespace>
-    <AssemblyName>9_4_CirclesPlus</AssemblyName>
+    <RootNamespace>ChatArduino</RootNamespace>
+    <AssemblyName>ChatArduino</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -54,7 +54,7 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="TCanvas.cs" />
+    <Compile Include="SPort.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
