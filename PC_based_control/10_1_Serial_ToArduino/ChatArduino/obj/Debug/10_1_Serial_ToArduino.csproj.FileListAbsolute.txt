@@ -1,0 +1,10 @@
+C:\Users\Bang\source\repos\PC_Based_Control\10_1_Serial_ToArduino\ChatArduino\bin\Debug\ChatArduino.exe.config
+C:\Users\Bang\source\repos\PC_Based_Control\10_1_Serial_ToArduino\ChatArduino\bin\Debug\ChatArduino.exe
+C:\Users\Bang\source\repos\PC_Based_Control\10_1_Serial_ToArduino\ChatArduino\bin\Debug\ChatArduino.pdb
+C:\Users\Bang\source\repos\PC_Based_Control\10_1_Serial_ToArduino\ChatArduino\obj\Debug\10_1_Serial_ToArduino.csproj.AssemblyReference.cache
+C:\Users\Bang\source\repos\PC_Based_Control\10_1_Serial_ToArduino\ChatArduino\obj\Debug\ChatArduino.Form1.resources
+C:\Users\Bang\source\repos\PC_Based_Control\10_1_Serial_ToArduino\ChatArduino\obj\Debug\ChatArduino.Properties.Resources.resources
+C:\Users\Bang\source\repos\PC_Based_Control\10_1_Serial_ToArduino\ChatArduino\obj\Debug\10_1_Serial_ToArduino.csproj.GenerateResource.cache
+C:\Users\Bang\source\repos\PC_Based_Control\10_1_Serial_ToArduino\ChatArduino\obj\Debug\10_1_Serial_ToArduino.csproj.CoreCompileInputs.cache
+C:\Users\Bang\source\repos\PC_Based_Control\10_1_Serial_ToArduino\ChatArduino\obj\Debug\ChatArduino.exe
+C:\Users\Bang\source\repos\PC_Based_Control\10_1_Serial_ToArduino\ChatArduino\obj\Debug\ChatArduino.pdb

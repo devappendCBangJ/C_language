@@ -1,0 +1,10 @@
+C:\Users\Hi\source\repos\PC_based_control\11_1_TalkOnly\TalkOnly\bin\Debug\TalkOnly.exe.config
+C:\Users\Hi\source\repos\PC_based_control\11_1_TalkOnly\TalkOnly\bin\Debug\TalkOnly.exe
+C:\Users\Hi\source\repos\PC_based_control\11_1_TalkOnly\TalkOnly\bin\Debug\TalkOnly.pdb
+C:\Users\Hi\source\repos\PC_based_control\11_1_TalkOnly\TalkOnly\obj\Debug\TalkOnly.csproj.AssemblyReference.cache
+C:\Users\Hi\source\repos\PC_based_control\11_1_TalkOnly\TalkOnly\obj\Debug\TalkOnly.Form1.resources
+C:\Users\Hi\source\repos\PC_based_control\11_1_TalkOnly\TalkOnly\obj\Debug\TalkOnly.Properties.Resources.resources
+C:\Users\Hi\source\repos\PC_based_control\11_1_TalkOnly\TalkOnly\obj\Debug\TalkOnly.csproj.GenerateResource.cache
+C:\Users\Hi\source\repos\PC_based_control\11_1_TalkOnly\TalkOnly\obj\Debug\TalkOnly.csproj.CoreCompileInputs.cache
+C:\Users\Hi\source\repos\PC_based_control\11_1_TalkOnly\TalkOnly\obj\Debug\TalkOnly.exe
+C:\Users\Hi\source\repos\PC_based_control\11_1_TalkOnly\TalkOnly\obj\Debug\TalkOnly.pdb

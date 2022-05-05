@@ -1,0 +1,10 @@
+C:\Users\Hi\source\repos\PC_based_control\11_2_Polling\Polling\bin\Debug\Polling.exe.config
+C:\Users\Hi\source\repos\PC_based_control\11_2_Polling\Polling\bin\Debug\Polling.exe
+C:\Users\Hi\source\repos\PC_based_control\11_2_Polling\Polling\bin\Debug\Polling.pdb
+C:\Users\Hi\source\repos\PC_based_control\11_2_Polling\Polling\obj\Debug\11_2_Polling.csproj.AssemblyReference.cache
+C:\Users\Hi\source\repos\PC_based_control\11_2_Polling\Polling\obj\Debug\Polling.Form1.resources
+C:\Users\Hi\source\repos\PC_based_control\11_2_Polling\Polling\obj\Debug\Polling.Properties.Resources.resources
+C:\Users\Hi\source\repos\PC_based_control\11_2_Polling\Polling\obj\Debug\11_2_Polling.csproj.GenerateResource.cache
+C:\Users\Hi\source\repos\PC_based_control\11_2_Polling\Polling\obj\Debug\11_2_Polling.csproj.CoreCompileInputs.cache
+C:\Users\Hi\source\repos\PC_based_control\11_2_Polling\Polling\obj\Debug\Polling.exe
+C:\Users\Hi\source\repos\PC_based_control\11_2_Polling\Polling\obj\Debug\Polling.pdb

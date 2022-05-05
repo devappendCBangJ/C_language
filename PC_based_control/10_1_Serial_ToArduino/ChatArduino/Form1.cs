@@ -16,9 +16,12 @@ namespace ChatArduino
         public Form1()
         {
             InitializeComponent();
-            Control.CheckForIllegalCrossThreadCalls = false; // CrossThreadCalls 허용. 원래 이거 장시간 쓰면 에러 발생
+            Control.CheckForIllegalCrossThreadCalls = false; // CrossThreadCalls 허용. 원래 이거 장시간 쓰면 에러 발생 ♣
         }
 
+        //========================================================
+        //  데이터읽기 ♣
+        //========================================================
         private void serialPort_DataReceived(object sender, SerialDataReceivedEventArgs e)
         {
             if (txtDialog.Text.Length > 1200) txtDialog.Text = "";
@@ -27,6 +30,9 @@ namespace ChatArduino
             txtDialog.Text += "[Arduino] " + inp;
         }
 
+        //========================================================
+        //  Port 열기 ♣
+        //========================================================
         private void btnOpen_Click(object sender, EventArgs e)
         {
             bool success = false;
@@ -45,6 +51,9 @@ namespace ChatArduino
             else { MessageBox.Show("시리얼포트를 열지 못했습니다", "오류"); }
         }
 
+        //========================================================
+        //  컴퓨터에 존재하는 Port 알아보기 ♣
+        //========================================================
         private void Form1_Load(object sender, EventArgs e)
         {
             string[] ports = SPort.GetPortsList();
@@ -56,6 +65,9 @@ namespace ChatArduino
             }
         }
 
+        //========================================================
+        //  데이터보내기 ♣
+        //========================================================
         private void btnSend_Click(object sender, EventArgs e)
         {
             if (txtDialog.Text.Length > 1200) txtDialog.Text = "";
@@ -70,9 +82,11 @@ namespace ChatArduino
             txtInput.Text = "";
         }
 
+        //========================================================
+        //  엔터 입력시 버튼 클릭 활성화 ♣
+        //========================================================
         private void Form1_KeyPress(object sender, KeyPressEventArgs e)
         {
-            // 엔터 입력시 버튼 클릭 활성화
             if (e.KeyChar == '\r' && btnSend.Enabled)
                 btnSend.PerformClick();
         }
