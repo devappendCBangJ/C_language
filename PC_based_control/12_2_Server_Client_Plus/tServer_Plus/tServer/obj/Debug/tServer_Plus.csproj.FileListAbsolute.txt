@@ -1,0 +1,10 @@
+C:\Users\Bang\Desktop\4_Server_Client_Plus\tServer_Plus\tServer\bin\Debug\tServer.exe.config
+C:\Users\Bang\Desktop\4_Server_Client_Plus\tServer_Plus\tServer\bin\Debug\tServer.exe
+C:\Users\Bang\Desktop\4_Server_Client_Plus\tServer_Plus\tServer\bin\Debug\tServer.pdb
+C:\Users\Bang\Desktop\4_Server_Client_Plus\tServer_Plus\tServer\obj\Debug\tServer_Plus.csproj.AssemblyReference.cache
+C:\Users\Bang\Desktop\4_Server_Client_Plus\tServer_Plus\tServer\obj\Debug\tServer.Form1.resources
+C:\Users\Bang\Desktop\4_Server_Client_Plus\tServer_Plus\tServer\obj\Debug\tServer.Properties.Resources.resources
+C:\Users\Bang\Desktop\4_Server_Client_Plus\tServer_Plus\tServer\obj\Debug\tServer_Plus.csproj.GenerateResource.cache
+C:\Users\Bang\Desktop\4_Server_Client_Plus\tServer_Plus\tServer\obj\Debug\tServer_Plus.csproj.CoreCompileInputs.cache
+C:\Users\Bang\Desktop\4_Server_Client_Plus\tServer_Plus\tServer\obj\Debug\tServer.exe
+C:\Users\Bang\Desktop\4_Server_Client_Plus\tServer_Plus\tServer\obj\Debug\tServer.pdb

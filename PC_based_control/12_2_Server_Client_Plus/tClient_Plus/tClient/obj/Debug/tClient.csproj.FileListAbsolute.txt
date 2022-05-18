@@ -1,0 +1,40 @@
+C:\Users\Hi\Desktop\4_Server_Client_폼만\tClient\tClient\bin\Debug\tClient.exe.config
+C:\Users\Hi\Desktop\4_Server_Client_폼만\tClient\tClient\bin\Debug\tClient.exe
+C:\Users\Hi\Desktop\4_Server_Client_폼만\tClient\tClient\bin\Debug\tClient.pdb
+C:\Users\Hi\Desktop\4_Server_Client_폼만\tClient\tClient\obj\Debug\tClient.csproj.AssemblyReference.cache
+C:\Users\Hi\Desktop\4_Server_Client_폼만\tClient\tClient\obj\Debug\tClient.Form1.resources
+C:\Users\Hi\Desktop\4_Server_Client_폼만\tClient\tClient\obj\Debug\tClient.Properties.Resources.resources
+C:\Users\Hi\Desktop\4_Server_Client_폼만\tClient\tClient\obj\Debug\tClient.csproj.GenerateResource.cache
+C:\Users\Hi\Desktop\4_Server_Client_폼만\tClient\tClient\obj\Debug\tClient.csproj.CoreCompileInputs.cache
+C:\Users\Hi\Desktop\4_Server_Client_폼만\tClient\tClient\obj\Debug\tClient.exe
+C:\Users\Hi\Desktop\4_Server_Client_폼만\tClient\tClient\obj\Debug\tClient.pdb
+C:\Users\Bang\Desktop\피제프\4_Server_Client_폼만\tClient\tClient\bin\Debug\tClient.exe.config
+C:\Users\Bang\Desktop\피제프\4_Server_Client_폼만\tClient\tClient\bin\Debug\tClient.exe
+C:\Users\Bang\Desktop\피제프\4_Server_Client_폼만\tClient\tClient\bin\Debug\tClient.pdb
+C:\Users\Bang\Desktop\피제프\4_Server_Client_폼만\tClient\tClient\obj\Debug\tClient.csproj.AssemblyReference.cache
+C:\Users\Bang\Desktop\피제프\4_Server_Client_폼만\tClient\tClient\obj\Debug\tClient.Form1.resources
+C:\Users\Bang\Desktop\피제프\4_Server_Client_폼만\tClient\tClient\obj\Debug\tClient.Properties.Resources.resources
+C:\Users\Bang\Desktop\피제프\4_Server_Client_폼만\tClient\tClient\obj\Debug\tClient.csproj.GenerateResource.cache
+C:\Users\Bang\Desktop\피제프\4_Server_Client_폼만\tClient\tClient\obj\Debug\tClient.csproj.CoreCompileInputs.cache
+C:\Users\Bang\Desktop\피제프\4_Server_Client_폼만\tClient\tClient\obj\Debug\tClient.exe
+C:\Users\Bang\Desktop\피제프\4_Server_Client_폼만\tClient\tClient\obj\Debug\tClient.pdb
+C:\Users\Hi\Desktop\피제프\4_Server_Client_폼만\tClient\tClient\bin\Debug\tClient.exe.config
+C:\Users\Hi\Desktop\피제프\4_Server_Client_폼만\tClient\tClient\bin\Debug\tClient.exe
+C:\Users\Hi\Desktop\피제프\4_Server_Client_폼만\tClient\tClient\bin\Debug\tClient.pdb
+C:\Users\Hi\Desktop\피제프\4_Server_Client_폼만\tClient\tClient\obj\Debug\tClient.csproj.AssemblyReference.cache
+C:\Users\Hi\Desktop\피제프\4_Server_Client_폼만\tClient\tClient\obj\Debug\tClient.Form1.resources
+C:\Users\Hi\Desktop\피제프\4_Server_Client_폼만\tClient\tClient\obj\Debug\tClient.Properties.Resources.resources
+C:\Users\Hi\Desktop\피제프\4_Server_Client_폼만\tClient\tClient\obj\Debug\tClient.csproj.GenerateResource.cache
+C:\Users\Hi\Desktop\피제프\4_Server_Client_폼만\tClient\tClient\obj\Debug\tClient.csproj.CoreCompileInputs.cache
+C:\Users\Hi\Desktop\피제프\4_Server_Client_폼만\tClient\tClient\obj\Debug\tClient.exe
+C:\Users\Hi\Desktop\피제프\4_Server_Client_폼만\tClient\tClient\obj\Debug\tClient.pdb
+C:\Users\Bang\Desktop\방D훈\3학년 1학기\PC 기반 제어프로그래밍\12주차 과제\4_Server_Client_폼만\tClient\tClient\bin\Debug\tClient.exe.config
+C:\Users\Bang\Desktop\방D훈\3학년 1학기\PC 기반 제어프로그래밍\12주차 과제\4_Server_Client_폼만\tClient\tClient\bin\Debug\tClient.exe
+C:\Users\Bang\Desktop\방D훈\3학년 1학기\PC 기반 제어프로그래밍\12주차 과제\4_Server_Client_폼만\tClient\tClient\bin\Debug\tClient.pdb
+C:\Users\Bang\Desktop\방D훈\3학년 1학기\PC 기반 제어프로그래밍\12주차 과제\4_Server_Client_폼만\tClient\tClient\obj\Debug\tClient.csproj.AssemblyReference.cache
+C:\Users\Bang\Desktop\방D훈\3학년 1학기\PC 기반 제어프로그래밍\12주차 과제\4_Server_Client_폼만\tClient\tClient\obj\Debug\tClient.Form1.resources
+C:\Users\Bang\Desktop\방D훈\3학년 1학기\PC 기반 제어프로그래밍\12주차 과제\4_Server_Client_폼만\tClient\tClient\obj\Debug\tClient.Properties.Resources.resources
+C:\Users\Bang\Desktop\방D훈\3학년 1학기\PC 기반 제어프로그래밍\12주차 과제\4_Server_Client_폼만\tClient\tClient\obj\Debug\tClient.csproj.GenerateResource.cache
+C:\Users\Bang\Desktop\방D훈\3학년 1학기\PC 기반 제어프로그래밍\12주차 과제\4_Server_Client_폼만\tClient\tClient\obj\Debug\tClient.csproj.CoreCompileInputs.cache
+C:\Users\Bang\Desktop\방D훈\3학년 1학기\PC 기반 제어프로그래밍\12주차 과제\4_Server_Client_폼만\tClient\tClient\obj\Debug\tClient.exe
+C:\Users\Bang\Desktop\방D훈\3학년 1학기\PC 기반 제어프로그래밍\12주차 과제\4_Server_Client_폼만\tClient\tClient\obj\Debug\tClient.pdb
