@@ -8,3 +8,13 @@ C:\Users\Bang\Desktop\4_Server_Client_Plus\tClient_Plus\tClient\obj\Debug\tClien
 C:\Users\Bang\Desktop\4_Server_Client_Plus\tClient_Plus\tClient\obj\Debug\tClient_Plus.csproj.CoreCompileInputs.cache
 C:\Users\Bang\Desktop\4_Server_Client_Plus\tClient_Plus\tClient\obj\Debug\tClient.exe
 C:\Users\Bang\Desktop\4_Server_Client_Plus\tClient_Plus\tClient\obj\Debug\tClient.pdb
+C:\Users\Bang\source\repos\PC_Based_Control\12_2_Server_Client_Plus\tClient_Plus\tClient\bin\Debug\tClient.exe.config
+C:\Users\Bang\source\repos\PC_Based_Control\12_2_Server_Client_Plus\tClient_Plus\tClient\bin\Debug\tClient.exe
+C:\Users\Bang\source\repos\PC_Based_Control\12_2_Server_Client_Plus\tClient_Plus\tClient\bin\Debug\tClient.pdb
+C:\Users\Bang\source\repos\PC_Based_Control\12_2_Server_Client_Plus\tClient_Plus\tClient\obj\Debug\tClient_Plus.csproj.AssemblyReference.cache
+C:\Users\Bang\source\repos\PC_Based_Control\12_2_Server_Client_Plus\tClient_Plus\tClient\obj\Debug\tClient.Form1.resources
+C:\Users\Bang\source\repos\PC_Based_Control\12_2_Server_Client_Plus\tClient_Plus\tClient\obj\Debug\tClient.Properties.Resources.resources
+C:\Users\Bang\source\repos\PC_Based_Control\12_2_Server_Client_Plus\tClient_Plus\tClient\obj\Debug\tClient_Plus.csproj.GenerateResource.cache
+C:\Users\Bang\source\repos\PC_Based_Control\12_2_Server_Client_Plus\tClient_Plus\tClient\obj\Debug\tClient_Plus.csproj.CoreCompileInputs.cache
+C:\Users\Bang\source\repos\PC_Based_Control\12_2_Server_Client_Plus\tClient_Plus\tClient\obj\Debug\tClient.exe
+C:\Users\Bang\source\repos\PC_Based_Control\12_2_Server_Client_Plus\tClient_Plus\tClient\obj\Debug\tClient.pdb

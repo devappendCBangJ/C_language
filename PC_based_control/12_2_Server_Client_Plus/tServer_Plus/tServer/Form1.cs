@@ -74,21 +74,24 @@ namespace tServer
                 lblConnCopy2.Text = "Comm : " + conn.ToString();
             }
 
-            txtMyIP.Text = TSocket.HostAddresses()[1].ToString();   //XP는 [0]   // ● 추가된 부분
+            if ((serverChat != null && serverCopy != null && serverComm != null && serverCopy2 != null)    // ● 추가된 부분
+                && (serverChat.ServerStatus().ToString() == "Closed" || serverCopy.ServerStatus().ToString() == "Closed"
+                || serverComm.ServerStatus().ToString() == "Closed" || serverCopy2.ServerStatus().ToString() == "Closed"))
+            {
+                string myIP = txtMyIP.Text;
 
-            string myIP = txtMyIP.Text; // ● 추가된 부분
+                if (serverChat == null) serverChat = new TServer();                         // 서버 열기 + 타이머 방식 listen 시작
+                serverChat.ServerStartListen(myIP, 5000);   // 1024~65535 추천
 
-            if (serverChat == null) serverChat = new TServer();                         // 서버 열기 + 타이머 방식 listen 시작
-            serverChat.ServerStartListen(myIP, 5000);   // 1024~65535 추천
+                if (serverCopy == null) serverCopy = new TServer(CirclePosDataArrived);     // 서버 열기 + 이벤트 방식 listen 시작
+                serverCopy.ServerStartListen(myIP, 5001);   // 1024~65535 추천
 
-            if (serverCopy == null) serverCopy = new TServer(CirclePosDataArrived);     // 서버 열기 + 이벤트 방식 listen 시작
-            serverCopy.ServerStartListen(myIP, 5001);   // 1024~65535 추천
+                if (serverComm == null) serverComm = new TServer(AskingBitsDataArrived);    // 서버 열기 + 폴링 방식 listen 시작
+                serverComm.ServerStartListen(myIP, 5002);   // 1024~65535 추천
 
-            if (serverComm == null) serverComm = new TServer(AskingBitsDataArrived);    // 서버 열기 + 폴링 방식 listen 시작
-            serverComm.ServerStartListen(myIP, 5002);   // 1024~65535 추천
-
-            if (serverCopy2 == null) serverCopy2 = new TServer();                         // 서버 열기 + 이벤트 방식 listen 시작     // ● 추가된 부분
-            serverCopy2.ServerStartListen(myIP, 5003);   // 1024~65535 추천
+                if (serverCopy2 == null) serverCopy2 = new TServer();                         // 서버 열기 + 이벤트 방식 listen 시작     // ● 추가된 부분
+                serverCopy2.ServerStartListen(myIP, 5003);   // 1024~65535 추천
+            }
         }
 
         // 버튼 클릭시, HostAddress 받기 + 출력

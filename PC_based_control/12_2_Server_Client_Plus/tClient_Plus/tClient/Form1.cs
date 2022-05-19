@@ -73,22 +73,25 @@ namespace tClient
                 lblConnCopy2.Text = "Comm : " + conn.ToString();
             }
 
-            txtServerIP.Text = TSocket.HostAddresses()[1].ToString();//XP는 [0]  // ● 추가된 부분
+            if ((clientChat != null && clientCopy != null && clientComm != null && clientCopy2 != null)    // ● 추가된 부분
+                && (clientChat.ClientStatus().ToString() == "Closed" || clientCopy.ClientStatus().ToString() == "Closed"
+                || clientComm.ClientStatus().ToString() == "Closed" || clientCopy2.ClientStatus().ToString() == "Closed") )
+            {
+                string serverIP = txtServerIP.Text;
+                string clientIP = TSocket.HostAddresses()[1].ToString();    //XP는 [0]
 
-            string serverIP = txtServerIP.Text; // ● 추가된 부분
-            string clientIP = TSocket.HostAddresses()[1].ToString();    //XP는 [0]
+                if (clientChat == null) clientChat = new TClient();         // 서버 열기 + 타이머 방식 connection 요청
+                clientChat.ClientBeginConnect(serverIP, 5000, clientIP);    // 1024~65535 추천
 
-            if (clientChat == null) clientChat = new TClient();         // 서버 열기 + 타이머 방식 connection 요청
-            clientChat.ClientBeginConnect(serverIP, 5000, clientIP);    // 1024~65535 추천
+                if (clientCopy == null) clientCopy = new TClient();         // 서버 열기 + 이벤트 방식 connection 요청(보내기만하므로 이벤트 핸들링 함수 선언x. CirclePosDataArrived 표시x)
+                clientCopy.ClientBeginConnect(serverIP, 5001, clientIP);    // 1024~65535 추천
 
-            if (clientCopy == null) clientCopy = new TClient();         // 서버 열기 + 이벤트 방식 connection 요청(보내기만하므로 이벤트 핸들링 함수 선언x. CirclePosDataArrived 표시x)
-            clientCopy.ClientBeginConnect(serverIP, 5001, clientIP);    // 1024~65535 추천
+                if (clientComm == null) clientComm = new TClient();         // 서버 열기 + 폴링 방식 connection 요청(보내기만하므로 이벤트 핸들링 함수 선언x. AskingBitsDataArrived 표시x)
+                clientComm.ClientBeginConnect(serverIP, 5002, clientIP);    // 1024~65535 추천
 
-            if (clientComm == null) clientComm = new TClient();         // 서버 열기 + 폴링 방식 connection 요청(보내기만하므로 이벤트 핸들링 함수 선언x. AskingBitsDataArrived 표시x)
-            clientComm.ClientBeginConnect(serverIP, 5002, clientIP);    // 1024~65535 추천
-
-            if (clientCopy2 == null) clientCopy2 = new TClient(CirclePosDataArrived);         // 서버 열기 + 폴링 방식 connection 요청(보내기만하므로 이벤트 핸들링 함수 선언x. AskingBitsDataArrived 표시x)
-            clientCopy2.ClientBeginConnect(serverIP, 5003, clientIP);    // 1024~65535 추천
+                if (clientCopy2 == null) clientCopy2 = new TClient(CirclePosDataArrived);         // 서버 열기 + 폴링 방식 connection 요청(보내기만하므로 이벤트 핸들링 함수 선언x. AskingBitsDataArrived 표시x)
+                clientCopy2.ClientBeginConnect(serverIP, 5003, clientIP);    // 1024~65535 추천
+            }
         }
 
         // 버튼 클릭시, HostAddress 받기 + 출력
