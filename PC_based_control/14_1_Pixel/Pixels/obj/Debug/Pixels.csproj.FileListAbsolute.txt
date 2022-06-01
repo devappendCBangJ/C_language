@@ -1,0 +1,10 @@
+C:\Users\Bang\Desktop\Pixels_폼만\Pixels\bin\Debug\Pixels.exe.config
+C:\Users\Bang\Desktop\Pixels_폼만\Pixels\bin\Debug\Pixels.exe
+C:\Users\Bang\Desktop\Pixels_폼만\Pixels\bin\Debug\Pixels.pdb
+C:\Users\Bang\Desktop\Pixels_폼만\Pixels\obj\Debug\Pixels.csproj.AssemblyReference.cache
+C:\Users\Bang\Desktop\Pixels_폼만\Pixels\obj\Debug\Pixels.Form1.resources
+C:\Users\Bang\Desktop\Pixels_폼만\Pixels\obj\Debug\Pixels.Properties.Resources.resources
+C:\Users\Bang\Desktop\Pixels_폼만\Pixels\obj\Debug\Pixels.csproj.GenerateResource.cache
+C:\Users\Bang\Desktop\Pixels_폼만\Pixels\obj\Debug\Pixels.csproj.CoreCompileInputs.cache
+C:\Users\Bang\Desktop\Pixels_폼만\Pixels\obj\Debug\Pixels.exe
+C:\Users\Bang\Desktop\Pixels_폼만\Pixels\obj\Debug\Pixels.pdb

@@ -163,41 +163,49 @@ namespace Labeling
             int area;
             double xcen, ycen;
             txtLabelingResult.Text = "라벨링시간(초)= " + string.Format("{0:##0.000}", dtime) + "\r\n";
-            txtLabelingResult.Text = "동전 개수= " + Convert.ToString(nblob) + "\r\n";
+            txtLabelingResult.Text = "라벨 개수= " + Convert.ToString(nblob) + "\r\n";
             for (int i = 0; i < nblob; i++)
             {
                 LabelingCV.getAreaCenter(blobArr[i], out area, out xcen, out ycen);
                 CoinName = 0;   // ● 추가된 코드
-                if (10 <= area && area < 50)
+                if (5000 <= area && area < 9500)
                 {
                     CoinArr[0] += 1;
                     CoinName = 10;
                     CoinTot += 10;
                 }
-                else if (50 <= area && area < 100)
+                else if (9500 <= area && area < 11500)
                 {
                     CoinArr[1] += 1;
                     CoinName = 50;
                     CoinTot += 50;
                 }
-                else if (100 <= area && area < 500)
+                else if (11500 <= area && area < 16500)
                 {
-                    CoinArr[2] += 1;
+                    CoinArr[2] += 1; 
                     CoinName = 100;
                     CoinTot += 100;
                 }
-                else if (500 <= area && area < 10000000)
+                else if (16500 <= area && area < 20000)
                 {
                     CoinArr[3] += 1;
                     CoinName = 500;
                     CoinTot += 500;
                 }
 
-                txtLabelingResult.Text += "동전번호= " + Convert.ToString(i + 1).PadLeft(2) + "  " +     // ● 추가된 코드
-                                        "면적= " + Convert.ToString(area).PadLeft(5) + "  " +
-                                        "중심= " + string.Format("{0:##0.00}", xcen) + ", " +
-                                        String.Format("{0:##0.00}", ycen) + "  " +
-                                        "액수= " + Convert.ToString(CoinName) + "\r\n";
+                //txtLabelingResult.Text += "라벨 번호= " + Convert.ToString(i + 1).PadLeft(2) + "  " +     // ● 추가된 코드
+                //                        "면적= " + Convert.ToString(area).PadLeft(5) + "  " +
+                //                        "중심= " + string.Format("{0:##0.00}", xcen) + ", " +
+                //                        String.Format("{0:##0.00}", ycen) + "  " +
+                //                        "액수= " + Convert.ToString(CoinName) + "\r\n";
+                if (5000 <= area && area < 20000)
+                {
+                    txtLabelingResult.Text += "라벨 번호= " + Convert.ToString(i + 1).PadLeft(2) + "  " +     // ● 추가된 코드
+                        "면적= " + Convert.ToString(area).PadLeft(5) + "  " +
+                        "중심= " + string.Format("{0:##0.00}", xcen) + ", " +
+                        String.Format("{0:##0.00}", ycen) + "  " +
+                        "액수= " + Convert.ToString(CoinName) + "\r\n";
+                }
             }
             txtLabelingResult.Text += "ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ" + "\r\n" + 
                                      "10원 개수= " + Convert.ToString(CoinArr[0]) + "\r\n" +
