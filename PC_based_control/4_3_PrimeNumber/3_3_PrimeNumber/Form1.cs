@@ -64,7 +64,7 @@ namespace _3_3_PrimeNumber
                     break;
                 }
             }
-            label1.Text = Convert.ToString(i) + "입니다.";
+            label1.Text = Convert.ToString(i-1) + "입니다.";
         }
     }
 }

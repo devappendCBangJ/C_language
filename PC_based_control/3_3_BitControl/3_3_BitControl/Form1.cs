@@ -47,6 +47,7 @@ namespace _3_3_BitControl
 
         private int ShiftUpCheckBox(int num)
         {
+            num = num & ~(0x80);
             if (chk6.Checked)
             {
                 num = num | 0x80; // 2^7만 true로 ♣
@@ -88,6 +89,7 @@ namespace _3_3_BitControl
 
         private int ShiftDownCheckBox(int num)
         {
+            num = num & ~(0x01);
             if (chk1.Checked)
             {
                 num = num | 0x01; // 2^0만 true로 ♣
@@ -174,21 +176,20 @@ namespace _3_3_BitControl
 
         private void BtnFromBit_Click(object sender, EventArgs e)
         {
-            // 입력
-            int num = 0;
+            //// 입력 + 입력 1way
+            //int num = 0;
 
-            // 연산 1way
-            // if (chk0.Checked) num = num | 0x01; // mask 씌움. 한바퀴만 도는데, else if 쓰면 제일 위에꺼 하나만 하고 끝내버리니까 안됨
-            // if (chk1.Checked) num = num | 0x02;
-            // if (chk2.Checked) num = num | 0x04;
-            // if (chk3.Checked) num = num | 0x08;
-            // if (chk4.Checked) num = num | 0x10;
-            // if (chk5.Checked) num = num | 0x20;
-            // if (chk6.Checked) num = num | 0x40;
-            // if (chk7.Checked) num = num | 0x80;
+            //if (chk0.Checked) num = num | 0x01; // mask 씌움. 한바퀴만 도는데, else if 쓰면 제일 위에꺼 하나만 하고 끝내버리니까 안됨
+            //if (chk1.Checked) num = num | 0x02;
+            //if (chk2.Checked) num = num | 0x04;
+            //if (chk3.Checked) num = num | 0x08;
+            //if (chk4.Checked) num = num | 0x10;
+            //if (chk5.Checked) num = num | 0x20;
+            //if (chk6.Checked) num = num | 0x40;
+            //if (chk7.Checked) num = num | 0x80;
 
             // 입력 + 연산 2way
-            num = GetCheckBox();
+            int num = GetCheckBox();
 
             // 출력
             txtNum.Text = Convert.ToString(num);

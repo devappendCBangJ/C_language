@@ -1,0 +1,10 @@
+C:\Users\Bang\source\repos\PC_Based_Control\4_2_Continue\3_2_Goto_Control\bin\Debug\3_2_Goto_Control.exe.config
+C:\Users\Bang\source\repos\PC_Based_Control\4_2_Continue\3_2_Goto_Control\bin\Debug\3_2_Goto_Control.exe
+C:\Users\Bang\source\repos\PC_Based_Control\4_2_Continue\3_2_Goto_Control\bin\Debug\3_2_Goto_Control.pdb
+C:\Users\Bang\source\repos\PC_Based_Control\4_2_Continue\3_2_Goto_Control\obj\Debug\4_2_Continue.csproj.AssemblyReference.cache
+C:\Users\Bang\source\repos\PC_Based_Control\4_2_Continue\3_2_Goto_Control\obj\Debug\_3_2_Goto_Control.Form1.resources
+C:\Users\Bang\source\repos\PC_Based_Control\4_2_Continue\3_2_Goto_Control\obj\Debug\_3_2_Goto_Control.Properties.Resources.resources
+C:\Users\Bang\source\repos\PC_Based_Control\4_2_Continue\3_2_Goto_Control\obj\Debug\4_2_Continue.csproj.GenerateResource.cache
+C:\Users\Bang\source\repos\PC_Based_Control\4_2_Continue\3_2_Goto_Control\obj\Debug\4_2_Continue.csproj.CoreCompileInputs.cache
+C:\Users\Bang\source\repos\PC_Based_Control\4_2_Continue\3_2_Goto_Control\obj\Debug\3_2_Goto_Control.exe
+C:\Users\Bang\source\repos\PC_Based_Control\4_2_Continue\3_2_Goto_Control\obj\Debug\3_2_Goto_Control.pdb

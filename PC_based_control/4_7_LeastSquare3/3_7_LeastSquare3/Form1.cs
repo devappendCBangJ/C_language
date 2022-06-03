@@ -94,6 +94,9 @@ namespace _3_7_LeastSquare3
             // Cramer's rule 풀이
 
             // Sum 변수 세팅 - 1way
+            SumSet();
+
+            // Sum 변수 세팅 - 2way
             //double sumx = 0;
             //double sumy = 0;
             //double sumx2 = 0;
@@ -102,10 +105,7 @@ namespace _3_7_LeastSquare3
             //double sumxy = 0;
             //double sumx2y = 0;
 
-            // Sum 변수 세팅 - 2way
-            SumSet();
-
-            // Sum 변수 세팅 추가 ♣
+            // Sum 변수 세팅2 ♣
             for (int i = 0; i<ndat; i++)
             {
                 sumX += xw[i];

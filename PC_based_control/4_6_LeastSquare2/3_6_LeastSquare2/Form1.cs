@@ -23,7 +23,7 @@ namespace _3_6_LeastSquare2
         }
         private float ypixel(double yw)
         {
-            return (float)(picDraw.ClientSize.Height * (1 - (yw - ymin) / (ymax - ymin)));
+            return (float)(picDraw.ClientSize.Height * (1 - (yw - ymin) / (ymax - ymin))); // ♣♣
         }
         public Form()
         {
