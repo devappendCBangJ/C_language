@@ -13,7 +13,7 @@ namespace _9_4_CirclesPlus
     public partial class frmMain : Form
     {
         // canvas, circle list 초기화
-        private TCanvas canvas = null;
+        private TCanvas canvas = null; // ♣♣♣
 
         private List<Circle> circles = new List<Circle>(); // list 사용하는 것 잘 봐두기 ♣
         private Random rnd = new Random();
@@ -31,7 +31,7 @@ namespace _9_4_CirclesPlus
             // 마우스 위치에 원 추가
             if (radAdd.Checked)
             {
-                Circle cir = new Circle(canvas.xposD(e.X), canvas.yposD(e.Y));
+                Circle cir = new Circle(canvas.xposD(e.X), canvas.yposD(e.Y)); // ♣♣♣
                 circles.Add(cir);
                 DrawCircles();
             }
@@ -42,10 +42,10 @@ namespace _9_4_CirclesPlus
                 List<Circle> cdel = new List<Circle>();
                 for (int i = 0; i < circles.Count; i++)
                 {
-                    if (circles[i].isinside(canvas.xposD(e.X), canvas.yposD(e.Y))) cdel.Add(circles[i]);
+                    if (circles[i].isinside(canvas.xposD(e.X), canvas.yposD(e.Y))) cdel.Add(circles[i]); // ♣
                 }
 
-                for (int i = 0; i < cdel.Count; i++) circles.Remove(cdel[i]); // circles 배열에 있는 특정 원소 삭제
+                for (int i = 0; i < cdel.Count; i++) circles.Remove(cdel[i]); // circles 배열에 있는 특정 원소 삭제 ♣♣♣
                 DrawCircles();
             }
         }
@@ -102,7 +102,7 @@ namespace _9_4_CirclesPlus
     // circle class
     class Circle
     {
-        private static Random rnd = new Random();
+        private static Random rnd = new Random(); // 아래서 this.~~ 하는 놈들도 여기서 this 없이 한번 더 선언 ♣
         private double xcen, ycen, radius;
         private int red, green, blue;
         private double xmov, ymov;
@@ -136,8 +136,7 @@ namespace _9_4_CirclesPlus
         // 그리기
         public void draw(TCanvas canvas)
         {
-            canvas.DrawEllipse(Color.FromArgb(this.red, this.green, this.blue),
-            this.xcen, this.ycen, this.radius * 2, this.radius * 2);
+            canvas.DrawEllipse(Color.FromArgb(this.red, this.green, this.blue), this.xcen, this.ycen, this.radius * 2, this.radius * 2);
         }
 
         // 주어진 점이 내부인지 판단

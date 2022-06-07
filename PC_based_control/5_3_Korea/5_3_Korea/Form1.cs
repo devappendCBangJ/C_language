@@ -35,9 +35,9 @@ namespace _5_3_Korea
             // 코드 시도
             try
             {
-                // 파일 읽기 ♣♣
+                // 파일 읽기 ♣♣♣
                 StreamReader sr = new StreamReader(fname, Encoding.Default);
-                // 1줄 읽기 ♣♣
+                // 1줄 읽기 ♣♣♣
                 string st = sr.ReadLine();
                 npoint = Convert.ToInt32(st.Trim());
                 xp = new float[npoint];
@@ -46,11 +46,11 @@ namespace _5_3_Korea
                 for (int i = 0; i < npoint; i++)
                 {
                     st = sr.ReadLine();
-                    string[] word = st.Split(',');
+                    string[] word = st.Split(','); // ♣
                     xp[i] = Convert.ToSingle(word[0].Trim());
                     yp[i] = Convert.ToSingle(word[1].Trim());
                 }
-                sr.Close();
+                sr.Close(); // ♣♣♣
             }
             // 오류날 경우 코드
             catch
@@ -60,8 +60,8 @@ namespace _5_3_Korea
             }
 
             // 그리기
-            Graphics grp = picDraw.CreateGraphics();
-            Pen pen = new Pen(Color.Red);
+            Graphics grp = picDraw.CreateGraphics(); // ♣
+            Pen pen = new Pen(Color.Red); // ♣
             for (int i = 1; i < npoint; i++)
             {
                 grp.DrawLine(pen, xp[i-1], yp[i-1], xp[i], yp[i]);

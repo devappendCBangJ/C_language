@@ -1,0 +1,10 @@
+C:\Users\Bang\source\repos\PC_Based_Control\9_3_Circles\9_4_CirclesPlus\bin\Debug\9_4_CirclesPlus.exe.config
+C:\Users\Bang\source\repos\PC_Based_Control\9_3_Circles\9_4_CirclesPlus\bin\Debug\9_4_CirclesPlus.exe
+C:\Users\Bang\source\repos\PC_Based_Control\9_3_Circles\9_4_CirclesPlus\bin\Debug\9_4_CirclesPlus.pdb
+C:\Users\Bang\source\repos\PC_Based_Control\9_3_Circles\9_4_CirclesPlus\obj\Debug\9_3_Circles.csproj.AssemblyReference.cache
+C:\Users\Bang\source\repos\PC_Based_Control\9_3_Circles\9_4_CirclesPlus\obj\Debug\_9_4_CirclesPlus.frmMain.resources
+C:\Users\Bang\source\repos\PC_Based_Control\9_3_Circles\9_4_CirclesPlus\obj\Debug\_9_4_CirclesPlus.Properties.Resources.resources
+C:\Users\Bang\source\repos\PC_Based_Control\9_3_Circles\9_4_CirclesPlus\obj\Debug\9_3_Circles.csproj.GenerateResource.cache
+C:\Users\Bang\source\repos\PC_Based_Control\9_3_Circles\9_4_CirclesPlus\obj\Debug\9_3_Circles.csproj.CoreCompileInputs.cache
+C:\Users\Bang\source\repos\PC_Based_Control\9_3_Circles\9_4_CirclesPlus\obj\Debug\9_4_CirclesPlus.exe
+C:\Users\Bang\source\repos\PC_Based_Control\9_3_Circles\9_4_CirclesPlus\obj\Debug\9_4_CirclesPlus.pdb

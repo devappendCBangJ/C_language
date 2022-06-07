@@ -21,15 +21,15 @@ namespace _13_1_OpenCvTest
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Mat matOrg = new Mat("Lake.JPG");
-            pictureBox1.Image = matOrg.ToBitmap();
+            Mat matOrg = new Mat("Lake.JPG"); // ♣
+            pictureBox1.Image = matOrg.ToBitmap(); // ♣
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
             Mat matOrg = new Mat("Lake.JPG");   // OpenCv에서 이미지 한장의 자료형 : Mat ♣
-            Mat matGray = matOrg.CvtColor(ColorConversionCodes.BGR2GRAY);
-            pictureBox1.Image = matGray.ToBitmap();
+            Mat matGray = matOrg.CvtColor(ColorConversionCodes.BGR2GRAY); // ♣♣♣
+            pictureBox1.Image = matGray.ToBitmap(); // ♣♣♣
         }
     }
 }

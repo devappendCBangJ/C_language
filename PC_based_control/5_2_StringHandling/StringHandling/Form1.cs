@@ -45,7 +45,7 @@ namespace StringHandling
             // 문자열 오른쪽 n개 출력
             string st = txtIN1.Text;
             int n = Convert.ToInt32(txtIN2.Text);
-            txtOUT.Text = st.Substring(st.Length - n, n); // ♣
+            txtOUT.Text = st.Substring(st.Length - n, n); // ♣♣♣
         }
 
         private void btnMid_Click(object sender, EventArgs e)
@@ -90,7 +90,7 @@ namespace StringHandling
                 // 이렇게 하는 것을 권장하지 않음
 
             // 문자열 비교 - 3way
-            txtOUT.Text = st1.CompareTo(st2) == 0 ? "같음" : "다름";
+            txtOUT.Text = st1.CompareTo(st2) == 0 ? "같음" : "다름"; // ♣♣♣
         }
 
         private void btnFind_Click(object sender, EventArgs e)
@@ -98,7 +98,7 @@ namespace StringHandling
             // st1 문자열에서 st2 문자에 해당되는 인덱스 출력
             string st1 = txtIN1.Text;
             string st2 = txtIN2.Text;
-            int idx = st1.IndexOf(st2);
+            int idx = st1.IndexOf(st2); // ♣
             txtOUT.Text = Convert.ToString(idx);
         }
 
@@ -107,7 +107,7 @@ namespace StringHandling
             // 총 문자 개수가 n개 되도록 문자열 왼쪽에 공백 삽입
             string st = txtIN1.Text;
             int n = Convert.ToInt32(txtIN2.Text);
-            txtOUT.Text = st.PadLeft(n);
+            txtOUT.Text = st.PadLeft(n); // ♣
         }
 
         private void btnPadRight_Click(object sender, EventArgs e)
@@ -115,24 +115,24 @@ namespace StringHandling
             // 총 문자 개수가 n개 되도록 문자열 오른쪽에 공백 삽입
             string st = txtIN1.Text;
             int n = Convert.ToInt32(txtIN2.Text);
-            txtOUT.Text = st.PadRight(n);
+            txtOUT.Text = st.PadRight(n); // ♣
         }
 
         private void btnSplit_Click(object sender, EventArgs e)
         {
             // 문자열 슬라이싱
-            char[] delim = new char[] { '-', ' ', ':' };
+            char [] delim = new char[] { '-', ' ', ':' };
             string st = lblTime.Text;
             string [] word = st.Split(delim);
 
-            txtOUT.Text = word[4] + "시 입니다.";
+            txtOUT.Text = word[4] + "시 입니다."; // ♣♣♣
         }
 
         private void btnReplace_Click(object sender, EventArgs e)
         {
             // 문자열 대체
             string st = lblTime.Text;
-            txtOUT.Text = st.Replace(' ', '/');
+            txtOUT.Text = st.Replace(' ', '/'); // ♣♣♣
         }
     }
 }

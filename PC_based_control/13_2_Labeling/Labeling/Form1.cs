@@ -15,7 +15,7 @@ namespace Labeling
 {
     public partial class Form1 : Form
     {
-        VideoCapture gCap;
+        VideoCapture gCap; // ♣♣♣
 
         public Form1()
         {
@@ -27,8 +27,8 @@ namespace Labeling
             if (openFileDialog.ShowDialog() == DialogResult.OK)  // 파일읽기
             {
                 string fname = openFileDialog.FileName;
-                Mat mat = new Mat(fname);
-                picSrc.Image = mat.ToBitmap();
+                Mat mat = new Mat(fname); // ♣♣♣
+                picSrc.Image = mat.ToBitmap(); // ♣♣♣
             }
         }
 
@@ -37,15 +37,15 @@ namespace Labeling
             if (timCam.Enabled == false)
             {
                 int idxcam = 0;
-                gCap = new VideoCapture(CaptureDevice.DShow, idxcam);
+                gCap = new VideoCapture(CaptureDevice.DShow, idxcam); // ♣
 
                 // 필요하면 해상도 설정
-                gCap.FrameWidth = 1280;
+                gCap.FrameWidth = 1280; // ♣
                 gCap.FrameHeight = 1024;
 
-                if (gCap.IsOpened() == false) return;
+                if (gCap.IsOpened() == false) return; // ♣
 
-                timCam.Interval = 33;   //초당 30프레임 설정
+                timCam.Interval = 33;   //초당 30프레임 설정 ♣
                 timCam.Enabled = true;
             }
             else
@@ -60,8 +60,8 @@ namespace Labeling
         private void timCam_Tick(object sender, EventArgs e)
         {
             //gCap.Grab();  <- 내부 메모리에 먼저 저장할 필요가 있을 때 사용
-            Mat mat = gCap.RetrieveMat();   // VideoCapture를 mat로 변환
-            picSrc.Image = mat.ToBitmap();
+            Mat mat = gCap.RetrieveMat();   // VideoCapture를 mat로 변환 ♣
+            picSrc.Image = mat.ToBitmap(); // ♣
 
             // 깜박거림 표시
             chkCam.Checked = !chkCam.Checked;
@@ -72,15 +72,15 @@ namespace Labeling
 
         private void btnToGray_Click(object sender, EventArgs e)
         {
-            if (picSrc.Image == null) return;
+            if (picSrc.Image == null) return; // ♣
 
             // picSrc의 Image를 추출하여 matSrc에 저장
-            Bitmap bmp = picSrc.Image as Bitmap;        // Bitmap class가 파생클래스이므로 변환 가능
-            Mat matSrc = BitmapConverter.ToMat(bmp);
+            Bitmap bmp = picSrc.Image as Bitmap;        // Bitmap class가 파생클래스이므로 변환 가능 ♣
+            Mat matSrc = BitmapConverter.ToMat(bmp); // ♣♣♣
 
             // (OpenCV 함수를 이용하여) matSrc를 Gray로 변환
-            Mat matGray = matSrc.CvtColor(ColorConversionCodes.BGR2GRAY);
-            picGray.Image = matGray.ToBitmap();
+            Mat matGray = matSrc.CvtColor(ColorConversionCodes.BGR2GRAY); // ♣♣♣
+            picGray.Image = matGray.ToBitmap(); // ♣
         }
 
         private void btnToBin_Click(object sender, EventArgs e)
@@ -94,13 +94,13 @@ namespace Labeling
             // (OpenCV 함수를 이용하여) matGray를 Binary로 변환
             if (radOtus.Checked)        // Otus의 알고리즘
             {
-                Mat matBin = matGray.Threshold(0, 255, ThresholdTypes.Otsu);
+                Mat matBin = matGray.Threshold(0, 255, ThresholdTypes.Otsu); // ♣♣♣
                 picBin.Image = matBin.ToBitmap();
             }
             else if (radBin.Checked)    // threshold 직접 지정 알고리즘 : 스크롤바 활용해서 threshold 지정
             {
-                double thresh = hscThreshold.Value;
-                Mat matBin = matGray.Threshold(thresh, 255, ThresholdTypes.Binary);
+                double thresh = hscThreshold.Value; // ♣
+                Mat matBin = matGray.Threshold(thresh, 255, ThresholdTypes.Binary); // ♣
                 picBin.Image = matBin.ToBitmap();
             }
         }
@@ -108,18 +108,19 @@ namespace Labeling
         private void hscThreshold_Scroll(object sender, ScrollEventArgs e)
         {
             lblThreshold.Text = Convert.ToString(hscThreshold.Value);
-            btnToBin.PerformClick();
+            btnToBin.PerformClick(); // ♣
         }
 
         private void radOtus_CheckedChanged(object sender, EventArgs e)
         {
-            btnToBin.PerformClick();
+            btnToBin.PerformClick(); // ♣
         }
 
         private void radBin_CheckedChanged(object sender, EventArgs e)
         {
-            btnToBin.PerformClick();
+            btnToBin.PerformClick(); // ♣
         }
+        
 
         private void btnEdge_Click(object sender, EventArgs e)
         {
@@ -131,7 +132,7 @@ namespace Labeling
 
             // (OpenCV 함수를 이용하여) Canny Edge 영상 얻기
             int threshold = hscThreshold.Value;
-            Mat matEdge = matGray.Canny(threshold, 255);
+            Mat matEdge = matGray.Canny(threshold, 255); // ♣♣♣
             picResult.Image = matEdge.ToBitmap();
         }
 
@@ -147,8 +148,8 @@ namespace Labeling
             DateTime stime = DateTime.Now;
 
             Mat matResult;
-            CvBlob[] blobArr = LabelingCV.FindBlobs(matBin, out matResult);
-            int nblob = blobArr.Length;
+            CvBlob[] blobArr = LabelingCV.FindBlobs(matBin, out matResult); // ♣♣♣
+            int nblob = blobArr.Length; // ♣♣♣
 
             double dtime = Util.TimeInSeconds(stime);
 
@@ -159,14 +160,14 @@ namespace Labeling
             int area;
             double xcen, ycen;
             txtLabelingResult.Text = "라벨링시간(초)= " + string.Format("{0:##0.000}", dtime) + "\r\n";
-            txtLabelingResult.Text = "동전 개수= " + Convert.ToString(nblob) + "\r\n";
+            txtLabelingResult.Text = "라벨 개수= " + Convert.ToString(nblob) + "\r\n";
             for (int i = 0; i < nblob; i++)
             {
                 LabelingCV.getAreaCenter(blobArr[i], out area, out xcen, out ycen);
                 txtLabelingResult.Text += "동전번호= " + Convert.ToString(i + 1).PadLeft(2) + "  " +
                                         "면적= " + Convert.ToString(area).PadLeft(5) + "  " +
                                         "중심= " + string.Format("{0:##0.00}", xcen) + ", " +
-                                        String.Format("{0:##0.00}", ycen) + "\r\n";
+                                        string.Format("{0:##0.00}", ycen) + "\r\n";
             }
         }
 

@@ -13,7 +13,7 @@ namespace tClient
         //===========================================================
         public static bool AskDigitalInput(TClient clientComm, bool[] bits)
         {
-            // 수신버퍼 청소
+            // 수신버퍼 청소 ♣
             string dum = clientComm.GetRcvMsg();
 
             // 명령 송신
@@ -33,7 +33,7 @@ namespace tClient
                 double dtime = Util.TimeInSeconds(stime);
                 if (dtime > 0.5) return false;
 
-                // 수신 버퍼 검사
+                // 수신 버퍼 검사 ♣
                 rbuff += clientComm.GetRcvMsg();
 
                 idx1 = rbuff.IndexOf(TSocket.sACK());
@@ -45,9 +45,9 @@ namespace tClient
                     {
                         if (rbuff.Substring(idx1 + 1, 2) == "RI")   // 다음 통신값 처음이 RI?
                         {
-                            // 한개의 block 찾음
+                            // 한개의 block 찾음 ♣
                             string dd = rbuff.Substring(idx1 + 3, 2);
-                            indata = Convert.ToInt32(dd, 16);       // 16진수를 10진수로 변환
+                            indata = Convert.ToInt32(dd, 16);       // 16진수를 10진수로 변환 ♣♣♣
                             success = true;
                             break;
                         }

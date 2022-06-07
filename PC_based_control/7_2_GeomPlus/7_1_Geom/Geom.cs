@@ -87,13 +87,14 @@ namespace _7_1_Geom
 
     class Triangle : Geom
     {
-        private int point, height, width;
+        private int xsmall, ysmall, height, width;
         public static int num;
 
-        public Triangle(int point1, int height1, int width1, Color col)
+        public Triangle(int xsmall, int ysmall, int height1, int width1, Color col)
         {
             this.col = col;
-            this.point = point1;
+            this.xsmall = xsmall;
+            this.ysmall = ysmall;
             this.height = height1;
             this.width = width1;
             num++;
@@ -102,9 +103,9 @@ namespace _7_1_Geom
         public override void Draw(PictureBox pic)
         {
             Graphics grp = pic.CreateGraphics();
-            grp.DrawLine(new Pen(col), point, point, point + width, point);
-            grp.DrawLine(new Pen(col), point + width, point, point + width, point + height);
-            grp.DrawLine(new Pen(col), point + width, point + height, point, point);
+            grp.DrawLine(new Pen(col), xsmall, ysmall, xsmall + width, ysmall);
+            grp.DrawLine(new Pen(col), xsmall + width, ysmall, xsmall + width, ysmall + height);
+            grp.DrawLine(new Pen(col), xsmall + width, ysmall + height, xsmall, ysmall);
         }
     }
 }

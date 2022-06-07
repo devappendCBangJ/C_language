@@ -46,14 +46,14 @@ namespace _3_4_Mole
             CloseAll();
         }
 
-        private void picCard_MouseDown(object sender, MouseEventArgs e) // Event 통합 ♣♣
+        private void picCard_MouseDown(object sender, MouseEventArgs e) // Event 통합 ♣♣♣
         {
             // sender : 5개의 picBox 중 하나
 
             // 카드 클릭 여부 확인
             int ihit;
-            PictureBox pic = sender as PictureBox;
-            if (pic.Name == "picCard00") ihit = 0;
+            PictureBox pic = sender as PictureBox; // ♣♣♣
+            if (pic.Name == "picCard00") ihit = 0; // ♣♣♣
             else if (pic.Name == "picCard01") ihit = 1;
             else if (pic.Name == "picCard02") ihit = 2;
             else if (pic.Name == "picCard03") ihit = 3;
@@ -72,7 +72,7 @@ namespace _3_4_Mole
         private void CloseAll()
         {
             // 그림 전부 닫기
-            picCard00.Image = Properties.Resources.closed;
+            picCard00.Image = Properties.Resources.closed; // ♣♣♣
             picCard01.Image = Properties.Resources.closed;
             picCard02.Image = Properties.Resources.closed;
             picCard03.Image = Properties.Resources.closed;

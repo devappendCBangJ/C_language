@@ -24,7 +24,7 @@ namespace tClient
             Control.CheckForIllegalCrossThreadCalls = false;    // Thread 규칙 위반 선언(다른 thread에 있는 UI 수정 가능)
         }
 
-        // 폼 로드 시, HostName과 HostAddress 받기 + 출력
+        // 폼 로드 시, HostName과 HostAddress 받기 + 출력 ♣
         private void Form1_Load(object sender, EventArgs e)
         {
             string hostname = TSocket.HostName();
@@ -35,11 +35,10 @@ namespace tClient
             {
                 st = st + addrs[i].ToString() + "\r\n";
             }
-
             lblComInfo.Text = st;
         }
 
-        // 타이머 간격마다, 소켓 열려있으면 클라이언트 연결 상태 받기 + 출력
+        // 타이머 간격마다, 소켓 열려있으면 클라이언트 연결 상태 받기 + 출력 ♣
         private void timConnStatus_Tick(object sender, EventArgs e)             // 각 소켓별 상태
         {
             if (clientChat == null) { lblConnChat.Text = "Chat : " + "NULL"; }
@@ -64,13 +63,13 @@ namespace tClient
             }
         }
 
-        // 버튼 클릭시, HostAddress 받기 + 출력
+        // 버튼 클릭시, HostAddress 받기 + 출력 ♣
         private void btnServerMe_Click(object sender, EventArgs e)
         {
             txtServerIP.Text = TSocket.HostAddresses()[1].ToString();//XP는 [0]
         }
 
-        // 버튼 클릭시, 소켓 열음 + connect 시작
+        // 버튼 클릭시, 소켓 열음 + connect 시작 ♣
         private void btnConnect_Click(object sender, EventArgs e)
         {
             string serverIP = txtServerIP.Text;
@@ -86,7 +85,7 @@ namespace tClient
             clientComm.ClientBeginConnect(serverIP, 5002, clientIP);    // 1024~65535 추천
         }
 
-        // 버튼 클릭시, 소켓 열려있으면 클라이언트 닫기
+        // 버튼 클릭시, 소켓 열려있으면 클라이언트 닫기 ♣
         private void btnClose_Click(object sender, EventArgs e)         // 클라이언트 닫기
         {
             if (clientChat != null) clientChat.ClientClose();
@@ -94,7 +93,7 @@ namespace tClient
             if (clientComm != null) clientComm.ClientClose();
         }
 
-        // 버튼 클릭시, 소켓 열려있으면 통신값 보냄 + 출력
+        // 버튼 클릭시, 소켓 열려있으면 통신값 보냄 + 출력 ♣
         private void btnSend_Click(object sender, EventArgs e)          // 소켓 만들어짐 + 텍스트 존재하는 경우 통신값 보내기
         {
             if (clientChat == null) return;
@@ -107,13 +106,13 @@ namespace tClient
             txtSend.Text = "";
         }
 
-        // 마우스 올린 상태에서 엔터키 누를 시, 버튼 클릭
+        // 마우스 올린 상태에서 엔터키 누를 시, 버튼 클릭 ♣
         private void Form1_KeyPress(object sender, KeyPressEventArgs e) // 마우스만 올려져있는 상태로 enter키 누르면, btnSend 누른것과 같은 효과
         {
             if (e.KeyChar == '\r') btnSend.PerformClick();
         }
 
-        // 타이머 간격마다, 소켓 열려있으면 통신값 받음 + 출력
+        // 타이머 간격마다, 소켓 열려있으면 통신값 받음 + 출력 ♣
         private void timGetRcvMsg_Tick(object sender, EventArgs e)      // 소켓 만들어진 경우 통신값 받기
         {
             if (clientChat == null) return;
@@ -121,38 +120,36 @@ namespace tClient
             if (st.Length > 0) txtDialog.Text += st;
         }
 
-        // picDraw에서 마우스 움직임 시, 원 좌표 송신 : 통신 형태 맞으면 x, y좌표 csv 형태 송신
+        // picDraw에서 마우스 움직임 시, 원 좌표 송신 : 통신 형태 맞으면 x, y좌표 csv 형태 송신 ♣
         private void pnlDraw_MouseMove(object sender, MouseEventArgs e) // 마우스 움직임 : 원 좌표 송신
         {
-            if (e.Button != MouseButtons.Left) return;
+            if (e.Button != MouseButtons.Left) return; // ♣♣♣
             lblO.Left = e.X;
             lblO.Top = e.Y;
 
-            string st = TSocket.sSTX() + Convert.ToString(e.X) +
-                        "," + Convert.ToString(e.Y) + TSocket.sETX();
+            string st = TSocket.sSTX() + Convert.ToString(e.X) + "," + Convert.ToString(e.Y) + TSocket.sETX();
             clientCopy.ClientSend(st);
         }
 
-        // picDraw에서 마우스 움직임 시, 원 좌표 송신 : 통신 형태 맞으면 x, y좌표 csv 형태 송신
+        // picDraw에서 마우스 움직임 시, 원 좌표 송신 : 통신 형태 맞으면 x, y좌표 csv 형태 송신 ♣
         private void pnlDraw_MouseDown(object sender, MouseEventArgs e) // 마우스 움직임 : 원 좌표 송신
         {
             if (e.Button != MouseButtons.Left) return;
             lblO.Left = e.X;
             lblO.Top = e.Y;
 
-            string st = TSocket.sSTX() + Convert.ToString(e.X) +
-                        "," + Convert.ToString(e.Y) + TSocket.sETX();
+            string st = TSocket.sSTX() + Convert.ToString(e.X) + "," + Convert.ToString(e.Y) + TSocket.sETX();
             clientCopy.ClientSend(st);
         }
 
-        // 비트 정보 수신 : 소켓 열려있고, 통신 형태 맞으면 비트 수신
+        // 비트 정보 수신 : 소켓 열려있고, 통신 형태 맞으면 비트 수신 ♣
         private void btnReadBits_Click(object sender, EventArgs e)  // 소켓 존재 + 통신 연결 시, 체크박스 업데이트
         {
             if (clientComm == null) return;
             if (clientComm.ClientStatus() != csConnStatus.Connected) return;
 
             bool[] bits = new bool[8];
-            bool success = TComm.AskDigitalInput(clientComm, bits);
+            bool success = TComm.AskDigitalInput(clientComm, bits); 
             if (success)
             {
                 chkDI0.Checked = bits[0];
@@ -163,17 +160,15 @@ namespace tClient
                 chkDI5.Checked = bits[5];
                 chkDI6.Checked = bits[6];
                 chkDI7.Checked = bits[7];
-                lblCommOK.Text =
-                     Convert.ToString(Convert.ToInt32(lblCommOK.Text) + 1);
+                lblCommOK.Text = Convert.ToString(Convert.ToInt32(lblCommOK.Text) + 1);
             }
             else
             {
-                lblCommNG.Text =
-                     Convert.ToString(Convert.ToInt32(lblCommNG.Text) + 1);
+                lblCommNG.Text = Convert.ToString(Convert.ToInt32(lblCommNG.Text) + 1);
             }
         }
 
-        // 타이머 간격마다, 비트 정보 수신
+        // 타이머 간격마다, 비트 정보 수신 ♣
         private void timAskBits_Tick(object sender, EventArgs e)
         {
             btnReadBits.PerformClick();

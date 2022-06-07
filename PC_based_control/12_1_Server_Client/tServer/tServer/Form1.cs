@@ -12,9 +12,9 @@ using System.Net.Sockets;
 
 namespace tServer
 {
-    public partial class Form1 : Form
+    public partial class Form1 : Form // ♣
     {
-        // 소켓 + 저장버퍼 생성
+        // 소켓 + 저장버퍼 생성 ♣
         private TServer serverChat;     //채팅용 소켓
         private TServer serverCopy;     //원위치복사용 소켓
         private TServer serverComm;     //비트통신용 소켓
@@ -25,10 +25,10 @@ namespace tServer
         public Form1()
         {
             InitializeComponent();
-            Control.CheckForIllegalCrossThreadCalls = false;    // Thread 규칙 위반 선언(다른 thread에 있는 UI 수정 가능)
+            Control.CheckForIllegalCrossThreadCalls = false;    // Thread 규칙 위반 선언(다른 thread에 있는 UI 수정 가능) ♣
         }
 
-        // 폼 로드 시, HostName과 HostAddress 받기 + 출력
+        // 폼 로드 시, HostName과 HostAddress 받기 + 출력 ♣
         private void Form1_Load(object sender, EventArgs e)     // Hostname, HostAddress 추출 + 출력
         {
             string hostname = TSocket.HostName();
@@ -42,7 +42,7 @@ namespace tServer
             lblComInfo.Text = st;
         }
 
-        // 타이머 간격마다, 소켓 열려있으면 서버 연결 상태 받기 + 출력
+        // 타이머 간격마다, 소켓 열려있으면 서버 연결 상태 받기 + 출력 ♣
         private void timConnStatus_Tick(object sender, EventArgs e)
         {
             if (serverChat == null) { lblConnChat.Text = "Chat : " + "NULL"; }
@@ -68,13 +68,13 @@ namespace tServer
 
         }
 
-        // 버튼 클릭시, HostAddress 받기 + 출력
+        // 버튼 클릭시, HostAddress 받기 + 출력 ♣
         private void btnServerMe_Click(object sender, EventArgs e)  // HostAddress 출력
         {
             txtMyIP.Text = TSocket.HostAddresses()[1].ToString();   //XP는 [0]
         }
 
-        // 버튼 클릭시, 소켓 열려있으면 서버 닫기
+        // 버튼 클릭시, 소켓 열려있으면 서버 닫기 ♣
         private void btnClose_Click(object sender, EventArgs e)     // 서버 닫기
         {
             if (serverChat != null) serverChat.ServerClose();
@@ -82,7 +82,7 @@ namespace tServer
             if (serverComm != null) serverComm.ServerClose();
         }
 
-        // 버튼 클릭시, 소켓 열음 + listen 시작
+        // 버튼 클릭시, 소켓 열음 + listen 시작 ♣
         private void btnListen_Click(object sender, EventArgs e)     
         {
             string myIP = txtMyIP.Text;
@@ -97,33 +97,33 @@ namespace tServer
             serverComm.ServerStartListen(myIP, 5002);   // 1024~65535 추천
         }
 
-        // 원 좌표 수신 : 통신 형태 맞으면 x, y좌표 슬라이싱 + 원 이동
+        // 원 좌표 수신 : 통신 형태 맞으면 x, y좌표 슬라이싱 + 원 이동 ♣
         private void CirclePosDataArrived()
         {
             while (true)
             {
                 rbuffcir += serverCopy.GetRcvMsg();
                 int idx1 = rbuffcir.IndexOf(TSocket.sSTX());
-                if (idx1 < 0) break;
+                if (idx1 < 0) break; // ♣♣♣
                 int idx2 = rbuffcir.IndexOf(TSocket.sETX(), idx1);
 
-                if (idx1 >= 0 && idx2 > idx1)
+                if (idx1 >= 0 && idx2 > idx1) // ♣♣♣
                 {
-                    string xypos = rbuffcir.Substring(idx1 + 1, idx2 - idx1 - 1);
+                    string xypos = rbuffcir.Substring(idx1 + 1, idx2 - idx1 - 1); // ♣
                     char[] sep = new char[] { ',' };
                     string[] xy = xypos.Split(sep);
                     lblO.Left = Convert.ToInt32(xy[0]);
                     lblO.Top = Convert.ToInt32(xy[1]);
-                    rbuffcir = rbuffcir.Substring(idx2 + 1);
+                    rbuffcir = rbuffcir.Substring(idx2 + 1); // ♣
                 }
-                else
+                else // ♣♣♣
                     break;
             }
 
         }
 
-        // 비트 정보 송신 : 통신 형태 맞으면 비트 생성 + 송신
-        private void AskingBitsDataArrived()        // 비트 정보 수신
+        // 비트 정보 송신 : 통신 형태 맞으면 비트 생성 + 송신 ♣
+        private void AskingBitsDataArrived()        // 비트 호출 신호 수신 + 비트 정보 송신
         {
             while (true)
             {
@@ -132,12 +132,12 @@ namespace tServer
                 if (idx1 < 0) break;
                 int idx2 = rbuffbit.IndexOf(TSocket.sETX(), idx1);
 
-                if (idx1 >= 0 && idx2 - idx1 == 3)
+                if (idx1 >= 0 && idx2 - idx1 == 3) // ♣♣♣
                 {
                     string stnet = rbuffbit.Substring(idx1 + 1, 2);
                     if (stnet == "RI")
                     {
-                        int ibits = 0;
+                        int ibits = 0; // ♣♣♣
                         if (chkDI0.Checked) ibits += 0x1;
                         if (chkDI1.Checked) ibits += 0x2;
                         if (chkDI2.Checked) ibits += 0x4;
@@ -153,12 +153,12 @@ namespace tServer
                         serverComm.ServerSend(st);
                     }
                     // 처리한 곳까지 잘라내기
-                    rbuffbit = rbuffbit.Substring(idx2 + 1);
+                    rbuffbit = rbuffbit.Substring(idx2 + 1); // ♣♣♣
                 }
             }
         }
 
-        // 버튼 클릭시, 소켓 열려있으면 통신값 보냄 + 출력
+        // 버튼 클릭시, 소켓 열려있으면 통신값 보냄 + 출력 ♣
         private void btnSend_Click(object sender, EventArgs e) // 소켓 만들어짐 + 텍스트 존재하는 경우 통신값 보내기
         {
             if (serverChat == null) return;         // 소켓이 null인 경우 : connect이 안된 상태이므로 return
@@ -171,13 +171,13 @@ namespace tServer
             txtSend.Text = "";
         }
 
-        // 마우스 올린 상태에서 엔터키 누를 시, 버튼 클릭
+        // 마우스 올린 상태에서 엔터키 누를 시, 버튼 클릭 ♣
         private void Form1_KeyPress(object sender, KeyPressEventArgs e) // 마우스만 올려져있는 상태로 enter키 누르면, btnSend 누른것과 같은 효과
         {
-            if (e.KeyChar == '\r') btnSend.PerformClick();
+            if (e.KeyChar == '\r') btnSend.PerformClick(); // ♣
         }
 
-        // 타이머 간격마다, 소켓 열려있으면 통신값 받음 + 출력
+        // 타이머 간격마다, 소켓 열려있으면 통신값 받음 + 출력 ♣
         private void timGetRcvMsg_Tick(object sender, EventArgs e) // 소켓 만들어진 경우 통신값 받기
         {
             if (serverChat == null) return;

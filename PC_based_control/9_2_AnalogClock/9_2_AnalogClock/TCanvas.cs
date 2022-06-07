@@ -70,12 +70,12 @@ namespace _9_2_AnalogClock
             int npixely = picbox.ClientSize.Height;
 
             // Bitmap 객체생성
-            this.bitmap = new Bitmap(npixelx, npixely, PixelFormat.Format24bppRgb);
+            this.bitmap = new Bitmap(npixelx, npixely, PixelFormat.Format24bppRgb); // ♣♣♣
 
             // Graphics 개체생성
             if (this.graphics != null) this.graphics.Dispose(); //(꼭 필요는 없음)
 
-            this.graphics = Graphics.FromImage(this.bitmap);
+            this.graphics = Graphics.FromImage(this.bitmap); // ♣♣♣
             this.graphics.Clear(Color.White);
 
             // 속성확인 (꼭 필요는 없음)
@@ -93,16 +93,16 @@ namespace _9_2_AnalogClock
         //--------------------------------------------------------------
         public void ClearDrawing(Color col)
         {
-            this.graphics.Clear(col);
-            this.picbox.Image = this.bitmap;
+            this.graphics.Clear(col); // ♣
+            this.picbox.Image = this.bitmap; // ♣
         }
         public void DrawLine(Color col, double x0, double y0, double x1, double y1)
         {
-            float xp0 = xpixelpos(x0); float yp0 = ypixelpos(y0);
-            float xp1 = xpixelpos(x1); float yp1 = ypixelpos(y1);
+            float xp0 = xpixelpos(x0); float yp0 = ypixelpos(y0); // ♣
+            float xp1 = xpixelpos(x1); float yp1 = ypixelpos(y1); // ♣
 
-            graphics.DrawLine(new Pen(col), xp0, yp0, xp1, yp1);
-            this.picbox.Image = this.bitmap;
+            graphics.DrawLine(new Pen(col), xp0, yp0, xp1, yp1); // ♣
+            this.picbox.Image = this.bitmap; // ♣
         }
         public void DrawLine(Color col, int width, double x0, double y0, double x1, double y1)
         {
@@ -110,24 +110,24 @@ namespace _9_2_AnalogClock
             float xp1 = xpixelpos(x1); float yp1 = ypixelpos(y1);
 
             Pen pen = new Pen(col);
-            pen.Width = width;
+            pen.Width = width; // ♣♣♣
 
             graphics.DrawLine(pen, xp0, yp0, xp1, yp1);
             this.picbox.Image = this.bitmap;
         }
         public void DrawFilledPolygon(Color col, int npt, double[] xps, double[] yps)
         {
-            PointF[] pts = new PointF[npt];
-            for (int i = 0; i < npt; i++)
+            PointF[] pts = new PointF[npt]; // ♣♣♣
+            for (int i = 0; i < npt; i++) // ♣♣♣
             {
                 pts[i].X = xpixelpos(xps[i]);
                 pts[i].Y = ypixelpos(yps[i]);
             }
 
-            SolidBrush brush = new SolidBrush(col);
-            graphics.FillPolygon(brush, pts);
+            SolidBrush brush = new SolidBrush(col); // ♣♣♣
+            graphics.FillPolygon(brush, pts); // ♣♣♣
 
-            graphics.DrawPolygon(new Pen(col), pts);
+            graphics.DrawPolygon(new Pen(col), pts); // ♣♣♣
             this.picbox.Image = this.bitmap;
         }
         public void DrawEllipse(Color col, double cenx, double ceny, double width, double height)
@@ -145,7 +145,7 @@ namespace _9_2_AnalogClock
             float xp0 = xpixelpos(x0); float yp0 = ypixelpos(y0);
 
             Font font = new Font("verdana", (float)emSize);
-            graphics.DrawString(st, font, Brushes.Black, xp0, yp0);
+            graphics.DrawString(st, font, Brushes.Black, xp0, yp0); // ♣♣♣
             this.picbox.Image = this.bitmap;
         }
     } // end of Class

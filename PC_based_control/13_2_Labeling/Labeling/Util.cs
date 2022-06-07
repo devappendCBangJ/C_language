@@ -13,8 +13,8 @@ namespace Labeling
         //=================================================================
         public static double TimeInSeconds(DateTime stime)
         {
-            TimeSpan dtime = DateTime.Now - stime;
-            double dsec = (double)(dtime.Ticks / 10000000.0);
+            TimeSpan dtime = DateTime.Now - stime; // ♣
+            double dsec = (double)(dtime.Ticks / 10000000.0); // ♣
             return dsec;
         }
     }

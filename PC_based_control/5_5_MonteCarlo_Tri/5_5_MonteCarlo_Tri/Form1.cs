@@ -18,7 +18,7 @@ namespace _5_5_MonteCarlo_Tri
         double [] p_y = new double[3];
         double tri_area;
 
-        double[] tmp_x_y = new double[2];
+        double [] tmp_x_y = new double[2];
         double [] tmp_area = new double[3];
 
         private void tri_area_func()

@@ -20,6 +20,6 @@ void FindNumberOfPrimeNumber(int nMax, int* nprime)	// nMax까지 소수 개수?
 	for (int i = 2; i <= nMax; i++)
 	{
 		bool isprime = is_prime_number(i);
-		if (isprime) (*nprime)++;
+		if (isprime) (*nprime)++; // ♣
 	}
 }

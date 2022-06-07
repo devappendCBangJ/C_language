@@ -12,7 +12,7 @@ namespace _9_2_AnalogClock
 {
     public partial class Form1 : Form
     {
-        private TCanvas canvas;
+        private TCanvas canvas; // ♣
 
         public Form1()
         {
@@ -22,29 +22,29 @@ namespace _9_2_AnalogClock
         private void timer1_Tick(object sender, EventArgs e)
         {
             DateTime now = DateTime.Now;
-            int hour = now.Hour;
-            int minute = now.Minute;
-            int second = now.Second;
+            int hour = now.Hour; // ♣♣♣
+            int minute = now.Minute; // ♣♣♣
+            int second = now.Second; // ♣♣♣
 
-            lblTime.Text = hour.ToString() + ":" + minute.ToString() + ":" + second.ToString();
+            lblTime.Text = hour.ToString() + ":" + minute.ToString() + ":" + second.ToString(); // ♣
 
             DrawClock(hour, minute, second);
         }
 
         private void DrawClock(int hour, int minute, int second)
         {
-            if (canvas == null) canvas = new TCanvas(picClock, -100, 100, -100, 100);
+            if (canvas == null) canvas = new TCanvas(picClock, -100, 100, -100, 100); // ♣
 
             // 화면지우기
-            canvas.ClearDrawing(Color.White);
+            canvas.ClearDrawing(Color.White); // ♣
 
             // 눈금그리기
             double deg, rad;
             double xp1, yp1, xp2, yp2;
             for (int i = 0; i < 60; i++)
             {
-                deg = 90.0 - 360 / 60 * i;
-                rad = deg * Math.PI / 180;
+                deg = 90.0 - 360 / 60 * i; // ♣♣♣
+                rad = deg * Math.PI / 180; // ♣
 
                 xp1 = ((i % 5 == 0) ? 85 : 90) * Math.Cos(rad);
                 yp1 = ((i % 5 == 0) ? 85 : 90) * Math.Sin(rad);

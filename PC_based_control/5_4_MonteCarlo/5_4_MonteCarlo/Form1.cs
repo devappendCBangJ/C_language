@@ -28,7 +28,7 @@ namespace _5_4_MonteCarlo
             double ratio_real = 100.0 * 100.0 / (double)area; // double형으로 형변환 하지 않으면 / 사용시 int 나누기 int가 되서 몫만 추출 ♣
 
             // lblRatioReal.Text = Convert.ToString(ratio_real);
-            lblRatioReal.Text = string.Format("{0:0.000000}", ratio_real);
+            lblRatioReal.Text = string.Format("{0:0.000000}", ratio_real); // ♣
 
             // Graphics 객체
             Graphics grp = picArea.CreateGraphics();

@@ -29,10 +29,10 @@ static class TSocket
 
     public static string HostName()
     {
-        return Dns.GetHostName();               // 컴퓨터명 파악
+        return Dns.GetHostName();               // 컴퓨터명 파악 ♣
     }
 
-    public static IPAddress[] HostAddresses()   // 컴퓨터 IP주소 파악
+    public static IPAddress[] HostAddresses()   // 컴퓨터 IP주소 파악 ♣
     {
         string hostname = HostName();
         IPAddress[] ips = Dns.GetHostAddresses(hostname);

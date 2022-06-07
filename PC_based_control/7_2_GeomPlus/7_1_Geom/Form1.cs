@@ -62,7 +62,7 @@ namespace _7_1_Geom
             geoms.Add(geom);
 
             col = Color.FromArgb(rnd.Next(200), rnd.Next(200), rnd.Next(200));
-            geom = new Triangle(100, 30, 30, col);
+            geom = new Triangle(100, 100, 30, 30, col);
             geoms.Add(geom);
 
             // 도형 그리기
@@ -77,34 +77,30 @@ namespace _7_1_Geom
             for (int i = 0; i < ngeom; i++)
             {
                 // 랜덤으로 도형 위치, 종류 결정
-                int rndFig = rnd.Next(4);
+                int rndFig = rnd.Next(4); // ♣
                 if (rndFig == 0)
                 {
                     col = Color.FromArgb(rnd.Next(200), rnd.Next(200), rnd.Next(200));
-                    Circle cir = new Circle(rnd.Next(500), rnd.Next(500),
-                                            rnd.Next(30), col);
+                    Circle cir = new Circle(rnd.Next(500), rnd.Next(500), rnd.Next(30), col);
                     geoms.Add(cir);
                 }
                 else if(rndFig == 1)
                 {
                     col = Color.FromArgb(rnd.Next(200), rnd.Next(200), rnd.Next(200));
-                    Diamond dia = new Diamond(rnd.Next(500), rnd.Next(500),
-                                              rnd.Next(30), rnd.Next(30), col);
+                    Diamond dia = new Diamond(rnd.Next(500), rnd.Next(500), rnd.Next(30), rnd.Next(30), col);
                     geoms.Add(dia);
                 }
                 else if (rndFig == 2)
                 {
                     col = Color.FromArgb(rnd.Next(200), rnd.Next(200), rnd.Next(200));
-                    Rectangle rec = new Rectangle(rnd.Next(500), rnd.Next(500),
-                                              rnd.Next(30), rnd.Next(30), col);
+                    Rectangle rec = new Rectangle(rnd.Next(500), rnd.Next(500), rnd.Next(30), rnd.Next(30), col);
                     geoms.Add(rec);
                 }
                 else if (rndFig == 3)
                 {
                     col = Color.FromArgb(rnd.Next(200), rnd.Next(200), rnd.Next(200));
-                    Triangle rec = new Triangle(rnd.Next(500),
-                                              rnd.Next(30), rnd.Next(30), col);
-                    geoms.Add(rec);
+                    Triangle tri = new Triangle(rnd.Next(500), rnd.Next(500), rnd.Next(30), rnd.Next(30), col);
+                    geoms.Add(tri);
                 }
             }
 
@@ -115,7 +111,7 @@ namespace _7_1_Geom
         private void btnErase_Click(object sender, EventArgs e)
         {
             // 배열 초기화, 도형 정보 초기화
-            geoms.Clear();  // 배열 깨끗하게 만들자
+            geoms.Clear();  // 배열 깨끗하게 만들자 ♣♣♣
             Circle.num = 0;
             Diamond.num = 0;
             Rectangle.num = 0;

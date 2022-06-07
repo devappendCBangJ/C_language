@@ -1,0 +1,10 @@
+C:\Users\Bang\source\repos\PC_Based_Control\14_1_Pixel\Pixels\bin\Debug\Pixels.exe.config
+C:\Users\Bang\source\repos\PC_Based_Control\14_1_Pixel\Pixels\bin\Debug\Pixels.exe
+C:\Users\Bang\source\repos\PC_Based_Control\14_1_Pixel\Pixels\bin\Debug\Pixels.pdb
+C:\Users\Bang\source\repos\PC_Based_Control\14_1_Pixel\Pixels\obj\Debug\14_1_Pixel.csproj.AssemblyReference.cache
+C:\Users\Bang\source\repos\PC_Based_Control\14_1_Pixel\Pixels\obj\Debug\Pixels.Form1.resources
+C:\Users\Bang\source\repos\PC_Based_Control\14_1_Pixel\Pixels\obj\Debug\Pixels.Properties.Resources.resources
+C:\Users\Bang\source\repos\PC_Based_Control\14_1_Pixel\Pixels\obj\Debug\14_1_Pixel.csproj.GenerateResource.cache
+C:\Users\Bang\source\repos\PC_Based_Control\14_1_Pixel\Pixels\obj\Debug\14_1_Pixel.csproj.CoreCompileInputs.cache
+C:\Users\Bang\source\repos\PC_Based_Control\14_1_Pixel\Pixels\obj\Debug\Pixels.exe
+C:\Users\Bang\source\repos\PC_Based_Control\14_1_Pixel\Pixels\obj\Debug\Pixels.pdb

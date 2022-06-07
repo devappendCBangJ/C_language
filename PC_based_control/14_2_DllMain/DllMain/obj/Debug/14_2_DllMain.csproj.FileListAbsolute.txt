@@ -1,0 +1,10 @@
+C:\Users\Bang\source\repos\PC_Based_Control\14_2_DllMain\DllMain\bin\Debug\DllMain.exe.config
+C:\Users\Bang\source\repos\PC_Based_Control\14_2_DllMain\DllMain\bin\Debug\DllMain.exe
+C:\Users\Bang\source\repos\PC_Based_Control\14_2_DllMain\DllMain\bin\Debug\DllMain.pdb
+C:\Users\Bang\source\repos\PC_Based_Control\14_2_DllMain\DllMain\obj\Debug\14_2_DllMain.csproj.AssemblyReference.cache
+C:\Users\Bang\source\repos\PC_Based_Control\14_2_DllMain\DllMain\obj\Debug\DllMain.Form1.resources
+C:\Users\Bang\source\repos\PC_Based_Control\14_2_DllMain\DllMain\obj\Debug\DllMain.Properties.Resources.resources
+C:\Users\Bang\source\repos\PC_Based_Control\14_2_DllMain\DllMain\obj\Debug\14_2_DllMain.csproj.GenerateResource.cache
+C:\Users\Bang\source\repos\PC_Based_Control\14_2_DllMain\DllMain\obj\Debug\14_2_DllMain.csproj.CoreCompileInputs.cache
+C:\Users\Bang\source\repos\PC_Based_Control\14_2_DllMain\DllMain\obj\Debug\DllMain.exe
+C:\Users\Bang\source\repos\PC_Based_Control\14_2_DllMain\DllMain\obj\Debug\DllMain.pdb

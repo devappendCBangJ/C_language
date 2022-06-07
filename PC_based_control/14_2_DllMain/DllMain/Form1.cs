@@ -21,13 +21,13 @@ namespace DllMain
         {
             lblNPrime.Text = "...";
             lblTime.Text = "...";
-            Application.DoEvents();     // 이건 뭐지??? ♣
+            Application.DoEvents();     // 이건 뭐지??? ♣♣♣
 
             int nMax = Convert.ToInt32(txtNMax.Text);
             int nprime;
 
             DateTime stime = DateTime.Now;
-            PrimeCSharp.FindNumberOfPrimeNumber(nMax, out nprime);
+            PrimeCSharp.FindNumberOfPrimeNumber(nMax, out nprime); // ♣♣♣
             double dtime = Util.TimeInSeconds(stime);
 
             lblNPrime.Text = Convert.ToString(nprime);
@@ -38,13 +38,13 @@ namespace DllMain
         {
             lblNPrime.Text = "...";
             lblTime.Text = "...";
-            Application.DoEvents();     // 이건 뭐지??? ♣
+            Application.DoEvents();     // 이건 뭐지??? ♣♣♣
 
             int nMax = Convert.ToInt32(txtNMax.Text);
             int nprime = 0;
 
             DateTime stime = DateTime.Now;
-            dllPrime.dllFindNumberOfPrimeNumber(nMax, ref nprime); // C++ 코드를 import한 함수 사용 ♣
+            dllPrime.dllFindNumberOfPrimeNumber(nMax, ref nprime); // C++ 코드를 import한 함수 사용 ♣♣♣
             double dtime = Util.TimeInSeconds(stime);
 
             lblNPrime.Text = Convert.ToString(nprime);

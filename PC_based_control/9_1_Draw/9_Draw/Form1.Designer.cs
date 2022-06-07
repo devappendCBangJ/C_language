@@ -36,16 +36,17 @@
             // 
             // picDraw
             // 
+            this.picDraw.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.picDraw.Location = new System.Drawing.Point(13, 13);
             this.picDraw.Name = "picDraw";
             this.picDraw.Size = new System.Drawing.Size(687, 669);
             this.picDraw.TabIndex = 0;
             this.picDraw.TabStop = false;
-            this.picDraw.Click += new System.EventHandler(this.pictureBox1_Click);
             this.picDraw.Paint += new System.Windows.Forms.PaintEventHandler(this.pictureBox1_Paint);
             // 
             // timer1
             // 
+            this.timer1.Enabled = true;
             this.timer1.Interval = 10;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
